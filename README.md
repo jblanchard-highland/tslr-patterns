@@ -27,14 +27,13 @@ Front-end project to support html elements to be developed in Outsystems
 
 ## Installation
 
-git clone
 npm install
 
 ## Usage
 
 Create a static server at port 3001 (for user interface, read [browser-sync official page for more info](http://www.browsersync.io/)) that watches for file changes and enables live reload:
 ```
-grunt server  
+grunt serve
 ```
 
 Compile LESS to CSS and lint all the generated files:
