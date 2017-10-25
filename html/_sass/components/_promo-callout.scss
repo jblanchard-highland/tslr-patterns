@@ -10,10 +10,10 @@
 
 	.img-wrapper {
       min-width: 20%;
-      background-image: url(/images/graph.png);
+      background-image: url(../images/graph.png);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: cover;
+      background-size:contain;
 	}
 
 	h2 {
