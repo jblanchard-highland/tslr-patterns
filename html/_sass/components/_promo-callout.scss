@@ -9,10 +9,11 @@
     }
 
 	.img-wrapper {
-
-      img {
-        max-width: 300px;
-      }
+      min-width: 20%;
+      background-image: url(../images/graph.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:contain;
 	}
 
 	h2 {
