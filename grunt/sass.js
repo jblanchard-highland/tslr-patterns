@@ -9,7 +9,7 @@ module.exports = {
 		},
 		files: {
 			"<%= cfg.root %><%= cfg.dest.styles %>main.css" :
-			"<%= cfg.root %><%= cfg.src.styles %>main.less"
+			"<%= cfg.root %><%= cfg.src.styles %>main.sass"
 		}
 	},
 	sourceMap: {
@@ -19,7 +19,7 @@ module.exports = {
 			sourceMapFileInline : true,
 			dumpLineNumbers : 'false'
 		},
-		src: "<%= cfg.root %><%= cfg.src.styles %>main.less",
+		src: "<%= cfg.root %><%= cfg.src.styles %>main.sass",
 		dest: "<%= cfg.root %><%= cfg.dest.styles %>main.css"
 	}
 };
