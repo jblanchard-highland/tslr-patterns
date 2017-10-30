@@ -2,7 +2,7 @@
 /* GENERIC RULES - Start */
 body {
   font-family: "Sanchez", serif;
-  font-size: 19px;
+  font-size: 39px !important;
   text-align: left;
   color: #006e74;
 }
