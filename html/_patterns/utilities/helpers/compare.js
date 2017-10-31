@@ -3,7 +3,7 @@ module.exports = function(lvalue, rvalue, options) {
   if(arguments.length < 3) {
     throw new Error("Handlerbars Helper 'compare' needs 2 parameters");
   }
-
+  
   operator = options.hash.operator || '===';
 
   var operators = {
