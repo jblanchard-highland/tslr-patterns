@@ -1,47 +1,45 @@
-// Utilities
-@import "utilities/reset.less";
-@import "utilities/prism.less";
+@import "settings/_variables";
+@import "settings/_reset";
+@import "settings/_typography";
+@import "settings/_common";
 
-// Atoms
-@import "atoms/button.less";
+// Template(s)
+
+@import "templates/_base-template";
+
+// Organisms
+
+@import "organisms/_header";
+@import "organisms/_footer";
 
 // Molecules
-@import "molecules/article.less";
-@import "molecules/authorship.less";
-@import "molecules/banner.less";
-@import "molecules/bulleted-list.less";
-@import "molecules/featured-bio.less";
-@import "molecules/legal-disclaimer.less";
-@import "molecules/promo-callout.less";
-@import "molecules/qa.less";
-@import "molecules/signup-form.less";
-@import "molecules/sources-citation.less";
-@import "molecules/static-item.less";
-@import "molecules/tip.less";
-@import "molecules/video-module.less";
-@import "molecules/pdf-module.less";
-@import "molecules/promotional-copy.less";
-@import "molecules/product-offering.less";
 
-// Templates
+    // New Content types
+@import "molecules/_article";
+@import "molecules/_authorship";
+@import "molecules/_banner";
+@import "molecules/_bulleted-list";
+@import "molecules/_featured-bio";
+@import "molecules/_legal-disclaimer";
+@import "molecules/_promo-callout";
+@import "molecules/_qa";
+@import "molecules/_signup-form";
+@import "molecules/_sources-citation";
+@import "molecules/_static-item";
+@import "molecules/_tip";
+@import "molecules/_video-module";
 
-@import "templates/base-template.less";
+    // Previous components from TSLR website
+@import "molecules/_stepper-btn-container";
+@import "molecules/_what-we-do";
+@import "molecules/_borrow-more";
+@import "molecules/_cu-vs-bank";
+
+// Atoms
+
+@import "atoms/_button";
 
 
-.main-container {
-	display: flex;
-	flex-wrap: wrap;
+// Utilities
 
-	.site-title {
-		width: 100%;
-	}
-
-	.wrapper {
-		flex: 1;
-		margin: 0 12px;
-	}
-
-	ul li {
-		margin: 8px 0;
-	}
-}
+@import "utilities/_prism";

@@ -20,6 +20,6 @@ module.exports = {
 			dumpLineNumbers : 'false'
 		},
 		src: "<%= cfg.root %><%= cfg.src.styles %>main.less",
-		dest: "<%= cfg.root %><%= cfg.dest.styles %>main.css"
+		dest: "<%= cfg.root %><%= cfg.dest.styles %>mains.css"
 	}
 };

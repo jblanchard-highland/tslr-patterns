@@ -108,13 +108,6 @@ e.g.:
 * Opera 11+
 * Internet Explorer 9+
 
-## Authors and Contributors
-Sérgio Santos (@s3rgiosan)  
-Luís Hebbelinck (@bylhebbelinck)  
-Ana Silva (@yana-vertigo)  
-Rodrigo Alves (@Rodrigo96)  
-Mário Silva (@Marocas)  
-
 ## Versioning
 This project uses MAJOR.MINOR.PATCH [Semantic Versioning](http://semver.org/).
 

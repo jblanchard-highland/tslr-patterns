@@ -1,0 +1,113 @@
+footer {
+    background-color: #f6f3f3;
+    padding: 15px;
+
+
+    .footer-rectangle {
+        background-color: #f6f3f3;
+    }
+
+    .footer-links-container {
+        
+        > div {
+            margin-top: 5px;
+        }
+
+        ul {
+            display: flex;
+            margin-top: 4px;
+            padding: 0;
+
+            li {
+                margin-right: 30px;
+                font-style: normal;
+                font-family: "Proxima Nova", sans-serif;
+                line-height: 1.42857143;
+
+                &:first-of-type {
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .footer {
+        &-links {
+            font-size: 13px;
+            color: #074679;
+            text-decoration: underline;
+            font-family: @content-font;
+        }
+
+        &-logo {
+            width: 180px;
+        }
+
+        &-address {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 1.42;
+            color: #074679;
+            padding-left: 20px;
+            font-family: @content-font;
+        }
+    }
+
+    .logo-col {
+        padding-top: 10px;
+    
+        .social-links {
+            display: flex;
+            justify-content: center;
+
+            .facebook-circled,
+            .twitter-circled,
+            .linkedin-circled {
+                width: 32px;
+                height: 32px;
+                margin: 0 6px 6px 6px;
+            }
+        }
+    }
+
+    .footer-copy p,
+    .copyright {
+        padding: 0 15px;
+        font-family: @content-font;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: left;
+        color: #495966;
+        text-align: left;
+        font-style: normal;
+    }
+
+    @media(max-width: 425px){
+        .footer-logo {
+            width: 100%;
+            max-height: 29px;
+            padding-top: 5px;
+        }
+            
+        .facebook-circled,
+        .twitter-circled,
+        .linkedin-circled {
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .footer-links-container ul {
+            margin-top: 0;
+            flex-direction: column;
+            list-style: none;
+            
+            li {
+                margin-top: 3px;
+            }
+        }
+    }
+}
