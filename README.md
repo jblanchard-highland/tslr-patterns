@@ -34,7 +34,7 @@ npm install
 
 Create a static server at port 3001 (for user interface, read [browser-sync official page for more info](http://www.browsersync.io/)) that watches for file changes and enables live reload:
 ```
-grunt server  
+grunt serve
 ```
 
 Compile LESS to CSS and lint all the generated files:
@@ -108,13 +108,6 @@ e.g.:
 * Safari 5+
 * Opera 11+
 * Internet Explorer 9+
-
-## Authors and Contributors
-Sérgio Santos (@s3rgiosan)  
-Luís Hebbelinck (@bylhebbelinck)  
-Ana Silva (@yana-vertigo)  
-Rodrigo Alves (@Rodrigo96)  
-Mário Silva (@Marocas)  
 
 ## Versioning
 This project uses MAJOR.MINOR.PATCH [Semantic Versioning](http://semver.org/).
