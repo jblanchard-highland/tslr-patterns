@@ -1974,25 +1974,26 @@ footer .copyright {
 	        box-shadow: none !important;
 }
 
-.signup-form input > span:first-of-type {
+.signup-form label > span:first-of-type {
 	font-family: 'Heebo', sans-serif !important;
 	font-size: 15px !important;
 	font-weight: 300 !important;
 	color: #006e74 !important;
+	margin-right: 4px;
 }
 
 .signup-form .input select {
+	background: #fff;
 	height: 42px;
 	width: 100%;
 	max-width: 100%;
-	background: #fff;
 	border: solid 1px #96d0c8 !important;
 	border-radius: 0;
-	outline: none;
 	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	cursor: pointer;
+	outline: none;
 }
 
 .signup-form .hs_community_workflow .input {
@@ -2001,19 +2002,19 @@ footer .copyright {
 
 .signup-form .hs_community_workflow .input:after {
 	content: '>';
-	position: absolute;
-	right: 0px;
-	top: 8px;
-	width: 41px;
 	font: 16px Consolas, monospace;
 	color: #96d0c8;
-	text-indent: 16px;
-	padding: 0 0 8px 0;
-	border-bottom: 1px solid #96d0c8;
-	pointer-events: none;
 	-webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	        transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	right: 0px;
+	top: 8px;
+	border-bottom: 1px solid #96d0c8;
+	position: absolute;
+	pointer-events: none;
+	width: 41px;
+	padding: 0 0 8px 0;
+	text-indent: 16px;
 }
 
 .sources-citation h3 {
