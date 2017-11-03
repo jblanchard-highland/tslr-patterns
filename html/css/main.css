@@ -44,7 +44,7 @@
 }
 
 .home-s5-col-height.left {
-	background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat-x, url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/studentshelpingeachotherhomework.jpg') repeat;
+	background: url('/TSLR_Site/img/overlaygradient.png') repeat-x, url('/TSLR_Site/img/studentshelpingeachotherhomework.jpg') repeat;
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -111,7 +111,7 @@
 }
 
 .home-s5-col-height.right {
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/confetti.svg');
+	background-image: url('/TSLR_Site/img/confetti.svg');
 	background-repeat: repeat;
 	background-size: cover;
 	display: -webkit-box;
@@ -142,6 +142,9 @@ body {
 	color: #006e74;
 }
 
+body form .container {
+	padding-top: 60px;
+}
 
 body form .container .row {
 	padding-left: 40px;
@@ -495,7 +498,7 @@ a:hover {
 	height: 22px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/chevronsinverted.png');
+	background-image: url('/TSLR_Site/img/chevronsinverted.png');
 }
 
 .lending-principles ul li p {
@@ -980,7 +983,7 @@ a:hover {
 /* State-of-Student-Debt YOU */
 
 .State-of-Student-Debt {
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+	background-image: url('/TSLR_Site/img/bgpattern.jpg');
 }
 
 .State-of-Student-Debt .row {
@@ -1318,6 +1321,80 @@ footer .copyright {
 	font-style: normal;
 }
 
+.form-wrapper {
+	margin: 20px;
+}
+
+.form-wrapper h2 {
+	margin-bottom: 23px;
+}
+
+.form-wrapper .form-header p {
+	color: #495966;
+}
+
+.form-wrapper .form-header a {
+	margin-left: 4px;
+}
+
+.form-wrapper .form-inputs-wrapper {
+	margin-top: 31px;
+}
+
+.form-wrapper .input-row {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.form-wrapper .input-row .form-label {
+	font-family: 'Heebo', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: left;
+	color: #006e74;
+}
+
+.form-wrapper .input-row input {
+	border: solid 0.5px #96d0c8;
+	outline: none;
+	padding: 4px;
+}
+
+.form-wrapper .toggle-password {
+	position: absolute;
+	left: 270px;
+	top: 30px;
+	cursor: pointer;
+}
+
+.form-wrapper .progress {
+	margin-top: 6px; /* override bootstrap rules */
+	height: 100%;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper .forgot-password {
+	margin-top: 5px;
+}
+
+.form-wrapper .form-footer {
+	margin-top: 20px;
+}
+
+.form-wrapper .form-footer .default-button {
+	margin-top: 30px;
+}
+
 .home-s1-col-height {
 	min-height: 500px;
 }
@@ -1328,7 +1405,7 @@ footer .copyright {
 }
 
 .home-s1-col-height.left {
-	background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat;
+	background: url('/TSLR_Site/img/overlaygradient.png') repeat;
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1473,7 +1550,7 @@ footer .copyright {
 }
 
 .apply-section .stepper-btn-container .line {
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/linered.png);
+	background-image: url(/TSLR_Site/img/linered.png);
 	top: inherit;
 	width: 14%;
 }
@@ -1482,7 +1559,7 @@ footer .copyright {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #DE4365;
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/communitybgtess.png);
+	background-image: url(/TSLR_Site/img/communitybgtess.png);
 	background-repeat: repeat;
 	background-size: 60px 38px;
 }
@@ -1804,7 +1881,7 @@ footer .copyright {
 	height: 22px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('https://dev.thriventstudentloanresources.com/img/chevrons.png');
+	background-image: url('/images/chevrons.png');
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -2076,17 +2153,17 @@ footer .copyright {
 .stepper-btn-container .img3 {
 	width: 80px;
 	height: 80px;
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icfile.svg);
+	background-image: url(/TSLR_Site/img/icfile.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .stepper-btn-container .img2 {
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollar.svg);
+	background-image: url(/TSLR_Site/img/icdollar.svg);
 }
 
 .stepper-btn-container .img3 {
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg);
+	background-image: url(/TSLR_Site/img/iccoin.svg);
 }
 
 .stepper-btn-container .img-holder {
@@ -2100,15 +2177,15 @@ footer .copyright {
 }
 
 .stepper-btn-container .img1.active {
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icfileactive.svg);
+	background-image: url(/TSLR_Site/img/icfileactive.svg);
 }
 
 .stepper-btn-container .img2.active {
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollaractive.svg);
+	background-image: url(/TSLR_Site/img/icdollaractive.svg);
 }
 
 .stepper-btn-container .img3.active {
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoinactive.svg);
+	background-image: url(/TSLR_Site/img/iccoinactive.svg);
 }
 
 .stepper-btn-container .default-button {
@@ -2129,13 +2206,13 @@ footer .copyright {
 	margin: 0 8px;
 	width: 11%;
 	height: 14px;
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/line.png);
+	background-image: url(/TSLR_Site/img/line.png);
 	background-repeat: repeat-x;
 }
 
 .what-we-do {
 	padding: 50px 15px 40px 15px;
-	background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat-x, url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg') repeat;
+	background: url('/TSLR_Site/img/overlaygradient.png') repeat-x, url('/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg') repeat;
 	background-size: cover;
 	background-position: center;
 }
