@@ -142,10 +142,6 @@ body {
 	color: #006e74;
 }
 
-body form .container {
-	padding-top: 60px;
-}
-
 body form .container .row {
 	padding-left: 40px;
 	padding-right: 40px;
@@ -1395,6 +1391,34 @@ footer .copyright {
 	margin-top: 30px;
 }
 
+.helping-you {
+	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+}
+
+.helping-you h2 {
+	position: relative;
+	margin: 0 auto 32px auto;
+	padding-bottom: 32px;
+	max-width: 440px;
+	text-align: center;
+	color: #fff;
+}
+
+.helping-you h2:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	right: 40px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.helping-you p {
+	color: #fff;
+	text-align: center;
+}
+
 .home-s1-col-height {
 	min-height: 500px;
 }
@@ -2623,6 +2647,25 @@ pre[class*="language-"] {
 	padding: 20px 15px 40px 15px;
 }
 
+.helping-you .video-holder {
+	margin: 5% 0 0 0;
+}
+
+.helping-you .description,
+.helping-you .video-holder {
+	padding: 20px 15px 20px 15px;
+}
+
+.helping-you .vertical-table-row {
+	display: table;
+}
+
+.helping-you .vertical-table-row [class*="col-"] {
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
 .borrow-more h2 {
 	padding-bottom: 40px;
 }
@@ -2956,6 +2999,38 @@ footer .footer-links-container ul {
 
 footer .footer-links-container ul li {
 	margin-top: 3px;
+}
+
+.helping-you {
+	padding-bottom: 24px;
+}
+
+.helping-you .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.helping-you .description,
+.helping-you .video-holder {
+	width: 100%;
+}
+
+.helping-you .video-holder {
+	padding: 0;
+	background-image: none;
+	background-color: #f6f3f3;
+}
+
+.helping-you .description {
+	padding: 10px 10px 30px 10px;
+}
+
+.helping-you .video-holder {
+	padding: 0 10px;
+	background: transparent;
 }
 
 .home-s1-col-height {
