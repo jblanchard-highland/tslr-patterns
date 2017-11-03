@@ -1429,7 +1429,7 @@ footer .copyright {
 }
 
 .home-s1-col-height.left {
-	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat;
+	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x, url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
 	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
