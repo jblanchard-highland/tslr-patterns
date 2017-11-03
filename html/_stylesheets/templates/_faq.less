@@ -1,0 +1,128 @@
+.jump-to-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-top: 24px;
+}
+
+.jump-to-label {
+  margin-right: 12px;
+  font-family: @content-font;
+  font-size: 18px;
+  color: #006e74;
+}
+
+.jump-buttons,
+.jump-buttons span {
+  display: flex;
+}
+
+.jump-buttons a {
+  display: flex;
+  align-items: flex-end;
+
+  margin: 0 8px;
+  height: 100px;
+  background-repeat: no-repeat;
+
+  font-family: @heading-font;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  color: #074679;
+}
+
+.jump-buttons a:first-of-type {
+  background-image: url(/TSLR_Site/img/icdollar.svg);
+  background-position: 50% 10px;
+  background-size: 80px;
+}
+
+.jump-buttons a:last-of-type {
+  background-image: url(/TSLR_Site/img/iccoin.svg);
+  background-position: 50% 0px;
+  background-size: 60px;
+}
+
+.accordion {
+  display: flex;
+  align-items: center;
+
+  margin: 20px 0;
+  font-family: @heading-font;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #323a41;
+
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.faq-list .section-title,
+.faq-list .sub-section-title {
+  text-decoration: none;
+}
+
+.chevron {
+  margin-right: 16px;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/TSLR_Site/img/chevrons.png);
+
+  transition: all 0.5s ease;
+}
+
+.accordion.active .chevron {
+  transform: rotate(90deg);
+}
+
+.panel {
+  display: none;
+  padding: 0 18px;
+  background-color: white;
+  box-shadow: none;
+
+  p {
+    font-family: @content-font;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.53;
+    color: #495966;
+  }
+}
+
+.thank-you {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.page-not-found-div {
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.document-holder {
+  display: block;
+  padding-top: 20px;
+  margin-left: 20px;
+  color: #BB0706;
+
+  > div {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+
+  a {
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none;
+  }
+
+}

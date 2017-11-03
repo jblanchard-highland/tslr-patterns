@@ -1,0 +1,58 @@
+.jump-to-wrapper {
+  z-index: 3;
+  position: relative;
+  top: 25px;
+  right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  padding-bottom: 30px;
+
+  transition: all 0.3s ease;
+
+  .jump-to-buttons > span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .jump-to-button a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    width: 116px;
+    height: 116px;
+    padding: 8px;
+
+    font-family: 'ITC Franklin Gothic LT W01BkCm', sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+    border-radius: 50%;
+    background-color: #236192;
+    border: solid 5px #ffffff;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 767px) {
+    top: 0;
+    right: initial;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0;
+
+    transition: all 0.3s ease;
+
+  }
+}
+
+.blog .jump-to-wrapper .jump-to-button:first-child {
+  display: block;
+}

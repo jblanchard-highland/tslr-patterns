@@ -1,0 +1,139 @@
+.blog h1 {
+  text-align: left;
+}
+
+.blog-top-header {
+  display: flex;
+
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.blog-list {
+  margin-top: 60px;
+}
+
+.blog-top .jump-to-wrapper {
+  right: initial;
+  left: 0;
+  top: 0;
+  justify-content: flex-start;
+}
+
+
+
+.blog-top .jump-to-wrapper .jump-to-button a {
+  margin: 0 15px;
+  background-color: rgba(140, 17, 37, 0.6);
+  color:white;
+}
+
+.blog-top .jump-to-wrapper .jump-to-button.active a {
+  background-color: rgba(140, 17, 37, 1);
+}
+
+.blog-highlighted {
+
+}
+
+.blog-list-item {
+  position: relative;
+  min-height: 296px;
+  margin-bottom: 29px;
+
+  background-size: cover;
+}
+
+.blog-top .blog-list-item {
+  margin-bottom: 35px;
+  min-height: 252px;
+}
+
+.blog-highlighted .blog-list-item {
+  min-height: 390px
+}
+
+
+.item-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 18px;
+  background-color: rgba(128, 206, 206, .7);
+  color: #fff;
+  color: var(--white);
+}
+
+.item-overlay h5,
+.item-overlay p {
+  font-family: 'ITC Franklin Gothic LT W01BkCm', sans-serif;
+  color: inherit;
+  margin: 0;
+}
+
+.item-overlay h5 {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.item-overlay p {
+
+  font-size: 18px;
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+  .blog-top .jump-to-wrapper .jump-to-button a {
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-top .jump-to-wrapper .jump-to-button a {
+    font-size: 17px;
+    margin: 0;
+    width: 95px;
+    height: 95px;
+  }
+}
+
+@media(max-width: 767px) {
+  .blog {
+    padding: 0;
+  }
+
+  .blog h1 {
+    text-align: center;
+  }
+
+  .blog-top-header {
+    flex-direction: column;
+  }
+
+  .blog-top-header h2,
+  .blog-top-header .cta-btn {
+    margin: 30px auto;
+  }
+
+  .blog-top-header .cta-btn {
+    order: 1;
+  }
+
+  .blog-top-header h2 {
+    order: 2;
+  }
+
+  .blog-top .col-sm-5 .jump-to-wrapper {
+    display: flex !important;
+    justify-content:center;
+    margin-top: 60px;
+  }
+
+  .blog-top .jump-to-wrapper .jump-to-button a {
+    margin: 0;
+  }
+
+  .blog-list {
+    padding: 0 60px;
+  }
+}
