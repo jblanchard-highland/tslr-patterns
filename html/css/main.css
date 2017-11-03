@@ -1933,12 +1933,33 @@ footer .copyright {
 	color: #495966;
 }
 
+.signup-form .hs-error-msgs {
+	padding: 4px;
+	list-style: none;
+}
+
+.signup-form .hs-error-msgs li {
+	font-size: 12px;
+}
+
 .signup-form input {
 	margin-top: 5px !important;
 	height: 40px !important;
 	border: solid 1px #96d0c8 !important;
 	border-radius: 0 !important;
 	padding: 0 12px !important;
+	font-size: 14px;
+	outline: none;
+}
+
+.signup-form .hs-field-desc {
+	color: #929292 !important;
+	font-size: 13px;
+}
+
+.signup-form .signup-form select {
+	font-size: 14px;
+	padding: 12px;
 }
 
 .signup-form input.hs-input {
@@ -1996,6 +2017,11 @@ footer .copyright {
 	outline: none;
 }
 
+.signup-form .hs-form-required {
+	color: red;
+	font-size: 14px;
+}
+
 .signup-form .hs_community_workflow .input {
 	position: relative;
 }
@@ -2015,6 +2041,10 @@ footer .copyright {
 	width: 41px;
 	padding: 0 0 8px 0;
 	text-indent: 16px;
+}
+
+.signup-form .actions {
+	margin-top: 20px;
 }
 
 .sources-citation h3 {
