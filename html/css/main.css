@@ -1,4 +1,141 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,500|Sanchez:400,400i');body {
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500|Sanchez:400,400i');/* style reset rules  */
+
+/* GENERIC COMPONENTS STYLES */
+
+.right-list ul li ul li:nth-child(3),
+.right-list ul li ul li:nth-child(4) { /*visibility:hidden;*/
+}
+
+.default-button,
+.hs-form .hs-button {
+	padding: 9px 25px 7px;
+	border: 2px solid #4A5965;
+	background: transparent;
+	border-radius: 0;
+	color: #4A5965;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	outline: none;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	text-decoration: none !important;
+	text-align: center;
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	display: inline-block;
+}
+
+/* END OF GENERIC COMPONENTS */
+
+.story {
+	margin: 20px 0;
+}
+
+/*Jump Start*/
+
+.home-s5-col-height {
+	min-height: 400px;
+}
+
+.home-s5-col-height.right {
+	padding-top: 0;
+	background-color: #f6f3f3;
+}
+
+.home-s5-col-height.left {
+	background: url('/TSLR_Site/img/overlaygradient.png') repeat-x, url('/TSLR_Site/img/studentshelpingeachotherhomework.jpg') repeat;
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.home-s5-col-height.left img {
+	position: absolute;
+	height: 100%;
+}
+
+.home-s5-col-height.left .default-button {
+	margin-top: 20px;
+	border-color: #fff;
+	color: #fff;
+}
+
+.home-s5-col-height.right .default-button {
+	margin-top: 20px;
+}
+
+.home-s5-col-height.left .default-button:hover {
+	color: #128482;
+	background-color: #fff;
+}
+
+.home-s5-col-height.right .default-button:hover {
+	background-color: #4A5965;
+	color: #fff;
+}
+
+.ambassador,
+.jumpstart {
+	max-width: 620px;
+	width: 100%;
+}
+
+.home-s5-col-height.left h2 {
+	padding: 0 0 20px 0;
+	color: #FFFFFF;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 46px;
+	text-align: center;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.home-s5-col-height.left p {
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.home-s5-col-height.right p {
+	color: #495966;
+	text-align: center;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.home-s5-col-height.right {
+	background-image: url('/TSLR_Site/img/confetti.svg');
+	background-repeat: repeat;
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.home-s5-col-height.right h2 {
+	padding: 0 0 20px 0;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 46px;
+	text-align: center;
+	color: #5b6770;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+}
+
+body {
 	font-family: 'Sanchez', serif;
 	font-size: 19px;
 	text-align: left;
@@ -170,143 +307,6 @@ a:hover {
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
-}
-
-/* style reset rules  */
-
-/* GENERIC COMPONENTS STYLES */
-
-.right-list ul li ul li:nth-child(3),
-.right-list ul li ul li:nth-child(4) { /*visibility:hidden;*/
-}
-
-.default-button,
-.hs-form .hs-button {
-	padding: 9px 25px 7px;
-	border: 2px solid #4A5965;
-	background: transparent;
-	border-radius: 0;
-	color: #4A5965;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	outline: none;
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	text-decoration: none !important;
-	text-align: center;
-	font-family: 'Heebo', sans-serif;
-	font-size: 16px;
-	display: inline-block;
-}
-
-/* END OF GENERIC COMPONENTS */
-
-.story {
-	margin: 20px 0;
-}
-
-/*Jump Start*/
-
-.home-s5-col-height {
-	min-height: 400px;
-}
-
-.home-s5-col-height.right {
-	padding-top: 0;
-	background-color: #f6f3f3;
-}
-
-.home-s5-col-height.left {
-	background: url('/TSLR_Site/img/overlaygradient.png') repeat-x, url('/TSLR_Site/img/studentshelpingeachotherhomework.jpg') repeat;
-	background-size: cover;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-}
-
-.home-s5-col-height.left img {
-	position: absolute;
-	height: 100%;
-}
-
-.home-s5-col-height.left .default-button {
-	margin-top: 20px;
-	border-color: #fff;
-	color: #fff;
-}
-
-.home-s5-col-height.right .default-button {
-	margin-top: 20px;
-}
-
-.home-s5-col-height.left .default-button:hover {
-	color: #128482;
-	background-color: #fff;
-}
-
-.home-s5-col-height.right .default-button:hover {
-	background-color: #4A5965;
-	color: #fff;
-}
-
-.ambassador,
-.jumpstart {
-	max-width: 620px;
-	width: 100%;
-}
-
-.home-s5-col-height.left h2 {
-	padding: 0 0 20px 0;
-	color: #FFFFFF;
-	font-size: 36px;
-	font-weight: 300;
-	line-height: 46px;
-	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
-}
-
-.home-s5-col-height.left p {
-	color: #fff;
-	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
-}
-
-.home-s5-col-height.right p {
-	color: #495966;
-	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
-}
-
-.home-s5-col-height.right {
-	background-image: url('/TSLR_Site/img/confetti.svg');
-	background-repeat: repeat;
-	background-size: cover;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: flex-start;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-}
-
-.home-s5-col-height.right h2 {
-	padding: 0 0 20px 0;
-	font-size: 36px;
-	font-weight: 300;
-	line-height: 46px;
-	text-align: center;
-	color: #5b6770;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
 }
 
 .main-container {
@@ -638,7 +638,6 @@ a:hover {
 }
 
 .contact-us .privacy-policy a {
-	font-family: normal;
 	font-size: inherit;
 	font-family: inherit;
 }
@@ -822,8 +821,6 @@ a:hover {
 	max-width: 50px;
 }
 
-/**** Methodology *******/
-
 .nav > li > a {
 	color: #128482;
 }
@@ -884,7 +881,6 @@ a:hover {
 	background: -o-linear-gradient(right, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8));
 	background: linear-gradient(-90deg, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8)); /* Standard syntax */
 	color: #fff;
-	color: var(--white);
 }
 
 .resource-overlay h5,
@@ -902,8 +898,6 @@ a:hover {
 .resource-overlay p {
 	font-size: 18px;
 }
-
-/**** END Methodology *******/
 
 .blog h1 {
 	text-align: left;
@@ -964,7 +958,6 @@ a:hover {
 	padding: 18px;
 	background-color: rgba(128, 206, 206, 0.7);
 	color: #fff;
-	color: var(--white);
 }
 
 .item-overlay h5,
@@ -1038,7 +1031,6 @@ a:hover {
 input.hs-input[type=text],
 input.hs-input[type=email] {
 	width: 100% !important;
-	padding: 0px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: normal;
@@ -1054,17 +1046,17 @@ input.hs-input[type=email] {
 .hs-form li {
 	list-style: none;
 	background-image: none;
-	background-repeat: none;
+	background-repeat: no-repeat;
 	background-position: 0;
 }
 
 input.hs-input[type=checkbox] {
-	margin: 0px 10px 0px 0px;
+	margin: 0 10px 0 0;
 }
 
 .hs-form .hs-field-desc {
 	color: #fff;
-	margin: 0px 0px 0px 0px;
+	margin: 0;
 	text-align: center;
 	font-size: 11px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2113,13 +2105,13 @@ footer .copyright {
 	margin: 0 8px;
 	width: 11%;
 	height: 14px;
-	background-image: url(/TSLR_Site/img/line.png?8477&8506&8507&8508&8509&8510&8518&8519&8520&8546&8559&8768&8770&8774&8870&8945&527&531&10054);
+	background-image: url(/TSLR_Site/img/line.png);
 	background-repeat: repeat-x;
 }
 
 .what-we-do {
 	padding: 50px 15px 40px 15px;
-	background: url('/TSLR_Site/img/overlaygradient.png?10054') repeat-x, url('/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg?10054') repeat;
+	background: url('/TSLR_Site/img/overlaygradient.png') repeat-x, url('/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg') repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -2630,6 +2622,29 @@ body form .container {
 
 @media (max-width: 768px) {
 
+h1 {
+	font-size: 36px;
+	line-height: 1.11;
+}
+
+h2 {
+	font-size: 32px;
+	line-height: 1.12;
+	text-align: center;
+	color: #006e74;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 300;
+}
+
+.cureferral-logo {
+	float: none;
+	margin: 15px 0;
+	width: 100%;
+}
+
 body form .container .row {
 	padding-left: 12px;
 	padding-right: 12px;
@@ -2664,29 +2679,6 @@ h4 {
 
 h4.inverted {
 	color: #ffffff;
-}
-
-h1 {
-	font-size: 36px;
-	line-height: 1.11;
-}
-
-h2 {
-	font-size: 32px;
-	line-height: 1.12;
-	text-align: center;
-	color: #006e74;
-}
-
-h3 {
-	font-size: 26px;
-	font-weight: 300;
-}
-
-.cureferral-logo {
-	float: none;
-	margin: 15px 0;
-	width: 100%;
 }
 
 .do-not-borrow-self {
@@ -2848,7 +2840,7 @@ h3 {
 }
 
 .State-of-Student-Debt .video-holder {
-	padding: 0px 10px;
+	padding: 0 10px;
 	background: transparent;
 }
 
