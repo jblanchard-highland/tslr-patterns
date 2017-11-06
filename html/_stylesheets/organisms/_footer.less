@@ -1,10 +1,10 @@
 footer {
-    background-color: #f6f3f3;
+    background-color: @pale-gray;
     padding: 15px;
 
 
     .footer-rectangle {
-        background-color: #f6f3f3;
+        background-color: @pale-gray;
     }
 
     .footer-links-container {
@@ -34,7 +34,7 @@ footer {
     .footer {
         &-links {
             font-size: 13px;
-            color: #074679;
+            color: @twilight-blue;
             text-decoration: underline;
             font-family: @content-font;
         }
@@ -49,7 +49,7 @@ footer {
             margin-bottom: 10px;
             font-size: 12px;
             line-height: 1.42;
-            color: #074679;
+            color: @twilight-blue;
             padding-left: 20px;
             font-family: @content-font;
         }
@@ -75,13 +75,14 @@ footer {
     .footer-copy p,
     .copyright {
         padding: 0 15px;
+
+        text-align: left;
         font-family: @content-font;
         font-size: 12px;
-        line-height: 14px;
-        text-align: left;
-        color: #495966;
-        text-align: left;
         font-style: normal;
+        line-height: 14px;
+
+        color: @thrivent-gray;
     }
 
     @media(max-width: 425px){

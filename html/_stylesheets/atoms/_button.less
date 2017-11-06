@@ -1,10 +1,23 @@
+.btn {
+  padding: 9px 5px 7px;
+  color: @twilight-blue;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: inherit;
+
+  &:hover {
+    color: @twilight-blue;
+  }
+}
+
 .default-button,
 .hs-form .hs-button {
   padding: 9px 25px 7px;
-  border: 2px solid #4A5965;
+  border: 2px solid @btn-gray;
   background: transparent;
   border-radius: 0;
-  color: #4A5965;
+  color: @btn-gray;
   text-transform: uppercase;
   letter-spacing: 2px;
   outline: none;
@@ -16,17 +29,17 @@
   display: inline-block;
 
   &:hover {
-    background-color: #4A5965;
-    color: #fff;
+    background-color: @btn-gray;
+    color: @white;
   }
 
   &.inverted {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid @white;
+    color: @white;
 
     &:hover {
-      background-color: #fff;
-      color: #4A5965;
+      background-color: @white;
+      color: @btn-gray;
     }
   }
 }

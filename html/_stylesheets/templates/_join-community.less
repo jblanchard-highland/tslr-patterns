@@ -20,7 +20,7 @@
       font-family: 'Heebo', sans-serif;
       font-size: 13px;
       line-height: normal;
-      color: #006e74;
+      color: @bluegreen-2;
     }
 
     a {
@@ -32,17 +32,17 @@
   input {
     margin-top: 5px !important;
     height: 40px !important;
-    border: solid 1px #96d0c8 !important;
+    border: solid 1px @pale-teal !important;
     border-radius: 0 !important;
     padding: 0 12px !important;
   }
 
   input[type="submit"] {
     margin: 0;
-    padding: 0px 25px 0px !important;
-    border: 2px solid #4A5965 !important;
+    padding: 0 25px 0 !important;
+    border: 2px solid @btn-gray !important;
     background: transparent;
-    color: #4A5965 !important;
+    color: @btn-gray !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
@@ -57,8 +57,8 @@
   }
 
   input[type="submit"]:hover {
-    background-color: #4A5965;
-    color: #fff !important;
+    background-color: @btn-gray;
+    color: @white !important;
     box-shadow: none !important;
   }
 
@@ -66,17 +66,15 @@
     font-family: 'Heebo', sans-serif !important;
     font-size: 15px !important;
     font-weight: 300 !important;
-    color: #006e74 !important;
+    color: @bluegreen-2 !important;
   }
 
   .input select {
-    background: #fff;
+    background: @white;
     height: 42px;
     width: 100%;
-    border: solid 1px #96d0c8 !important;
+    border: solid 1px @pale-teal !important;
     border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
     appearance: none;
     cursor: pointer;
     outline: none;
@@ -90,14 +88,14 @@
   .hs_community_workflow .input:after {
     content: '>';
     font: 16px Consolas, monospace;
-    color: #96d0c8;
+    color: @pale-teal;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    right: 0px;
+    right: 0;
     top: 8px;
-    border-bottom: 1px solid #96d0c8;
+    border-bottom: 1px solid @pale-teal;
     position: absolute;
     pointer-events: none;
     width: 41px;

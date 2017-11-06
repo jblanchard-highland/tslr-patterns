@@ -19,7 +19,7 @@
     max-width: 440px;
 
     text-align: center;
-    color: #fff;
+    color: @white;
 
     &:after {
       content: "";
@@ -28,14 +28,14 @@
       left: 40px;
       right: 40px;
       height: 2px;
-      background-color: #fff;
+      background-color: @white;
     }
 
 
   }
 
   p {
-    color: #fff;
+    color: @white;
     text-align: center;
   }
 
@@ -46,21 +46,24 @@
     font-weight: normal;
     float: left;
     text-align: left;
-    color: #fff;
+    color: @white;
   }
 
   input.hs-input[type=text], input.hs-input[type=email] {
+    margin-top: 5px !important;
+
     width: 100% !important;
+    height: 40px !important;
+    padding: 0 12px !important;
+    color: @dark-gray;
+
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
     line-height: 18px;
-    color: #666;
-    margin-top: 5px !important;
-    height: 40px !important;
+
     border: solid 1px #96d0c8 !important;
     border-radius: 0 !important;
-    padding: 0 12px !important;
   }
 
   .hs-form li {
@@ -76,7 +79,7 @@
   }
 
   .hs-form .hs-field-desc {
-    color: #fff;
+    color: @white;
     margin: 0;
     text-align: center;
     font-size: 11px;
@@ -85,21 +88,21 @@
 
   .default-button, .hs-form .hs-button {
     margin: 20px auto;
-    border-color: #fff;
-    color: #fff;
+    border-color: @white;
+    color: @white;
   }
 
   .default-button:hover, .hs-form .hs-button:hover {
-    background-color: #fff;
-    color: #128482;
+    background-color: @white;
+    color: @bluegreen;
   }
 
   .hs-form .hs-button {
     margin: 30px 0 0 0;
     padding: 5px 25px 5px !important;
-    border: 2px solid #4A5965 !important;
+    border: 2px solid @btn-gray !important;
     background: transparent;
-    color: #4A5965 !important;
+    color: @btn-gray !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
@@ -115,8 +118,8 @@
   }
 
   .hs-form .hs-button:hover {
-    background-color: #4A5965;
-    color: #fff !important;
+    background-color: @btn-gray;
+    color: @white !important;
     box-shadow: none !important;
 
   }
@@ -125,7 +128,7 @@
 
 
 .Adam-Article h1 {
-  color: #5b6770;
+  color: @culearn-gray;
 }
 
 .State-of-Student-Debt-video {
@@ -134,7 +137,7 @@
 
   max-height: 310px;
 
-  border: 8px solid #f6f3f3;
+  border: 8px solid @pale-gray;
 }
 
 .portrait {
@@ -157,7 +160,7 @@
   }
 
   .Adam-Article h1 {
-    color: #5b6770;
+    color: @culearn-gray;
   }
 
   .State-of-Student-Debt-video {
