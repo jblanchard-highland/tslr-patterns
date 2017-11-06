@@ -1358,9 +1358,10 @@ footer .copyright {
 }
 
 .form-wrapper .input-row input {
+	padding: 4px;
 	border: solid 0.5px #96d0c8;
 	outline: none;
-	padding: 4px;
+	font-size: 15px;
 }
 
 .form-wrapper .toggle-password {
@@ -1380,7 +1381,9 @@ footer .copyright {
 }
 
 .form-wrapper .forgot-password {
+	font-family: 'Heebo', sans-serif;
 	margin-top: 5px;
+	font-size: 13px;
 }
 
 .form-wrapper .form-footer {
