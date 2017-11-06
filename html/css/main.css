@@ -978,204 +978,149 @@ a:hover {
 
 /* State-of-Student-Debt YOU */
 
-/*
 .State-of-Student-Debt {
-  background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
 }
 
 .State-of-Student-Debt .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-
-.Adam-Article h1 {
-  color: #5b6770;
-}
-
 
 .State-of-Student-Debt h2 {
-  position: relative;
-  margin: 0px auto 32px auto;
-  padding-bottom: 32px;
-
-  max-width: 440px;
-
-  text-align: center;
-  color: #fff;
+	position: relative;
+	margin: 0 auto 32px auto;
+	padding-bottom: 32px;
+	max-width: 440px;
+	text-align: center;
+	color: #fff;
 }
 
 .State-of-Student-Debt h2:after {
-  content:"";
-  position: absolute;
-  bottom: 0;
-  left: 40px;
-  right: 40px;
-  height: 2px;
-  background-color: #fff;
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	right: 40px;
+	height: 2px;
+	background-color: #fff;
 }
 
 .State-of-Student-Debt p {
-  color: #fff;
-  text-align: center;
+	color: #fff;
+	text-align: center;
 }
 
-.hs-form label {
-  padding-top: 5px;
-  font-size: 15px;
-  line-height: 18px;
-  font-weight: normal;
-  float: left;
-  text-align: left;
-  color: #fff;
+.State-of-Student-Debt .hs-form label {
+	padding-top: 5px;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: normal;
+	float: left;
+	text-align: left;
+	color: #fff;
 }
 
-input.hs-input[type=text],input.hs-input[type=email]{
-  width: 100% !important;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-  color: #666;
-  margin-top: 5px !important;
-  height: 40px !important;
-  border: solid 1px #96d0c8 !important;
-  border-radius: 0 !important;
-  padding: 0 12px !important;
+.State-of-Student-Debt input.hs-input[type=text],
+.State-of-Student-Debt input.hs-input[type=email] {
+	width: 100% !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #666;
+	margin-top: 5px !important;
+	height: 40px !important;
+	border: solid 1px #96d0c8 !important;
+	border-radius: 0 !important;
+	padding: 0 12px !important;
 }
 
-.hs-form li {
-  list-style:none;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-position: 0;
+.State-of-Student-Debt .hs-form li {
+	list-style: none;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: 0;
 }
 
-input.hs-input[type=checkbox]{
-  margin: 0 10px 0 0;
-
-
+.State-of-Student-Debt input.hs-input[type=checkbox] {
+	margin: 0 10px 0 0;
 }
 
-.hs-form .hs-field-desc {
-  color: #fff;
-  margin: 0;
-  text-align: center;
-  font-size: 11px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+.State-of-Student-Debt .hs-form .hs-field-desc {
+	color: #fff;
+	margin: 0;
+	text-align: center;
+	font-size: 11px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.State-of-Student-Debt .default-button, .hs-form .hs-button {
-  margin: 20px auto;
-  border-color: #fff;
-  color: #fff;
+.State-of-Student-Debt .default-button,
+.State-of-Student-Debt .hs-form .hs-button {
+	margin: 20px auto;
+	border-color: #fff;
+	color: #fff;
 }
 
-.State-of-Student-Debt .default-button:hover, .hs-form .hs-button:hover {
-  background-color: #fff;
-  color: #128482;
+.State-of-Student-Debt .default-button:hover,
+.State-of-Student-Debt .hs-form .hs-button:hover {
+	background-color: #fff;
+	color: #128482;
 }
 
-.hs-form .hs-button{
-  margin: 30px 0 0 0;
-  padding: 5px 25px 5px !important;
-  border: 2px solid #4A5965 !important;
-  background: transparent;
-  color: #4A5965 !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 300;
-  outline: none;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  text-decoration: none !important;
-  font-family: 'Heebo', sans-serif;
-  font-size: 16px;
-  text-shadow: none;
-
+.State-of-Student-Debt .hs-form .hs-button {
+	margin: 30px 0 0 0;
+	padding: 5px 25px 5px !important;
+	border: 2px solid #4A5965 !important;
+	background: transparent;
+	color: #4A5965 !important;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 300;
+	outline: none;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	text-decoration: none !important;
+	font-family: 'Heebo', sans-serif;
+	font-size: 16px;
+	text-shadow: none;
 }
 
+.State-of-Student-Debt .hs-form .hs-button:hover {
+	background-color: #4A5965;
+	color: #fff !important;
+	-webkit-box-shadow: none !important;
+	        box-shadow: none !important;
+}
 
-.hs-form .hs-button:hover{
-  background-color: #4A5965;
-  color: #fff !important;
-  box-shadow: none !important;
-
+.Adam-Article h1 {
+	color: #5b6770;
 }
 
 .State-of-Student-Debt-video {
-  display: block;
-  margin: 0 auto;
-
-  max-height: 310px;
-
-  border: 8px solid #f6f3f3;
+	display: block;
+	margin: 0 auto;
+	max-height: 310px;
+	border: 8px solid #f6f3f3;
 }
 
 .portrait {
-  border-radius: 100px;
-  background-color: rgba(91, 103, 112, 0.1);
-  max-width: 200px;
-  max-height: 200px;
-  margin-bottom: 10px;
-  width: 100%;
-  height: auto;
+	border-radius: 100px;
+	background-color: rgba(91, 103, 112, 0.1);
+	max-width: 200px;
+	max-height: 200px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: auto;
 }
 
 .story {
-  margin: 20px 0;
+	margin: 20px 0;
 }
-@media (max-width: 767px) {
-  .State-of-Student-Debt {
-    padding-bottom: 24px;
-  }
-
-  .Adam-Article h1 {
-    color: #5b6770;
-  }
-
-  .State-of-Student-Debt-video {
-    margin: 0 auto;
-    max-height: 310px;
-    border-width: 16px;
-
-  }
-  .State-of-Student-Debt .description,
-  .State-of-Student-Debt .video-holder {
-    width: 100%;
-  }
-  .State-of-Student-Debt .video-holder {
-    padding: 0;
-    background-image: none;
-    background-color: #f6f3f3;
-  }
-  .State-of-Student-Debt .description,
-  .AdamIntro {
-    padding: 10px 10px 30px 10px;
-  }
-
-  .State-of-Student-Debt .video-holder {
-    padding: 0 10px;
-    background: transparent;
-  }
-
-}
-
-@media (min-width: 768px) {
-  .State-of-Student-Debt .video-holder {
-    Margin: 5% 0 0 0;
-  }
-  .State-of-Student-Debt .description,
-  .State-of-Student-Debt .video-holder,
-  .AdamIntro{
-    padding: 20px 15px 40px 15px;
-  }
-}
-
-*/
 
 .header {
 	background: transparent;
@@ -2098,6 +2043,10 @@ footer .copyright {
 	text-indent: 16px;
 }
 
+.signup-form .hs-form label {
+	width: 100%;
+}
+
 .signup-form .actions {
 	margin-top: 20px;
 }
@@ -2723,6 +2672,16 @@ pre[class*="language-"] {
 	Margin: 0 15%;
 }
 
+.State-of-Student-Debt .video-holder {
+	Margin: 5% 0 0 0;
+}
+
+.State-of-Student-Debt .description,
+.State-of-Student-Debt .video-holder,
+.AdamIntro {
+	padding: 20px 15px 40px 15px;
+}
+
 .helping-you .video-holder {
 	margin: 5% 0 0 0;
 }
@@ -3027,6 +2986,41 @@ h4.inverted {
 
 .blog-list {
 	padding: 0 60px;
+}
+
+.State-of-Student-Debt {
+	padding-bottom: 24px;
+}
+
+.Adam-Article h1 {
+	color: #5b6770;
+}
+
+.State-of-Student-Debt-video {
+	margin: 0 auto;
+	max-height: 310px;
+	border-width: 16px;
+}
+
+.State-of-Student-Debt .description,
+.State-of-Student-Debt .video-holder {
+	width: 100%;
+}
+
+.State-of-Student-Debt .video-holder {
+	padding: 0;
+	background-image: none;
+	background-color: #f6f3f3;
+}
+
+.State-of-Student-Debt .description,
+.AdamIntro {
+	padding: 10px 10px 30px 10px;
+}
+
+.State-of-Student-Debt .video-holder {
+	padding: 0 10px;
+	background: transparent;
 }
 
 footer .footer-links-container ul {
