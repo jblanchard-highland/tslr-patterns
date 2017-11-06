@@ -2017,6 +2017,15 @@ footer .copyright {
 	outline: none;
 }
 
+.signup-form .hs-form label {
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.signup-form .hs-form-field {
+	margin-bottom: 18px;
+}
+
 .signup-form .hs-form-required {
 	color: red;
 	font-size: 14px;
@@ -2041,10 +2050,6 @@ footer .copyright {
 	width: 41px;
 	padding: 0 0 8px 0;
 	text-indent: 16px;
-}
-
-.signup-form .hs-form label {
-	width: 100%;
 }
 
 .signup-form .actions {
