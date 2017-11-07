@@ -1224,7 +1224,8 @@ a:hover {
 	border-radius: 0;
 }
 
-.navbar-right {
+.navbar-right,
+.navbar-left {
 	margin-top: 10px;
 }
 
