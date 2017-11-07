@@ -5,6 +5,8 @@
   font-size: inherit;
   line-height: inherit;
   font-style: inherit;
+  outline: none;
+  background: transparent;
 
   &:hover {
     color: @twilight-blue;
@@ -13,20 +15,21 @@
 
 .default-button,
 .hs-form .hs-button {
+  display: inline-block;
   padding: 9px 25px 7px;
+  
   border: 2px solid @btn-gray;
-  background: transparent;
   border-radius: 0;
+
   color: @btn-gray;
   text-transform: uppercase;
   letter-spacing: 2px;
-  outline: none;
-  transition: all 0.5s ease;
   text-decoration: none !important;
   text-align: center;
   font-family: @heading-font;
   font-size: 16px;
-  display: inline-block;
+  
+  transition: all 0.5s ease;
 
   &:hover {
     background-color: @btn-gray;
@@ -47,8 +50,8 @@
 @media (max-width: 321px) {
   .default-button,
   .hs-form .hs-button {
-    font-size: 12px;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 12px;
   }
 }
