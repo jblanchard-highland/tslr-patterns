@@ -5,15 +5,6 @@
 	color: #006e74;
 }
 
-body form .container {
-	padding-top: 60px;
-}
-
-body form .container .row {
-	padding-left: 40px;
-	padding-right: 40px;
-}
-
 body form .container .row.home-s1-bg {
 	padding: 0;
 }
