@@ -1,12 +1,12 @@
 .what-we-do {
     padding: 50px 15px 40px 15px;
-    background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat-x, url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg') repeat;
+    background: url('/TSLR_Site/img/overlaygradient.png?10054') repeat-x, url('/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg?10054') repeat;
     background-size: cover;
     background-position: center;
 
     h2,
     p {
-        color: @white;
+        color: #fff;
         text-align: center;
         text-shadow: 0 0 0.5px rgba(255,255,255,0.5)
     }
@@ -16,7 +16,15 @@
     }
 
     .default-button {
-        margin: 50px auto 40px; 
+        display: inline-block;
+        margin: 50px auto 40px;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    .default-button:hover {
+        color: #128482;
+        background-color: #fff;
     }
 
     @media (max-width: 767px) {

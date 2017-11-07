@@ -29,15 +29,17 @@
       </header>
       <div class="promo-callout">
         <div class="img-wrapper">
-          <img src="/images/graph.png" alt="">
         </div>
         <div class="content">
           <h2>Promotional Callout title</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="btn-wrapper">
-          <a class="default-button inverted" href="">Button</a> </div>
+          <a class="default-button inverted" href="#">Button</a> </div>
       </div>
+      <footer role="contentinfo" class="footer">
+        this is a footer
+      </footer>
       <div class="code-wrapper">
         <div class="code-snippet">
           <h5>CSS:</h5>
@@ -51,11 +53,14 @@
 .promo-callout > div {
   margin: 0 12px;
 }
-.promo-callout .img-wrapper img {
-  max-width: 300px;
+.promo-callout .img-wrapper {
+  min-width: 20%;
+  background-image: url(/images/graph.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .promo-callout h2 {
-  margin-top: 0;
   color: #fff;
   text-align: left;
 }
@@ -71,25 +76,6 @@
 .promo-callout .btn-wrapper {
   display: flex;
   align-items: flex-end;
-}
-@media (max-width: 992px) {
-  .promo-callout {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px;
-  }
-  .promo-callout .img-wrapper {
-    margin-bottom: 24px;
-  }
-  .promo-callout .img-wrapper img {
-    max-width: 100%;
-  }
-  .promo-callout h2 {
-    text-align: center;
-  }
-  .promo-callout .btn-wrapper {
-    margin-top: 40px;
-  }
 }
 	          </code>
 	        </pre>
