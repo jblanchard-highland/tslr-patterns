@@ -213,6 +213,52 @@ a:hover {
 	margin: 0;
 }
 
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
+.mt80 {
+	margin-top: 80px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mb60 {
+	margin-bottom: 60px;
+}
+
+.mb80 {
+	margin-bottom: 80px;
+}
+
+.mlr20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mlr40 {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.center {
+	text-align: center!important;
+}
+
 .header {
 	background: transparent;
 }
@@ -462,13 +508,76 @@ footer .copyright {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	min-height: 400px;
+	min-height: 200px;
 	text-align: center;
 	font-size: 48px;
-	background-color: #595959;
+	background-color: #f6f3f3;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.banner-module:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.no-gradiant:before {
+	content: '';
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: none;
+	opacity: 0;
+}
+
+.dark-contrast * {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.light-contrast * {
+	color: #5b6770;
+	border-color: #5b6770;
+}
+
+.banner-module-home {
+	min-height: 490px;
+	background-position: center top;
+}
+
+.hero-content {
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.hero-left-content,
+.hero-right-content {
+	width: 100%;
+	padding: 80px 30px 40px 30px;
+}
+
+.hero-left-content h1,
+.hero-content h1 {
+	padding: 0 0 20px 0;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 46px;
+	text-align: center;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	position: relative;
+	z-index: 1;
 }
 
 .bulleted-list ul li {
@@ -871,7 +980,6 @@ footer .copyright {
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: left;
-	color: #006e74;
 }
 
 .stepper-btn-container {
@@ -1100,6 +1208,16 @@ footer .copyright {
 .default-button.inverted:hover {
 	background-color: #fff;
 	color: #4A5965;
+}
+
+.light-contrast .default-button.inverted {
+	color: #5b6770;
+	border-color: #5b6770;
+}
+
+.light-contrast .default-button.inverted:hover {
+	background-color: #4A5965;
+	color: #ffffff;
 }
 
 /* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
