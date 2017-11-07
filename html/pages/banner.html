@@ -20,6 +20,7 @@
 
   <body>
     <div class="container-fluid">
+
       <header>
         <a href="/#">
           < root</a>
@@ -27,50 +28,52 @@
             <h3>Banner</h3>
             <hr>
       </header>
-    </div>
+      <div class="row">
+        <div class="col-md-12">
 
-    <div class="row">
-      <div class="col-md-12">
+          <div class="banner-module">
 
-        <div class="banner-module dark-contrast" style="background-image: url('/images/banner-bg.jpg');">
+            <div class="hero-left-content" align="center">
 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>Title Here</h1>
-                <p>Some text here, this banner is dark contrast</p>
-              </div>
+              <h1>Title Here</h1>
+
             </div>
           </div>
 
-        </div>
-
-
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="banner-module light-contrast no-gradiant" style="background-image: url('');">
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1>Title Here</h1>
-                <p>Some text here, this banner is light contrast</p>
-              </div>
-            </div>
-          </div>
 
         </div>
-
-
       </div>
+
     </div>
 
+
+
+
+    <div class="code-wrapper">
+      <div class="code-snippet">
+        <h5>CSS:</h5>
+        <pre>
+				<code class="language-css">
+.banner-module {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	min-height: 200px;
+
+	text-align: center;
+    font-size: 48px;
+
+    background-color: #595959;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;	
+}
+	          </code>
+	        </pre>
+      </div>
+    </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

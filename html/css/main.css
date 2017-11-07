@@ -490,6 +490,43 @@ footer .copyright {
 }
 
 .banner-module {
+	background: url("https://www.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png") repeat-x, url("https://www.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg") repeat;
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.hero-content {
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.hero-left-content,
+.hero-right-content {
+	width: 100%;
+	padding: 80px 30px 40px 30px;
+}
+
+.hero-left-content h1,
+.hero-content h1 {
+	padding: 0 0 20px 0;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 46px;
+	text-align: center;
+	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	position: relative;
+	z-index: 1;
+}
+
+.banner-module-home {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -499,8 +536,8 @@ footer .copyright {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	min-height: 200px;
-	text-align: center;
+	min-height: 490px;
+	background-position: center top;
 	font-size: 48px;
 	background-color: #f6f3f3;
 	background-size: cover;
@@ -508,7 +545,7 @@ footer .copyright {
 	background-position: center;
 }
 
-.banner-module:before {
+.banner-module-home:before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -534,41 +571,13 @@ footer .copyright {
 }
 
 .dark-contrast * {
-	color: #ffffff;
-	border-color: #ffffff;
+	color: #ffffff!important;
+	border-color: #ffffff!important;
 }
 
 .light-contrast * {
-	color: #5b6770;
-	border-color: #5b6770;
-}
-
-.banner-module-home {
-	min-height: 490px;
-	background-position: center top;
-}
-
-.hero-content {
-	padding: 30px 40px;
-	text-align: center;
-}
-
-.hero-left-content,
-.hero-right-content {
-	width: 100%;
-	padding: 80px 30px 40px 30px;
-}
-
-.hero-left-content h1,
-.hero-content h1 {
-	padding: 0 0 20px 0;
-	font-size: 40px;
-	font-weight: 300;
-	line-height: 46px;
-	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
-	position: relative;
-	z-index: 1;
+	color: #5b6770!important;
+	border-color: #5b6770!important;
 }
 
 .bulleted-list ul li {
@@ -971,6 +980,7 @@ footer .copyright {
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: left;
+	color: #006e74;
 }
 
 .stepper-btn-container {

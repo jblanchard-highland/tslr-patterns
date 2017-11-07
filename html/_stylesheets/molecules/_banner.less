@@ -1,46 +1,15 @@
 .banner-module {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 200px;
-	text-align: center;
-    font-size: 48px;
-    background-color: #f6f3f3;
+    background: url("https://www.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png") repeat-x, url("https://www.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg") repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-        &:before {
-    content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: linear-gradient(to left,#339d9c,#de4365);
-	opacity: .75; 
-  }
-}
-
-.no-gradiant {
-     &:before {
-    content: '';
-	position: relative;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-image: none;
-	opacity: 0; 
-  }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 
-.dark-contrast *{
-    color:#ffffff;
-    border-color:#ffffff;
-}
-
-.light-contrast *{
-    color:#5b6770;
-    border-color:#5b6770;    
-}
