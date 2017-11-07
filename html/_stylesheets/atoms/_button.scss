@@ -12,9 +12,10 @@
   transition: all 0.5s ease;
   text-decoration: none !important;
   text-align: center;
-  font-family: @heading-font;
+  font-family: $heading-font;
   font-size: 16px;
   display: inline-block;
+  position: relative;    
 
   &:hover {
     background-color: #4A5965;
@@ -29,14 +30,5 @@
       background-color: #fff;
       color: #4A5965;
     }
-  }
-}
-
-.light-contrast .default-button.inverted {
-    color:#5b6770;
-    border-color:#5b6770; 
-    &:hover {
-        background-color: #4A5965;
-        color: #ffffff;
   }
 }

@@ -2,25 +2,18 @@
 
 @import "settings/_variables";
 @import "settings/_reset";
-@import "settings/_typography";
-@import "settings/_common";
+
 
 // Template(s)
 
 @import "templates/_base-template";
 
-// Organisms
-
-@import "organisms/_header";
-@import "organisms/_footer";
 
 // Molecules
 
-    // New Content types
 @import "molecules/_article";
 @import "molecules/_authorship";
 @import "molecules/_banner";
-@import "molecules/_banner-hero";
 @import "molecules/_bulleted-list";
 @import "molecules/_featured-bio";
 @import "molecules/_legal-disclaimer";
@@ -32,11 +25,6 @@
 @import "molecules/_tip";
 @import "molecules/_video-module";
 
-    // Previous components from TSLR website
-@import "molecules/_stepper-btn-container";
-@import "molecules/_what-we-do";
-@import "molecules/_borrow-more";
-@import "molecules/_cu-vs-bank";
 
 // Atoms
 
@@ -46,3 +34,4 @@
 // Utilities
 
 @import "utilities/_prism";
+

@@ -1,120 +1,84 @@
-.signup-form {
-  .hs-error-msgs {
-    padding: 4px;
-    list-style: none;
+.signup-form { // This rules works for Hub-spot form
+    
+    input {
+        margin-top: 5px !important;
+        height: 40px !important;
+        border: solid 1px #96d0c8 !important;
+        border-radius: 0 !important;
+        padding: 0 12px !important;
 
-    li {
-      font-size: 12px;
+        &.hs-input {
+            width: 100%;
+            max-width: 100%;
+            box-sizing: inherit !important;
+        }
+
+        &[type="submit"] {
+            margin: 0;
+            padding: 0px 25px 0px !important;
+            border: 2px solid #4A5965 !important;
+            background: transparent;
+            color: #4A5965 !important;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 300;
+            outline: none;
+            transition: all 0.5s ease;
+            text-decoration: none !important;
+            font-family: @heading-font;
+            font-size: 16px;
+            text-shadow: none;
+        }
+
+        &[type="submit"]:hover {
+            background-color: #4A5965 ;
+            color: #fff !important;
+            box-shadow: none !important;
+        }
+
+        > span:first-of-type {
+            font-family: @heading-font !important;
+            font-size: 15px !important;
+            font-weight: 300 !important;
+            color: #006e74 !important;
+        }
     }
-  }
 
-  input {
-    margin-top: 5px !important;
-    height: 40px !important;
-    border: solid 1px @pale-teal !important;
-    border-radius: 0 !important;
-    padding: 0 12px !important;
-    font-size: 14px;
-    outline: none;
-  }
+    .input select {
+        height: 42px;
+        width: 100%;
+        max-width: 100%;
 
-  .hs-field-desc {
-    color: @thrivent-gray !important;
-    font-size: 13px;
-  }
+        background: #fff;
+        border: solid 1px #96d0c8 !important;
+        border-radius: 0;
+        outline: none;
 
-  select {
-    font-size: 14px;
-    padding: 12px;
-  }
+        appearance: none;
+        cursor: pointer;
+    }
 
-  input.hs-input {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: inherit !important;
-  }
-  input[type="submit"] {
-    margin: 0;
-    padding: 0px 25px 0px !important;
-    border: 2px solid @btn-gray !important;
-    background: transparent;
-    color: @btn-gray !important;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    outline: none;
-    -webkit-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    text-decoration: none !important;
-    font-family: 'Heebo', sans-serif;
-    font-size: 16px;
-    text-shadow: none;
-  }
-  input[type="submit"]:hover {
-    background-color: @btn-gray;
-    color: @white !important;
-    box-shadow: none !important;
-  }
-  label > span:first-of-type {
-    font-family: 'Heebo', sans-serif !important;
-    font-size: 15px !important;
-    font-weight: 300 !important;
-    color: @bluegreen-2 !important;
-    margin-right: 4px;
-  }
+    .hs_community_workflow .input {
+        position: relative;
 
-  .input select {
-    background: @white;
-    height: 42px;
-    width: 100%;
-    max-width: 100%;
-    border: solid 1px @pale-teal !important;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    outline: none;
-  }
+        &:after {
+            content: '>';
+            position: absolute;
+            right: 0px;
+            top: 8px;
+            
+            width: 41px;
 
-  .hs-form label {
-    margin-bottom: 0;
-    width: 100%;
-  }
+            font: 16px Consolas, monospace;
+            color: #96d0c8 ;
+            text-indent: 16px;
 
-  .hs-form-field {
-    margin-bottom: 18px;
-  }
-
-  .hs-form-required {
-    color: red;
-    font-size: 14px;
-  }
-
-  .hs_community_workflow .input {
-    position: relative;
-  }
-
-  .hs_community_workflow .input:after {
-    content: '>';
-    font: 16px Consolas, monospace;
-    color: @pale-teal;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 0px;
-    top: 8px;
-    border-bottom: 1px solid @pale-teal;
-    position: absolute;
-    pointer-events: none;
-    width: 41px;
-    padding: 0 0 8px 0;
-    text-indent: 16px;
-  }
-
-  .actions {
-    margin-top: 20px;
-  }
+            padding: 0 0 8px 0;
+            border-bottom: 1px solid #96d0c8 ;
+            
+            pointer-events: none;
+            transform: rotate(90deg);
+            
+        }
+    }
 }

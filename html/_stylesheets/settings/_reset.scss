@@ -1,59 +1,69 @@
+/* GENERIC RULES - Start */
+
+body {
+    font-family: $content-font;
+    font-size: 19px;
+    text-align: left;
+    color: $bluegreen-2;
+}
+
+/* GENERIC RULES - End */
+
+
+/* TYPOGRAPHY RULES - Start */
+
 h1 {
-    font-family: @heading-font;
+    font-family: $heading-font;
     font-size: 40px;
     font-weight: 500;
     line-height: 1.1;
-    text-decoration: none;
-
     text-align: center;
-    color: @white;
+    color: $white;
 }
 
 h2 {
-    font-family: @heading-font;
+    font-family: $heading-font;
     font-size: 36px;
-    text-decoration: none;
     line-height: 1.11;
-    color: @culearn-gray;
+    color: $culearn-gray;
 }
 
 h2.inverted {
     font-weight: 500;
     text-align: left;
-    color: @white;
+    color: $white;
 }
 
 h2.alt {
-    color: @thrivent-red;
+    color: $thrivent-red;
 }
 
 h3 {
-    font-family: @content-font;
+    font-family: $content-font;
     font-size: 30px;
     text-align: left;
-    color: @dark-red;
+    color: $dark-red;
 }
 
 h4 {
-    font-family: @heading-font;
+    font-family: $heading-font;
     font-size: 26px;
     line-height: 1.15;
     text-align: left;
-    color: @dark-gray;
+    color: $dark-gray;
 }
 
 h4.inverted {
     font-weight: 500;
-    color: @white;
+    color: $white;
 }
 
-p,
-li {
-    font-family: @content-font;
+p {
+    font-family: $content-font;
     font-size: 17px;
     font-style: italic;
     line-height: 1.53;
-    color: @thrivent-gray;
+    color: $thrivent-gray;
 }
 
 p.larger {
@@ -63,25 +73,15 @@ p.larger {
 }
 
 p.inverted {
-    color: @white;
-}
-
-strong {
-    color: #333;
+    color: $white;
 }
 
 a {
-    font-family: @content-font;
+    font-family: $content-font;
     font-size: 18px;
     text-align: left;
     text-decoration: underline;
-    font-style: inherit;
-    outline: none;
-    color: @twilight-blue;
-
-    &:hover {
-        color: #074679;
-    }
+    color: $twilight-blue;
 }
 
 @media (max-width: 768px) {
@@ -95,13 +95,13 @@ a {
         font-size: 32px;
         line-height: 1.12;
         text-align: center;
-        color: @bluegreen-2;
+        color: $bluegreen-2;
     }
 
     h2.inverted {
         font-weight: 500;
         line-height: 1.25;
-        color: @white;
+        color: $white;
     }
 
     h3 {
@@ -114,6 +114,8 @@ a {
     }
 
     h4.inverted {
-        color: @white;
+        color: $white;
     }
 }
+
+/* TYPOGRAPHY RULES - End */

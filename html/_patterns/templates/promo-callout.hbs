@@ -3,6 +3,8 @@
 
     {{> molecules/promo-callout }}
 
+    {{> organisms/footer }}
+
     <div class="code-wrapper">
         <div class="code-snippet">
             <h5>CSS:</h5>
@@ -16,11 +18,14 @@
 .promo-callout > div {
   margin: 0 12px;
 }
-.promo-callout .img-wrapper img {
-  max-width: 300px;
+.promo-callout .img-wrapper {
+  min-width: 20%;
+  background-image: url(/images/graph.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .promo-callout h2 {
-  margin-top: 0;
   color: #fff;
   text-align: left;
 }
@@ -36,25 +41,6 @@
 .promo-callout .btn-wrapper {
   display: flex;
   align-items: flex-end;
-}
-@media (max-width: 992px) {
-  .promo-callout {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px;
-  }
-  .promo-callout .img-wrapper {
-    margin-bottom: 24px;
-  }
-  .promo-callout .img-wrapper img {
-    max-width: 100%;
-  }
-  .promo-callout h2 {
-    text-align: center;
-  }
-  .promo-callout .btn-wrapper {
-    margin-top: 40px;
-  }
 }
 	          </code>
 	        </pre>
