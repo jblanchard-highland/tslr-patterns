@@ -5,11 +5,6 @@
 	color: #006e74;
 }
 
-body form .container .row {
-	padding-left: 40px;
-	padding-right: 40px;
-}
-
 body form .container .row.home-s1-bg {
 	padding: 0;
 }
@@ -254,13 +249,6 @@ a:hover {
 
 .home-s5-col-height.left .default-button {
 	margin-top: 20px;
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.home-s5-col-height.left .default-button:hover {
-	color: #007c80;
-	background-color: #ffffff;
 }
 
 .home-s5-col-height.left .ambassador {
@@ -303,11 +291,6 @@ a:hover {
 
 .home-s5-col-height.right .default-button {
 	margin-top: 20px;
-}
-
-.home-s5-col-height.right .default-button:hover {
-	background-color: #4A5965;
-	color: #ffffff;
 }
 
 .apply hr {
@@ -378,16 +361,6 @@ a:hover {
 
 .lending-principles .btn-holder {
 	margin-top: 60px;
-}
-
-.lending-principles .default-button {
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.lending-principles .default-button:hover {
-	color: #007c80;
-	background-color: #ffffff;
 }
 
 .lending-principles .square {
@@ -1082,6 +1055,146 @@ a:hover {
 	margin: 20px 0;
 }
 
+.accordion {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 20px 0;
+	font-family: 'Heebo', sans-serif;
+	font-size: 26px;
+	line-height: 1.15;
+	color: #323a41;
+	cursor: pointer;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.faq-list .section-title,
+.faq-list .sub-section-title {
+	text-decoration: none;
+}
+
+.chevron {
+	margin-right: 16px;
+	width: 22px;
+	height: 22px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/chevrons.png);
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.accordion.active .chevron {
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+.panel {
+	display: none;
+	padding: 0 18px;
+	background-color: white;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.panel p {
+	font-family: 'Sanchez', serif;
+	font-size: 17px;
+	font-style: italic;
+	line-height: 1.53;
+	color: #495966;
+}
+
+.thank-you {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.page-not-found-div {
+	padding-top: 40px;
+	padding-bottom: 70px;
+}
+
+.page-not-found-div h3 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.document-holder {
+	display: block;
+	padding-top: 20px;
+	margin-left: 20px;
+	color: #c8102e;
+}
+
+.document-holder > div {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.document-holder a {
+	font-family: 'Heebo', sans-serif;
+	text-decoration: none;
+}
+
+.tools {
+	background-color: white;
+	padding-top: 50px;
+}
+
+.tools-graph-row {
+	padding-bottom: 30px;
+}
+
+.tools-graph-col {
+	padding-top: 30px;
+}
+
+.bor-rep-liv-giv {
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.banner-helping {
+	margin-top: 68px;
+	padding: 24px 0;
+	text-align: center;
+	text-transform: capitalize;
+	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+	background-repeat: repeat-x;
+}
+
+.banner-helping h3 {
+	color: #ffffff;
+}
+
+.bor-rep-liv-giv .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	padding: 35px 0;
+}
+
+.bor-rep-liv-giv img {
+	max-height: 200px;
+}
+
 .header {
 	background: transparent;
 }
@@ -1283,6 +1396,7 @@ footer .copyright {
 
 .form-wrapper h2 {
 	margin-bottom: 23px;
+	font-weight: 300;
 }
 
 .form-wrapper .form-header p {
@@ -1327,7 +1441,7 @@ footer .copyright {
 .form-wrapper .toggle-password {
 	position: absolute;
 	left: 270px;
-	top: 26px;
+	top: 32px;
 	cursor: pointer;
 }
 
@@ -1364,32 +1478,22 @@ footer .copyright {
 }
 
 .home-s1-col-height.left {
-	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x, url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
-	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x, url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
+	background-size: cover;
 }
 
 .home-s1-col-height.left img {
 	position: absolute;
 	height: 100%;
-}
-
-.home-s1-col-height.left .default-button {
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.home-s1-col-height.left .default-button:hover {
-	color: #007c80;
-	background-color: #ffffff;
 }
 
 .hero-left-content,
@@ -2194,6 +2298,7 @@ footer .copyright {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+	font-family: 'Heebo', sans-serif;
 }
 
 .stepper-btn-container .img1,
@@ -2236,14 +2341,9 @@ footer .copyright {
 	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoinactive.svg);
 }
 
-.stepper-btn-container .default-button {
+.stepper-btn-container .btn {
 	margin-top: 6px;
 	padding: 9px 5px 7px;
-	color: #074679;
-	text-transform: capitalize;
-	text-decoration: underline;
-	border: none;
-	letter-spacing: inherit;
 	font-size: 15px;
 	line-height: 22px;
 }
@@ -2276,15 +2376,7 @@ footer .copyright {
 }
 
 .what-we-do .default-button {
-	display: inline-block;
 	margin: 50px auto 40px;
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.what-we-do .default-button:hover {
-	color: #006e74;
-	background-color: #ffffff;
 }
 
 .borrow-more {
@@ -2418,6 +2510,62 @@ footer .copyright {
 	display: block;
 }
 
+.jump-to-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	margin-top: 24px;
+}
+
+.jump-to-container .jump-to-label {
+	margin-right: 12px;
+	font-family: 'Sanchez', serif;
+	font-size: 18px;
+	color: #006e74;
+}
+
+.jump-to-container .jump-buttons,
+.jump-to-container .jump-buttons span {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.jump-to-container .jump-buttons a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	margin: 0 8px;
+	height: 100px;
+	background-repeat: no-repeat;
+	font-family: 'Heebo', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
+	color: #074679;
+}
+
+.jump-to-container .jump-buttons a:first-of-type {
+	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollar.svg);
+	background-position: 50% 10px;
+	background-size: 80px;
+}
+
+.jump-to-container .jump-buttons a:last-of-type {
+	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg);
+	background-position: 50% 0px;
+	background-size: 60px;
+}
+
 .btn {
 	padding: 9px 5px 7px;
 	color: #074679;
@@ -2425,6 +2573,8 @@ footer .copyright {
 	font-size: inherit;
 	line-height: inherit;
 	font-style: inherit;
+	outline: none;
+	background: transparent;
 }
 
 .btn:hover {
@@ -2433,22 +2583,20 @@ footer .copyright {
 
 .default-button,
 .hs-form .hs-button {
+	display: inline-block;
 	padding: 9px 25px 7px;
 	border: 2px solid #4A5965;
-	background: transparent;
 	border-radius: 0;
 	color: #4A5965;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	outline: none;
-	-webkit-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
 	text-decoration: none !important;
 	text-align: center;
 	font-family: 'Heebo', sans-serif;
 	font-size: 16px;
-	display: inline-block;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .default-button:hover,
@@ -2840,6 +2988,12 @@ h4.inverted {
 	margin: 0 auto;
 }
 
+.bor-rep-liv-giv .row {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
 .hero-left-content {
 	padding: 100px 0;
 }
@@ -2982,8 +3136,8 @@ footer .footer-links-container ul li {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-top: inherit;
 	min-height: inherit;
 	background-color: #ffffff;
@@ -3087,9 +3241,9 @@ footer .linkedin-circled {
 
 .default-button,
 .hs-form .hs-button {
-	font-size: 12px;
 	padding-left: 15px;
 	padding-right: 15px;
+	font-size: 12px;
 }
 
 }
