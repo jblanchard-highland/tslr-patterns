@@ -1924,17 +1924,57 @@ footer .copyright {
 }
 
 .banner-module {
-	background: url("https://www.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png") repeat-x, url("https://www.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg") repeat;
-	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: flex-end;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 200px;
+	text-align: center;
+	font-size: 48px;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.banner-module:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.no-gradiant:before {
+	content: '';
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: none;
+	opacity: 0;
+}
+
+.dark-contrast * {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.light-contrast * {
+	color: #5b6770;
+	border-color: #5b6770;
 }
 
 .hero-content {
@@ -2103,7 +2143,7 @@ footer .copyright {
 	display: -ms-flexbox;
 	display: flex;
 	padding: 40px 80px;
-	background-color: #0D6E73;
+	background-color: #006e74;
 }
 
 .promo-callout > div {
@@ -2111,15 +2151,21 @@ footer .copyright {
 }
 
 .promo-callout .img-wrapper {
-	min-width: 20%;
-	background-image: url(../images/graph.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.promo-callout .img-wrapper img {
+	max-width: 300px;
 }
 
 .promo-callout h2 {
-	color: #fff;
+	margin-top: 0;
+	color: #ffffff;
 	text-align: left;
 }
 
@@ -2129,7 +2175,7 @@ footer .copyright {
 
 .promo-callout .content p {
 	margin: 0;
-	color: #fff;
+	color: #ffffff;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -2961,6 +3007,33 @@ body form .container {
 
 .nav-justified > li > a {
 	font-size: 16px;
+}
+
+.promo-callout {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 20px 20px;
+}
+
+.promo-callout .img-wrapper {
+	margin-bottom: 24px;
+}
+
+.promo-callout .img-wrapper img {
+	max-width: 100%;
+}
+
+.promo-callout h2 {
+	text-align: center;
+}
+
+.promo-callout .btn-wrapper {
+	margin-top: 40px;
 }
 
 }
