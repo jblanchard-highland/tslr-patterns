@@ -1,0 +1,106 @@
+//TODO: jump to component uniformization
+.jump-to-wrapper {
+  z-index: 3;
+  position: relative;
+  top: 25px;
+  right: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  padding-bottom: 30px;
+
+  transition: all 0.3s ease;
+
+  .jump-to-buttons > span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .jump-to-button a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    width: 116px;
+    height: 116px;
+    padding: 8px;
+
+    font-family: 'ITC Franklin Gothic LT W01BkCm', sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+    border-radius: 50%;
+    background-color: @twilight-blue;
+    border: solid 5px @white;
+    color: @white;
+    transition: all 0.3s ease;
+  }
+
+  @media (max-width: 767px) {
+    top: 0;
+    right: initial;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 0;
+
+    transition: all 0.3s ease;
+
+  }
+}
+
+.blog .jump-to-wrapper .jump-to-button:first-child {
+  display: block;
+}
+
+.jump-to-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  margin-top: 24px;
+
+  .jump-to-label {
+    margin-right: 12px;
+    font-family: @content-font;
+    font-size: 18px;
+    color: @bluegreen-2;
+  }
+
+  .jump-buttons,
+  .jump-buttons span {
+    display: flex;
+  }
+
+  .jump-buttons a {
+    display: flex;
+    align-items: flex-end;
+
+    margin: 0 8px;
+    height: 100px;
+    background-repeat: no-repeat;
+
+    font-family: @heading-font;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    color: @twilight-blue;
+  }
+
+  .jump-buttons a:first-of-type {
+    background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollar.svg);
+    background-position: 50% 10px;
+    background-size: 80px;
+  }
+
+  .jump-buttons a:last-of-type {
+    background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg);
+    background-position: 50% 0px;
+    background-size: 60px;
+  }
+}
