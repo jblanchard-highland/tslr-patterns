@@ -1,6 +1,6 @@
 <div class="container-fluid">
      
-    {{> organisms/header title="Banner Hero TSLR" }}
+    {{> organisms/header title="Banner Hero GradPath" }}
     
 </div>    
     
@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-12"> 
 
-            {{> molecules/banner-hero title="Title Here - Dark Contrast " class="dark-contrast" image="/images/banner-home-page.jpg"}}
+            {{> molecules/banner-hero-gradpath title1="Fill the Cost-of-College Gap," title2="Do Great Things" subtitle="GradPath brings together college students and the generosity of community to support making the college dream possible." class="dark-contrast" image="/images/banner-home-page.jpg"}}
             
         </div>  
     </div>
@@ -18,7 +18,7 @@
      <div class="row">
         <div class="col-md-12"> 
 
-            {{> molecules/banner-hero title="Title Here - Light Contrast" class="light-contrast no-gradiant" image="/images/confetti.svg"}}
+            {{> molecules/banner-hero-gradpath title1="Fill the Cost-of-College Gap," title2="Do Great Things" subtitle="GradPath brings together college students and the generosity of community to support making the college dream possible." class="light-contrast no-gradiant" image="/images/confetti.svg"}}
             
         </div>  
     </div>  
@@ -30,30 +30,7 @@
 			<h5>CSS:</h5>
 			<pre>
 				<code class="language-css">
-.hero-content {
-    padding: 30px 40px;
-    text-align: center;
-}
-
-.hero-left-content, .hero-right-content {
-    width: 100%;
-    padding: 80px 30px 40px 30px;
-}
-
-.hero-left-content h1, .hero-content h1{
-    padding: 0 0 20px 0;
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 46px;
-    text-align: center;
-    text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
-    position: relative;
-    z-index: 1;
-}
-
-
-
-.banner-module-home {
+.banner-module-gradpath {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -63,7 +40,6 @@
     background-color: #f6f3f3;
     background-size:cover;
     background-repeat: no-repeat;
-    
         &:before {
     content: '';
 	position: absolute;
@@ -74,6 +50,24 @@
 	background-image: linear-gradient(to left,#339d9c,#de4365);
 	opacity: .75; 
   }
+}
+
+
+.hero-content {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.hero-content h1{
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero-content h4{
+    text-align: center;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
 }
 
 
@@ -107,5 +101,7 @@
 	        </pre>
 	      </div>
 	  </div>
+
+
 
 

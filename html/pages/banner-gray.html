@@ -41,78 +41,87 @@
 
 
 
-              <div class="row mt40">
+              <div class="mt40 hexagon">
 
-                <div class="col-sm-2 hidden-xs"></div>
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
+                <div class="row">
+
+                  <div class="col-sm-2 hidden-xs"></div>
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-1"></div>
+                      <h4>Prepare to Plan</h4>
+                      <p>Find the Real Cost of College</p>
+                    </div>
+
+
                   </div>
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-2"></div>
+                      <h4>Set College Goals</h4>
+                      <p>Compare, Apply, Financial Aid</p>
+                    </div>
 
-                </div>
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
+
                   </div>
-
-                </div>
-                <div class="col-sm-2 hidden-xs"></div>
-
-
-
-
-
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
-                  </div>
-
-                </div>
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
-                  </div>
-
-                </div>
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
-                  </div>
+                  <div class="col-sm-2 hidden-xs"></div>
 
                 </div>
 
 
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-1"></div>
+                      <h4>Now Empower Others</h4>
+                      <p>Join the Movement</p>
+                    </div>
 
 
-                <div class="col-sm-2 hidden-xs"></div>
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-2"></div>
+                      <h4>Remember to Have Fun</h4>
+                      <p>Videos &amp; Games</p>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-1"></div>
+                      <h4>Close The Gap</h4>
+                      <p>Scholarships &amp; Community</p>
+                    </div>
+
+
                   </div>
 
                 </div>
-                <div class="col-sm-4">
-                  <div class="circle circle-1">
-                    <div class="img-1"></div>
-                    <h4>Prepare to Plan</h4>
-                    <p>Find the Real Cost of College</p>
+
+                <div class="row">
+                  <div class="col-sm-2 hidden-xs"></div>
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-2"></div>
+                      <h4>Pay Back Quickly</h4>
+                      <p>Budget &amp; Refinance Loans</p>
+                    </div>
+
+
                   </div>
+                  <div class="col-sm-4">
+                    <div class="circle circle-1">
+                      <div class="circle-icon circle-icon-1"></div>
+                      <h4>Borrow Smart</h4>
+                      <p>Life Hacks &amp; Lean Loans</p>
+                    </div>
 
+
+                  </div>
+                  <div class="col-sm-2 hidden-xs"></div>
                 </div>
-                <div class="col-sm-2 hidden-xs"></div>
-
 
               </div>
 
@@ -126,35 +135,151 @@
         </div>
       </div>
 
-    </div>
 
 
 
 
-    <div class="code-wrapper">
-      <div class="code-snippet">
-        <h5>CSS:</h5>
-        <pre>
+      <div class="code-wrapper">
+        <div class="code-snippet">
+          <h5>CSS:</h5>
+          <pre>
 				<code class="language-css">
-.banner-module {
+// banner gray
+
+.banner-gray {
 	display: flex;
+    padding: 40px 20px 80px 20px;
 	align-items: center;
 	justify-content: center;
-
 	min-height: 200px;
-
 	text-align: center;
-    font-size: 48px;
-
-    background-color: #595959;
+    background-color: #f6f3f3;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;	
+    background-position: center;
+    
 }
+
+// circles
+
+.hexagon {
+    background-image: url("/images/hexagon.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.circle {
+    padding: 15% 5%;
+    width:90%;
+    min-height:300px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -khtml-border-radius: 50%;
+    background:#fff;
+    text-align:center;
+    margin: 0 auto;
+}
+
+
+
+// background image (numbers) for every circle, total must be 7
+
+.circle-1 {
+    background: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("/images/one.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+// general style for icons inside of circle
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+
+// icons inside of every circle, total must be 7
+
+.circle-icon-1 {
+    background-image: url("https://www.thriventstudentloanresources.com/TSLR_Site/img/icfile.svg");
+}
+
+.circle-icon-2 {
+    background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg");
+}
+
+
+.circle h4 {
+  font-family: @content-font;
+  font-size: 24px;
+  text-align: center;
+  color: #006e74!important;  
+}
+
+.circle p {
+  font-family: @heading-font;
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+  color: #006e74!important;
+  font-style: normal; 
+  margin-top: 10px;    
+    
+}
+
+
+
+// Media Queries for small screens and mobiles...
+
+
+@media (max-width: 1199px) {
+     
+  .circle {
+    padding: 10% 5%;
+    min-width: 230px;
+    min-height: 240px;
+    }
+  
+}
+
+
+@media (max-width: 991px) {
+     
+  .circle {
+    padding: 10% 5%;
+    min-width: 230px;
+    min-height: 240px;
+    }
+     
+}
+
+@media (max-width: 767px) {
+    
+   .hexagon {
+    background-image: none;
+    }
+     
+  .circle {
+    padding: 15% 5%;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;  
+    }
+     
+}
+
+
 	          </code>
 	        </pre>
+        </div>
       </div>
-    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
