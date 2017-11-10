@@ -1810,20 +1810,20 @@ footer .copyright {
 	background-size: 60px 38px;
 }
 
-.community-section-icon {
+.community-section .community-icon {
 	margin-top: 20px;
 }
 
-.community-section-title {
+.community-section .community-title {
 	color: #ffffff;
 	margin: 35px 0;
 }
 
-.community-section-content {
+.community-section .community-content {
 	color: #ffffff;
 }
 
-.community-section-content.bold {
+.community-section .community-content.bold {
 	font-weight: 600;
 }
 
