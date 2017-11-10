@@ -1953,9 +1953,10 @@ footer .copyright {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	position: relative;
 	min-height: 490px;
-	background-position: center top;
 	font-size: 48px;
+	background-position: center top;
 	background-color: #f6f3f3;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1992,13 +1993,13 @@ footer .copyright {
 }
 
 .dark-contrast * {
-	color: #ffffff!important;
-	border-color: #ffffff!important;
+	color: #ffffff !important;
+	border-color: #ffffff !important;
 }
 
 .light-contrast * {
-	color: #5b6770!important;
-	border-color: #5b6770!important;
+	color: #5b6770 !important;
+	border-color: #5b6770 !important;
 }
 
 .banner-module-gradpath {
