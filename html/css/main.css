@@ -1811,12 +1811,14 @@ footer .copyright {
 }
 
 .community-section .community-icon {
+	width: 90%;
 	margin-top: 20px;
 }
 
 .community-section .community-title {
-	color: #ffffff;
 	margin: 35px 0;
+	color: #ffffff;
+	text-align: center;
 }
 
 .community-section .community-content {
@@ -3279,7 +3281,7 @@ footer .copyright {
 }
 
 .community-section .connect-details {
-	margin: 15px 0px 30px;
+	margin: 15px 0 30px;
 }
 
 .helping-you .video-holder {
