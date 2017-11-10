@@ -396,8 +396,6 @@ a:hover {
 }
 
 .home-s5-col-height.left {
-	background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat-x, url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/studentshelpingeachotherhomework.jpg') repeat;
-	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -407,6 +405,7 @@ a:hover {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	background-size: cover;
 }
 
 .home-s5-col-height.left img {
@@ -451,8 +450,7 @@ a:hover {
 	        align-items: center;
 	padding-top: 0;
 	background-color: #f6f3f3;
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/confetti.svg');
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
@@ -1804,17 +1802,39 @@ footer .copyright {
 	width: 14%;
 }
 
-.home-community {
+.community-section {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #de4365;
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/communitybgtess.png);
 	background-repeat: repeat;
 	background-size: 60px 38px;
 }
 
-.home-community .default-button {
+.community-section-icon {
+	margin-top: 20px;
+}
+
+.community-section-title {
+	color: #ffffff;
+	margin: 35px 0;
+}
+
+.community-section-content {
+	color: #ffffff;
+}
+
+.community-section-content.bold {
+	font-weight: 600;
+}
+
+.community-section .default-button {
 	margin: 20px auto 30px;
+}
+
+.community-section p {
+	color: white;
+	text-align: center;
+	margin: 35px 0;
 }
 
 .helping-you {
@@ -3252,6 +3272,14 @@ footer .copyright {
 	right: 0;
 	bottom: 0;
 	Margin: 0 15%;
+}
+
+.community-section .connect-icon {
+	margin-top: -45px;
+}
+
+.community-section .connect-details {
+	margin: 15px 0px 30px;
 }
 
 .helping-you .video-holder {
