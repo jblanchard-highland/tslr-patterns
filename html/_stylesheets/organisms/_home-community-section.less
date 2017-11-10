@@ -6,10 +6,25 @@
   // background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/communitybgtess.png);
   background-repeat: repeat;
   background-size: 60px 38px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .col-sm-4,
+  .col-sm-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .community {
+
     &-icon {
-      width: 90%;
-      margin-top: 20px;
+
     }
 
     &-title {
@@ -33,7 +48,7 @@
   p {
     color: white;
     text-align: center;
-    margin: 35px 0;
+    margin: 12px 0;
   }
 
   @media (min-width: 768px) {
