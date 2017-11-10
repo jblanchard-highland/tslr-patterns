@@ -1845,6 +1845,10 @@ footer .copyright {
 	text-align: center;
 }
 
+.helping-you iframe {
+	border: 10px solid #e7e7e7;
+}
+
 .cu-vs-bank {
 	display: none; /* temporary unavailable section */
 	background-color: #ffffff;
@@ -2782,8 +2786,7 @@ footer .copyright {
 }
 
 .video-module iframe {
-	width: 100%;
-	border: 10px solid #F5F1F1;
+	border: 10px solid #e7e7e7;
 }
 
 .video-module h3 {
