@@ -3,42 +3,52 @@
   padding-bottom: 40px;
 
   background-color: @darkish-pink;
-  // background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/communitybgtess.png);
   background-repeat: repeat;
   background-size: 60px 38px;
 
-  &-icon {
-    margin-top: 20px;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  &-title {
-    color: @white;
-    margin: 35px 0;
+  .col-sm-4,
+  .col-sm-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  &-content {
-    color: @white;
+  .community {
 
-    &.bold {
-      font-weight: 600;
+    &-icon {
+
+    }
+
+    &-title {
+      margin: 35px 0;
+      color: @white;
+      text-align: center;
+    }
+
+    &-content {
+      color: @white;
+
+      &.bold {
+        font-weight: 600;
+      }
     }
   }
+
+
   .default-button {
     margin: 20px auto 30px;
   }
 
   p {
-    color: white;
+    color: @white;
     text-align: center;
-    margin: 35px 0;
-  }
-
-  @media (min-width : 768px) {
-    .connect-icon {
-      margin-top: -45px;
-    }
-    .connect-details {
-      margin: 15px 0px 30px;
-    }
+    margin: 12px 0;
   }
 }

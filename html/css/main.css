@@ -454,6 +454,11 @@ a:hover {
 	background-size: cover;
 }
 
+.home-s5-col-height.right .jumpstart {
+	max-width: 620px;
+	width: 100%;
+}
+
 .home-s5-col-height.right h2 {
 	padding: 0 0 20px 0;
 	font-size: 36px;
@@ -1810,20 +1815,45 @@ footer .copyright {
 	background-size: 60px 38px;
 }
 
-.community-section-icon {
-	margin-top: 20px;
+.community-section .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
-.community-section-title {
-	color: #ffffff;
+.community-section .col-sm-4,
+.community-section .col-sm-8 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.community-section .community-title {
 	margin: 35px 0;
+	color: #ffffff;
+	text-align: center;
 }
 
-.community-section-content {
+.community-section .community-content {
 	color: #ffffff;
 }
 
-.community-section-content.bold {
+.community-section .community-content.bold {
 	font-weight: 600;
 }
 
@@ -1832,9 +1862,9 @@ footer .copyright {
 }
 
 .community-section p {
-	color: white;
+	color: #ffffff;
 	text-align: center;
-	margin: 35px 0;
+	margin: 12px 0;
 }
 
 .helping-you {
@@ -2114,6 +2144,67 @@ footer .copyright {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.banner-gray-gradpath h1 {
+	font-size: 50px;
+	font-weight: 500;
+	color: #c8102e !important;
+}
+
+.banner-module-story {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	min-height: 436px;
+	font-size: 48px;
+	background-position: center top;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-module-story:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.story-content {
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.story-content h2 {
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.story-content h4 {
+	font-size: 22px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.transparency {
+	background: #000000;
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .banner-module-resources {
@@ -3129,7 +3220,7 @@ footer .copyright {
 	font-family: 'Heebo', sans-serif;
 	font-size: 16px;
 	display: inline-block;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -3272,14 +3363,6 @@ footer .copyright {
 	right: 0;
 	bottom: 0;
 	Margin: 0 15%;
-}
-
-.community-section .connect-icon {
-	margin-top: -45px;
-}
-
-.community-section .connect-details {
-	margin: 15px 0px 30px;
 }
 
 .helping-you .video-holder {
