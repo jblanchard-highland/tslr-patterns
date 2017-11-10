@@ -2953,17 +2953,8 @@ footer .copyright {
 	margin: 24px 0;
 }
 
-.borrow-more .img-list-container img:nth-child(1) {
-	width: 26%;
-	margin-right: 4%;
-}
-
-.borrow-more .img-list-container img:nth-child(2) {
-	width: 40%;
-}
-
-.borrow-more .img-list-container img:nth-child(3) {
-	width: 30%;
+.borrow-more .img-list-container img {
+	width: 100%;
 }
 
 .ambassador-callout {
@@ -3217,38 +3208,15 @@ footer .copyright {
 	font-weight: 300;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-.home-s5-col-height {
-	min-height: 400px;
-}
-
-.blog-top .jump-to-wrapper .jump-to-button a {
-	font-size: 17px;
-	margin: 0;
-	width: 95px;
-	height: 95px;
-}
-
-.header > .container {
-	width: 100%;
-}
-
-.nav > li > a {
-	padding: 15px 7px;
-}
-
-.home-s1-col-height {
-	min-height: 460px;
-}
-
-.home-s1-col-height.right {
-	padding-top: 100px;
-}
-
-}
-
 @media (min-width: 768px) {
+
+.pull-right-sm {
+	float: right;
+}
+
+.pull-left-sm {
+	float: left;
+}
 
 .State-of-Student-Debt .video-holder {
 	Margin: 5% 0 0 0;
@@ -3308,6 +3276,37 @@ footer .copyright {
 
 .borrow-more h2 {
 	padding-bottom: 40px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.home-s5-col-height {
+	min-height: 400px;
+}
+
+.blog-top .jump-to-wrapper .jump-to-button a {
+	font-size: 17px;
+	margin: 0;
+	width: 95px;
+	height: 95px;
+}
+
+.header > .container {
+	width: 100%;
+}
+
+.nav > li > a {
+	padding: 15px 7px;
+}
+
+.home-s1-col-height {
+	min-height: 460px;
+}
+
+.home-s1-col-height.right {
+	padding-top: 100px;
 }
 
 }
