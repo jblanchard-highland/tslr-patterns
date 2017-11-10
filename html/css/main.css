@@ -2092,42 +2092,111 @@ footer .copyright {
 }
 
 .banner-module-resources {
+	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	background-position: left top;
 	background-color: #ffffff;
 	background-repeat: no-repeat;
-	padding: 40px 60px;
+	padding: 40px 30px 40px 60px;
 }
 
-.hero-content {
-	padding: 30px 40px;
-	text-align: center;
+.resources-content {
+	padding-right: 50px;
+	margin-bottom: 40px;
 }
 
-.hero-content h1 {
-	font-weight: 400;
-	text-align: center;
-	margin-bottom: 20px;
+.resources-content h1 {
+	font-weight: 500;
+	text-align: left;
 }
 
-.hero-content h4 {
-	text-align: center;
-	font-weight: 400;
-	line-height: 30px;
+.resources-content p {
+	font-style: italic;
+	font-size: 17px;
+	line-height: 26px;
 	letter-spacing: 1px;
 }
 
 .bordered-white-container {
-	padding: 30px 35px;
+	padding: 20px 25px;
 	background-color: rgba(255, 255, 255, 0.9);
 	border: solid 7px #f6f3f3!important;
+}
+
+.bordered-white-container h3 {
+	font-family: 'Heebo', sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	text-align: left;
+	color: #5b6770;
+}
+
+.bordered-white-container h5 {
+	margin-top: 20px;
+	font-family: 'Sanchez', serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+	color: #8c1125 !important;
+}
+
+.bordered-white-container p {
+	color: #495966 !important;
 }
 
 .bordered-white-container img {
 	border: solid 1px #efefef!important;
 	width: 100%;
+	margin: 20px 0;
+}
+
+.list-circles ul {
+	list-style: none;
+	margin: 60px 20px 80px -60px;
+}
+
+.list-circles li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.list-circles li .circle {
+	padding: 15% 5%;
+	width: 105px;
+	min-height: 105px;
+	max-height: 105px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.list-circles li .circle .circle-icon {
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.list-circles .circle h4 {
+	font-family: 'Sanchez', serif;
+	font-size: 9px;
+	text-align: center;
+	font-style: normal;
+	color: #96d0c8!important;
+}
+
+.list-circles li .circle p {
+	font-family: 'Heebo', sans-serif;
+	font-size: 6px;
+	font-weight: 300;
+	text-align: center;
+	color: #96d0c8!important;
+	font-style: normal;
+	margin-top: -5px;
 }
 
 .bulleted-list ul li {
@@ -2588,6 +2657,79 @@ footer .copyright {
 	color: #006e74;
 }
 
+.static-item-article {
+	padding: 50px 0;
+}
+
+.static-item-article img {
+	width: 100%;
+	border: 10px solid #F5F1F1;
+}
+
+.static-item-article .content-right {
+	padding-top: 30px;
+}
+
+.static-item-article .content-center {
+	padding-top: 15px;
+}
+
+.static-item-article h1 {
+	font-family: 'Heebo', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 40px;
+	color: #5b6770;
+}
+
+.static-item-article h3 {
+	margin: 10px 0 30px;
+	font-family: 'Heebo', sans-serif;
+	font-size: 30px;
+	line-height: 1.36;
+	font-weight: 400;
+	text-align: center;
+	color: #323a41;
+}
+
+.static-item-article h4 {
+	margin: 10px 0 20px;
+	font-family: 'Heebo', sans-serif;
+	font-size: 22px;
+	line-height: 1.36;
+	font-weight: 400;
+	text-align: center;
+	color: #323a41;
+}
+
+.static-item-article p {
+	font-family: 'Sanchez', serif;
+	font-size: 17px;
+	line-height: 1.62;
+	font-weight: 400;
+	text-align: center;
+	color: #495966;
+	margin: 20px;
+}
+
+.static-item-article hr {
+	width: 120px;
+	border: solid 1px #7fcecd;
+}
+
+.static-item-article a {
+	font-style: normal;
+}
+
+.static-item-title h2 {
+	font-family: 'Sanchez', serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+	color: #8c1125 !important;
+}
+
 .tip-module {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2974,6 +3116,7 @@ footer .copyright {
 	font-size: 16px;
 	display: inline-block;
 	font-weight: 300;
+	font-style: normal;
 }
 
 .default-button:hover {
@@ -3061,6 +3204,13 @@ footer .copyright {
 	color: #006e74!important;
 	font-style: normal;
 	margin-top: 10px;
+}
+
+.breadcrumbs span,
+.breadcrumbs a {
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -3184,6 +3334,18 @@ body form .container {
 
 @media (max-width: 1199px) {
 
+.list-circles ul {
+	margin: 30px 20px 30px -60px;
+}
+
+.list-circles li {
+	margin-right: 5px;
+}
+
+.list-circles .circle {
+	min-width: inherit;
+}
+
 .circle {
 	padding: 10% 5%;
 	min-width: 230px;
@@ -3228,6 +3390,14 @@ body form .container {
 }
 
 @media (max-width: 991px) {
+
+.banner-module-resources {
+	padding: 40px 20px 40px 20px;
+}
+
+.resources-content {
+	padding-right: 0px;
+}
 
 .circle {
 	padding: 10% 5%;
