@@ -454,6 +454,11 @@ a:hover {
 	background-size: cover;
 }
 
+.home-s5-col-height.right .jumpstart {
+	max-width: 620px;
+	width: 100%;
+}
+
 .home-s5-col-height.right h2 {
 	padding: 0 0 20px 0;
 	font-size: 36px;
@@ -1810,9 +1815,32 @@ footer .copyright {
 	background-size: 60px 38px;
 }
 
-.community-section .community-icon {
-	width: 90%;
-	margin-top: 20px;
+.community-section .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.community-section .col-sm-4,
+.community-section .col-sm-8 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .community-section .community-title {
@@ -1834,9 +1862,9 @@ footer .copyright {
 }
 
 .community-section p {
-	color: white;
+	color: #ffffff;
 	text-align: center;
-	margin: 35px 0;
+	margin: 12px 0;
 }
 
 .helping-you {
@@ -3131,7 +3159,7 @@ footer .copyright {
 	font-family: 'Heebo', sans-serif;
 	font-size: 16px;
 	display: inline-block;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -3274,14 +3302,6 @@ footer .copyright {
 	right: 0;
 	bottom: 0;
 	Margin: 0 15%;
-}
-
-.community-section .connect-icon {
-	margin-top: -45px;
-}
-
-.community-section .connect-details {
-	margin: 15px 0 30px;
 }
 
 .helping-you .video-holder {
