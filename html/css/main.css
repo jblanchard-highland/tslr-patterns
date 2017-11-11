@@ -2078,7 +2078,7 @@ footer .copyright {
 	content: '';
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 15px;
 	bottom: 0;
 	left: 0;
 	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
@@ -2186,6 +2186,7 @@ footer .copyright {
 }
 
 .story-content {
+	margin-top: 15%;
 	padding: 30px 40px;
 	text-align: center;
 }
@@ -2203,6 +2204,12 @@ footer .copyright {
 }
 
 .transparency {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0;
+	padding: 0 30px;
+	min-height: 436px;
 	background: #000000;
 	background: rgba(0, 0, 0, 0.2);
 }
@@ -3503,6 +3510,10 @@ body form .container {
 }
 
 @media (max-width: 991px) {
+
+.transparency {
+	width: 100%;
+}
 
 .banner-module-resources {
 	padding: 40px 20px 40px 20px;
