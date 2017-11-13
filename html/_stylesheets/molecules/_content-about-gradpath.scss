@@ -1,0 +1,34 @@
+.about-content {
+  padding-top: 60px;
+  max-width: 800px;
+
+  p {
+    margin: 40px 0;
+    font-size: 19px;
+    line-height: inherit;
+    text-align: center;
+  }
+
+  .icon {
+    padding: 10px;
+    text-align: center;
+
+    img {
+      max-width: 94px;
+    }
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .default-button {
+      margin: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
+}

@@ -1,6 +1,6 @@
-var BY_Starter = {
+var App = {
   debug: false,
-  log: function(what)   { if(BY_Starter.debug) { console.log(what); } },
+  log: function(what)   { if(App.debug) { console.log(what); } },
   exists: function(el)  { if($(el).length > 0) { return true; } },
 
   init: function() {
@@ -31,7 +31,7 @@ var BY_Starter = {
   'use strict';
 
   $(document).ready(function() {
-    BY_Starter.init();
+    App.init();
   });
 
 })(jQuery, this);
