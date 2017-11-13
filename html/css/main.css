@@ -2034,8 +2034,8 @@ footer .copyright {
 }
 
 .dark-contrast * {
-	color: #ffffff !important;
-	border-color: #ffffff !important;
+	color: #fff !important;
+	border-color: #fff !important;
 }
 
 .light-contrast * {
@@ -2223,7 +2223,7 @@ footer .copyright {
 	display: -ms-flexbox;
 	display: flex;
 	background-position: left top;
-	background-color: #ffffff;
+	background-color: #fff;
 	background-repeat: no-repeat;
 	padding: 40px 30px 40px 60px;
 }
@@ -2888,7 +2888,7 @@ footer .copyright {
 	height: 84px;
 	min-height: 84px;
 	background-color: #de4365;
-	color: #ffffff;
+	color: #fff;
 	border-radius: 50%;
 	font-family: "Sanchez",serif;
 	font-size: 30.4px;

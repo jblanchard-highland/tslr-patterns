@@ -51,8 +51,8 @@
 }
 
 .light-contrast .default-button.inverted {
-    color:#5b6770;
-    border-color:#5b6770; 
+    color:$culearn-gray;
+    border-color:$culearn-gray;
     &:hover {
         background-color: #4A5965;
         color: #ffffff!important;
