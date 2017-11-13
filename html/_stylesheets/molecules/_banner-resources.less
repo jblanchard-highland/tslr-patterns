@@ -1,0 +1,154 @@
+
+
+
+// Resources main container
+
+.banner-module-resources {
+    background-size: cover;
+	display: flex;
+    background-position: left top;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    padding: 40px 30px 40px 60px;
+}
+
+.resources-content{
+  padding-right:50px; 
+  margin-bottom:40px;    
+}
+
+.resources-content h1{
+  font-weight: 500;
+  text-align: left;  
+}
+
+.resources-content p{
+    font-style: italic;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+
+// White box with transparency
+
+.bordered-white-container{
+padding: 20px 25px;    
+background-color: rgba(256,256,256,0.9);
+border: solid 7px #f6f3f3!important;    
+}
+
+.bordered-white-container h3 {
+  font-family: @heading-font;  
+  font-weight: 400;    
+  font-size: 36px;
+  text-align: left;
+  color: @culearn-gray;
+}
+
+
+.bordered-white-container h5 {
+  margin-top: 20px;       
+  font-family: @content-font;  
+  font-weight: 400;    
+  font-size: 30px;
+  text-align: left;
+  color: @dark-red!important;
+}
+
+.bordered-white-container p {
+  color: @thrivent-gray!important;
+}
+
+.bordered-white-container img{
+    border: solid 1px #efefef!important;     
+    width: 100%; 
+    margin: 20px 0;    
+}
+
+
+
+// Small Circles 
+
+.list-circles ul{
+    list-style: none;
+    margin: 60px 20px 80px -60px;
+}
+
+.list-circles li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.list-circles li .circle {
+    padding: 15% 5%;
+    width: 105px;
+    min-height: 105px;
+    max-height: 105px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.list-circles li .circle .circle-icon {
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.list-circles .circle h4 {
+    font-family: 'Sanchez', serif;
+    font-size: 9px;
+    text-align: center;
+    font-style: normal;
+    color: #96d0c8!important;
+    //color: #006e74!important;
+
+}
+
+.list-circles li .circle p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 6px;
+    font-weight: 300;
+    text-align: center;
+    color: #96d0c8!important;
+    //color: #006e74!important;
+    font-style: normal;
+    margin-top: -5px;
+}
+
+
+
+@media (max-width: 1199px) {
+    
+.list-circles ul {
+    margin: 30px 20px 30px -60px;
+}    
+    
+    
+.list-circles li {
+    margin-right: 5px;
+}    
+
+ .list-circles .circle {
+        min-width: inherit;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+     
+  .banner-module-resources {
+    padding: 40px 20px 40px 20px;
+    }
+    
+    .resources-content{
+  padding-right:0px;    
+    }
+     
+}
+

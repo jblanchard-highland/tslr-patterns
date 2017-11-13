@@ -1560,7 +1560,6 @@ footer .copyright {
 	line-height: 14px;
 	text-align: left;
 	color: #495966;
-	text-align: left;
 	font-style: normal;
 }
 
@@ -2128,8 +2127,24 @@ footer .copyright {
 	        justify-content: center;
 	min-height: 200px;
 	text-align: center;
-	background-color: #f6f3f3;
+}
+
+.banner-gray .banner-module {
+	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x,url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
 	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 200px;
+	text-align: center;
+	font-size: 48px;
+	background-color: #f6f3f3;
 	background-repeat: no-repeat;
 	background-position: center;
 }
