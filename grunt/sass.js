@@ -1,5 +1,4 @@
 'use strict';
-console.log('!!!');
 module.exports = {
 	compile: {
 		options: {

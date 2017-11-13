@@ -3213,7 +3213,23 @@ footer .copyright {
 	background-size: 60px;
 }
 
-.default-button {
+.btn {
+	color: #074679;
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	font-style: inherit;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #074679;
+}
+
+.default-button,
+.hs-form .hs-button {
 	padding: 9px 25px 7px;
 	border: 2px solid #4A5965;
 	background: transparent;
@@ -3234,17 +3250,20 @@ footer .copyright {
 	font-style: normal;
 }
 
-.default-button:hover {
+.default-button:hover,
+.hs-form .hs-button:hover {
 	background-color: #4A5965;
 	color: #fff;
 }
 
-.default-button.inverted {
+.default-button.inverted,
+.hs-form .hs-button.inverted {
 	border: 2px solid #fff;
 	color: #fff;
 }
 
-.default-button.inverted:hover {
+.default-button.inverted:hover,
+.hs-form .hs-button.inverted:hover {
 	background-color: #fff;
 	color: #4A5965 !important;
 }

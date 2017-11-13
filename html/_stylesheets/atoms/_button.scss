@@ -1,4 +1,20 @@
-.default-button {
+.btn {
+  color: $twilight-blue;
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  font-style: inherit;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color:$twilight-blue;
+  }
+}
+
+.default-button,
+.hs-form .hs-button {
   padding: 9px 25px 7px;
   border: 2px solid #4A5965;
   background: transparent;
@@ -16,7 +32,7 @@
   font-size: 16px;
   display: inline-block;
   font-weight: 400;
-  font-style: normal;    
+  font-style: normal;
 
   &:hover {
     background-color: #4A5965;
