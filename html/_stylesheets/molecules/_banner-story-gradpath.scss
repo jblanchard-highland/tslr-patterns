@@ -43,22 +43,37 @@
 }
 
 .transparency {
-        position: absolute;
-        width: 50%;
-        top:0;
-        right: 0;
-        padding: 0 30px;
+    
+        background: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.0) 0%, 
+            rgba(0, 0, 0, 0.0) 50%,
+            rgba(0, 0, 0, 0.4) 50%,
+            rgba(0, 0, 0, 0.4) 100%
+          );
+    
+        width: 100%;
         min-height: 436px;
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.2);
 	}
 
 
 @media (max-width: 991px) {
      
-      .transparency {
-        width: 100%; 
-        }
+    .transparency {
+     background: none; 
+     }
+    
+    .banner-module-story {  
+     background-position: left top;
+    }
+     
+}
+
+@media (max-width: 767px) {
+    
+    .banner-module-story {
+     background-position: left -350px top 1px;
+    }
      
 }
 

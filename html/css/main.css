@@ -2222,14 +2222,12 @@ footer .copyright {
 }
 
 .transparency {
-	position: absolute;
-	width: 50%;
-	top: 0;
-	right: 0;
-	padding: 0 30px;
+	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+	background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+	background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+	width: 100%;
 	min-height: 436px;
-	background: black;
-	background: rgba(0, 0, 0, 0.2);
 }
 
 .banner-module-resources {
@@ -2923,6 +2921,7 @@ footer .copyright {
 
 .video-module iframe {
 	border: 10px solid #e7e7e7;
+	width: 100%;
 }
 
 .video-module h3 {
@@ -3302,8 +3301,8 @@ footer .copyright {
 
 .circle {
 	padding: 15% 5%;
-	width: 90%;
-	min-height: 300px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -3505,8 +3504,8 @@ body form .container {
 
 .circle {
 	padding: 10% 5%;
-	min-width: 230px;
-	min-height: 240px;
+	width: 290px;
+	height: 290px;
 }
 
 }
@@ -3549,7 +3548,11 @@ body form .container {
 @media (max-width: 991px) {
 
 .transparency {
-	width: 100%;
+	background: none;
+}
+
+.banner-module-story {
+	background-position: left top;
 }
 
 .banner-module-resources {
@@ -3562,8 +3565,8 @@ body form .container {
 
 .circle {
 	padding: 10% 5%;
-	min-width: 230px;
-	min-height: 240px;
+	width: 230px;
+	height: 230px;
 }
 
 }
@@ -3829,6 +3832,10 @@ footer .footer-links-container ul li {
 .helping-you .video-holder {
 	padding: 0 10px;
 	background: transparent;
+}
+
+.banner-module-story {
+	background-position: left -350px top 1px;
 }
 
 .what-we-do {
