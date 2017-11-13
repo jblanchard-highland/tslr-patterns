@@ -1,0 +1,61 @@
+.header-gradpath {
+  background-color: $white-smoke;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 12px;
+
+    .logo-gradpath {
+      order: 1;
+      padding: 13px;
+
+      img {
+        max-width: 213px;
+      }
+    }
+
+    .nav-gradpath {
+      display: flex;
+      order: 2;
+      margin: 0 0 0 auto;
+      padding: 0;
+
+      li {
+        margin: 0 12px;
+        list-style: none;
+
+        a {
+          font-size: 22px;
+          color: $bluegreen-2;
+          text-decoration: none;
+          font-style: normal;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .signup-gradpath {
+      order: 3;
+      margin-left: 50px;
+    }
+
+    @media (max-width: 890px) {
+      .nav-gradpath {
+        order: 3;
+        margin: 0 10px;
+      }
+
+      .signup-gradpath {
+        order: 2;
+        margin-left: auto;
+      }
+    }
+  }
+}

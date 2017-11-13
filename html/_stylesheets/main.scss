@@ -30,6 +30,7 @@
 @import "organisms/_header";
 @import "organisms/_footer";
 @import "organisms/_form";
+@import "organisms/_header-gradpath";
 
 // Previous components from TSLR website
 @import "organisms/_hero-section";
@@ -52,6 +53,7 @@
 @import "molecules/_banner-green";
 @import "molecules/_banner-gray-gradpath";
 @import "molecules/_banner-story-gradpath";
+@import "molecules/_banner-about-gradpath";
 @import "molecules/_banner-resources";
 @import "molecules/_bulleted-list";
 @import "molecules/_featured-bio";
@@ -67,6 +69,7 @@
 @import "molecules/_static-item-article";
 @import "molecules/_tip";
 @import "molecules/_video-module";
+@import "molecules/_content-about-gradpath";
 
     // Previous components from TSLR website
 @import "molecules/_stepper-btn-container";

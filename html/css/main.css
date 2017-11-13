@@ -1673,6 +1673,70 @@ footer .copyright {
 	margin-top: 30px;
 }
 
+.header-gradpath {
+	background-color: #F7F5F5;
+}
+
+.header-gradpath .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding: 12px;
+}
+
+.header-gradpath .container .logo-gradpath {
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
+	padding: 13px;
+}
+
+.header-gradpath .container .logo-gradpath img {
+	max-width: 213px;
+}
+
+.header-gradpath .container .nav-gradpath {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
+	margin: 0 0 0 auto;
+	padding: 0;
+}
+
+.header-gradpath .container .nav-gradpath li {
+	margin: 0 12px;
+	list-style: none;
+}
+
+.header-gradpath .container .nav-gradpath li a {
+	font-size: 22px;
+	color: #006e74;
+	text-decoration: none;
+	font-style: normal;
+}
+
+.header-gradpath .container .nav-gradpath li a:hover {
+	text-decoration: underline;
+}
+
+.header-gradpath .container .signup-gradpath {
+	-webkit-box-ordinal-group: 4;
+	    -ms-flex-order: 3;
+	        order: 3;
+	margin-left: 50px;
+}
+
 .home-s1-col-height {
 	min-height: 500px;
 }
@@ -2083,9 +2147,10 @@ footer .copyright {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	position: relative;
 	min-height: 490px;
-	background-position: center top;
 	font-size: 48px;
+	background-position: center top;
 	background-color: #f6f3f3;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -2095,7 +2160,7 @@ footer .copyright {
 	content: '';
 	position: absolute;
 	top: 0;
-	right: 15px;
+	right: 0;
 	bottom: 0;
 	left: 0;
 	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
@@ -2296,6 +2361,49 @@ footer .copyright {
 	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
 	width: 100%;
 	min-height: 436px;
+}
+
+.banner-about-gradpath {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 490px;
+	background-position: center top;
+	font-size: 48px;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-about-gradpath:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.banner-about-gradpath h2 {
+	display: block;
+	margin: 0 auto;
+	max-width: 742px;
+	font-weight: 500;
+	line-height: 1.11;
+	text-align: center;
+	color: #ffffff;
 }
 
 .banner-module-resources {
@@ -3009,6 +3117,42 @@ footer .copyright {
 	color: #006e74;
 }
 
+.about-content {
+	padding-top: 60px;
+	max-width: 800px;
+}
+
+.about-content p {
+	margin: 40px 0;
+	font-size: 19px;
+	line-height: inherit;
+	text-align: center;
+}
+
+.about-content .icon {
+	padding: 10px;
+	text-align: center;
+}
+
+.about-content .icon img {
+	max-width: 94px;
+}
+
+.about-content .buttons-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.about-content .buttons-wrapper .default-button {
+	margin: 20px;
+}
+
 .stepper-btn-container {
 	position: relative;
 	display: -webkit-box;
@@ -3639,6 +3783,24 @@ body form .container {
 
 }
 
+@media (max-width: 890px) {
+
+.header-gradpath .container .nav-gradpath {
+	-webkit-box-ordinal-group: 4;
+	    -ms-flex-order: 3;
+	        order: 3;
+	margin: 0 10px;
+}
+
+.header-gradpath .container .signup-gradpath {
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
+	margin-left: auto;
+}
+
+}
+
 @media (max-width: 768px) {
 
 body form .container .row {
@@ -3723,6 +3885,10 @@ h4.inverted {
 
 .hero-right-content {
 	padding: 24px 0;
+}
+
+.about-content {
+	padding-top: 20px;
 }
 
 .ambassador-callout {
