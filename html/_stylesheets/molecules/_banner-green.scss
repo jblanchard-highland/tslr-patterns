@@ -1,0 +1,45 @@
+.banner-green {
+  display: flex;
+  padding: 60px 20px 80px 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  background-color: $pale-teal;
+    
+    h2 {
+      font-size: 60px;  
+    }
+    
+    .circle h4{
+       font-size: 32px;  
+       -webkit-transform: rotate(-30deg);
+	   transform: rotate(-30deg);
+    }
+    
+    .circle h4 strike {
+       color: $thrivent-red!important;    
+    }
+    
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .circle-icon {
+        height: 5px;
+    }
+    
+    h3 {
+       font-family: $heading-font;
+       font-size: 26px;
+       font-weight: 400;
+       text-align: center;
+       margin: 30px 0 10px 0;
+    }
+    
+    h5 {
+       margin-bottom: 25px;
+    }
+  
+}
