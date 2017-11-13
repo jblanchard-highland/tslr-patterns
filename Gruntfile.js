@@ -36,14 +36,14 @@ module.exports = function (grunt) {
     var configs = require( 'load-grunt-configs' )( grunt, options);
 
     grunt.initConfig( configs );
+    
 
     grunt.registerTask( 'default', ['styles', 'scripts', 'html', 'copy']);
     grunt.registerTask(   'serve', ['browserSync', 'watch']);
-    grunt.registerTask(  'styles', ['clean:css', 'less:compile', 'cmq:main', 'postcss:dist', 'less:sourceMap']);
+    grunt.registerTask(  'styles', ['clean:css', 'sass:compile', 'cmq:main', 'postcss:dist']);
     grunt.registerTask( 'scripts', ['jshint:beforeconcat', 'concat:main', 'concat:plugins', 'jshint:afterconcat']);
     grunt.registerTask(    'html', ['clean:pages', 'compile-handlebars:main', 'prettify']);
     grunt.registerTask(  'images', ['imagemin']);
     grunt.registerTask(    'dist', ['default', 'cssmin', 'uglify:main', 'images']);
     grunt.registerTask( 'favicon', ['realFavicon']);
 };
-

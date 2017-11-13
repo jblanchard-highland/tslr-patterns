@@ -1,0 +1,73 @@
+.stepper-btn-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 0 35px !important;
+
+    transition: all 0.3s ease;
+    
+    .img1,
+    .img2,
+    .img3 {
+        width: 80px;
+        height: 80px;
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icfile.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @media (max-width: 400px) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .img2 { 
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollar.svg);
+    }
+
+    .img3 { 
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg);
+    }
+
+    .img-holder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img1.active {
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icfileactive.svg);
+    }
+
+    .img2.active {
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollaractive.svg);
+    }
+
+    .img3.active { 
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoinactive.svg);
+    }
+
+    //TODO: Check if this .default-button override it's really necessary
+    .default-button {
+        margin-top: 6px;
+        padding: 9px 5px 7px;
+        color: #074679;
+        text-transform: capitalize;
+        text-decoration: underline;
+        border: none;
+        letter-spacing: inherit;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .line {
+        position: relative;
+        top: -20px;
+        margin: 0 8px;
+        width: 11%;
+        height: 14px;
+        background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/line.png);
+        background-repeat: repeat-x;
+    }   
+}

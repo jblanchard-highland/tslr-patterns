@@ -1,0 +1,53 @@
+.tools {
+  background-color: white;
+  padding-top: 50px;
+}
+
+.tools-graph-row {
+  padding-bottom: 30px;
+}
+
+.tools-graph-col {
+  padding-top: 30px;
+}
+
+.bor-rep-liv-giv {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.banner-helping {
+  margin-top: 68px;
+  padding: 24px 0;
+
+  text-align: center;
+  text-transform: capitalize;
+
+  background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');;
+  background-repeat: repeat-x;
+}
+
+.banner-helping h3 {
+  color: $white;
+}
+
+.bor-rep-liv-giv .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 35px 0;
+}
+
+@media (max-width: 768px) {
+  .bor-rep-liv-giv .row {
+    justify-content: center;
+  }
+}
+
+.bor-rep-liv-giv img {
+  max-height: 200px;
+
+}

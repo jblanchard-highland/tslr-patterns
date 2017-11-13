@@ -1,11 +1,9 @@
 'use strict';
 
 module.exports = {
-  less: {
-    files: "<%= cfg.root %><%= cfg.src.styles %>**/*.less",
-    tasks: [
-      "styles"
-    ]
+  sass: {
+    files: "<%= cfg.root %><%= cfg.src.styles %>**/*.scss",
+    tasks: ['styles']
   },
   scripts: {
     files: "<%= cfg.root %><%= cfg.src.scripts %>**/*.js",

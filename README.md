@@ -2,25 +2,20 @@
 Front-end project to support html elements to be developed in Outsystems
 
 ## Components
-* Normalize 2.1.0
-* Modernizr 2.6.2
-* jQuery 1.9.1
-* Grunt 0.4.1  
   * [postcss](https://github.com/nDmitry/grunt-postcss)
   * [grunt-browser-sync](https://github.com/BrowserSync/grunt-browser-sync)
   * [grunt-combine-media-queries](https://github.com/buildingblocks/grunt-combine-media-queries)
-  * [grunt-compile-handlebars](https://github.com/gruntjs/grunt-contrib-handlebars)  
-  * [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean) 
-  * [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat) 
-  * [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy)  
-  * [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)  
-  * [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin)  
-  * [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)  
-  * [grunt-contrib-less](https://github.com/gruntjs/grunt-contrib-less)  
-  * [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)  
-  * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)  
+  * [grunt-compile-handlebars](https://github.com/gruntjs/grunt-contrib-handlebars)
+  * [grunt-contrib-clean](https://github.com/gruntjs/grunt-contrib-clean)
+  * [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
+  * [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy)
+  * [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
+  * [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin)
+  * [grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+  * [grunt-contrib-sass](https://github.com/gruntjs/grunt-contrib-sass)
+  * [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
+  * [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
   * [grunt-prettify](https://github.com/jonschlinkert/grunt-prettify)
-  * [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)  
   * [load-grunt-configs](https://github.com/creynders/load-grunt-configs)
   * [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks)
   * [time-grunt](https://github.com/sindresorhus/time-grunt)
@@ -36,47 +31,35 @@ Create a static server at port 3001 (for user interface, read [browser-sync offi
 grunt serve
 ```
 
-Compile LESS to CSS and lint all the generated files:
+Compile SASS to CSS and lint all the generated files:
 ```
-grunt styles  
+grunt styles
 ```
 
 Validate JS with JSHint and concatenates different files to one:
 ```
-grunt scripts  
-```
-
-Convert a set of images into a spritesheet and corresponding CSS variables:
-```
-grunt sprites  
+grunt scripts
 ```
 
 Minify PNG and JPEG images:
 ```
-grunt images  
+grunt images
 ```
 
 Compile [Handlebars](http://handlebarsjs.com) templates and outputs static HTML:
 ```
-grunt html  
+grunt html
 ```
 
 Development build:
 ```
-grunt  
+grunt
 ```
 
 Production build:
 ```
-grunt dist  
-``` 
-
-### Updating Autoprefix prefixes database
+grunt dist
 ```
-$ npm update caniuse-db
-```
-[Disabeling some prefixers](https://www.npmjs.com/package/autoprefixer#disabling)  
-[Autoprefixer Playground](http://simevidas.jsbin.com/gufoko/quiet)  
 
 ### BrowserSync Features
 1. **Scroll** - I can keep your pages in sync when scrolling.

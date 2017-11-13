@@ -1,0 +1,206 @@
+/* State-of-Student-Debt YOU */
+
+.State-of-Student-Debt {
+  background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    position: relative;
+    margin: 0 auto 32px auto;
+    padding-bottom: 32px;
+
+    max-width: 440px;
+
+    text-align: center;
+    color: $white;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 40px;
+      right: 40px;
+      height: 2px;
+      background-color: $white;
+    }
+
+
+  }
+
+  p {
+    color: $white;
+    text-align: center;
+  }
+
+  .hs-form label {
+    padding-top: 5px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: normal;
+    float: left;
+    text-align: left;
+    color: $white;
+  }
+
+  input.hs-input[type=text], input.hs-input[type=email] {
+    margin-top: 5px !important;
+
+    width: 100% !important;
+    height: 40px !important;
+    padding: 0 12px !important;
+    color: $dark-gray;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+
+    border: solid 1px #96d0c8 !important;
+    border-radius: 0 !important;
+  }
+
+  .hs-form li {
+    list-style: none;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: 0;
+  }
+
+  input.hs-input[type=checkbox] {
+    margin: 0 10px 0 0;
+
+  }
+
+  .hs-form .hs-field-desc {
+    color: $white;
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  }
+
+  .default-button, .hs-form .hs-button {
+    margin: 20px auto;
+    border-color: $white;
+    color: $white;
+  }
+
+  .default-button:hover, .hs-form .hs-button:hover {
+    background-color: $white;
+    color: $bluegreen;
+  }
+
+  .hs-form .hs-button {
+    margin: 30px 0 0 0;
+    padding: 5px 25px 5px !important;
+    border: 2px solid $btn-gray !important;
+    background: transparent;
+    color: $btn-gray !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    outline: none;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-decoration: none !important;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    text-shadow: none;
+
+  }
+
+  .hs-form .hs-button:hover {
+    background-color: $btn-gray;
+    color: $white !important;
+    box-shadow: none !important;
+
+  }
+
+}
+
+
+.Adam-Article h1 {
+  color: $culearn-gray;
+}
+
+.State-of-Student-Debt-video {
+  display: block;
+  margin: 0 auto;
+
+  max-height: 310px;
+
+  border: 8px solid $pale-gray;
+}
+
+.portrait {
+  border-radius: 100px;
+  background-color: rgba(91, 103, 112, 0.1);
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.story {
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  .State-of-Student-Debt {
+    padding-bottom: 24px;
+  }
+
+  .Adam-Article h1 {
+    color: $culearn-gray;
+  }
+
+  .State-of-Student-Debt-video {
+    margin: 0 auto;
+    max-height: 310px;
+    border-width: 16px;
+
+  }
+
+  .State-of-Student-Debt .description,
+  .State-of-Student-Debt .video-holder {
+    width: 100%;
+  }
+
+  .State-of-Student-Debt .video-holder {
+    padding: 0;
+    background-image: none;
+    background-color: #f6f3f3;
+  }
+
+  .State-of-Student-Debt .description,
+  .AdamIntro {
+    padding: 10px 10px 30px 10px;
+  }
+
+  .State-of-Student-Debt .video-holder {
+    padding: 0 10px;
+    background: transparent;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .State-of-Student-Debt .video-holder {
+    Margin: 5% 0 0 0;
+  }
+
+  .State-of-Student-Debt .description,
+  .State-of-Student-Debt .video-holder,
+  .AdamIntro {
+    padding: 20px 15px 40px 15px;
+  }
+}

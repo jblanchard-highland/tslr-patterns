@@ -1,0 +1,21 @@
+.ambassador-callout {
+  border: 1px solid black;
+  padding: 0 10px 0 10px;
+
+  h3 {
+    margin-top: 20px;
+  }
+
+  img {
+    width: 90%;
+  }
+
+  .default-button:hover {
+    background-color: $white;
+    color: $btn-gray;
+  }
+
+  @media (max-width: 768px) {
+    padding: 100px 0;
+  }
+}

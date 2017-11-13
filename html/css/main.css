@@ -1,13 +1,133 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:400,500|Sanchez:400,400i');body {
-	font-family: 'Sanchez', serif;
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500|Sanchez:300,400,400i");code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+:not(pre)>code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: rgba(255,255,255,0.5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+body {
+	font-family: "Sanchez",serif;
 	font-size: 19px;
 	text-align: left;
 	color: #006e74;
-}
-
-body form .container .row {
-	padding-left: 40px;
-	padding-right: 40px;
 }
 
 body form .container .row.home-s1-bg {
@@ -21,13 +141,13 @@ ol ol {
 .video-holder,
 .col-right.hidden-xs.col-sm-5,
 .do-not-borrow-self .col-right.col-sm-4 {
-	margin: 0 -1px; /*hack for col size in safari*/
+	margin: 0 -1px;
 }
 
 .dropdown-toggle {
 	display: -webkit-box !important;
 	display: -ms-flexbox !important;
-	display: flex !important; /* hack for IE11 */
+	display: flex !important;
 }
 
 .modal-body {
@@ -35,17 +155,17 @@ ol ol {
 }
 
 h1 {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 40px;
 	font-weight: 500;
 	line-height: 1.1;
 	text-decoration: none;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 }
 
 h2 {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 36px;
 	text-decoration: none;
 	line-height: 1.11;
@@ -55,7 +175,7 @@ h2 {
 h2.inverted {
 	font-weight: 500;
 	text-align: left;
-	color: #ffffff;
+	color: #fff;
 }
 
 h2.alt {
@@ -63,14 +183,14 @@ h2.alt {
 }
 
 h3 {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 30px;
 	text-align: left;
 	color: #8c1125;
 }
 
 h4 {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 26px;
 	line-height: 1.15;
 	text-align: left;
@@ -79,12 +199,12 @@ h4 {
 
 h4.inverted {
 	font-weight: 500;
-	color: #ffffff;
+	color: #fff;
 }
 
 p,
 li {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 17px;
 	font-style: italic;
 	line-height: 1.53;
@@ -98,7 +218,7 @@ p.larger {
 }
 
 p.inverted {
-	color: #ffffff;
+	color: #fff;
 }
 
 strong {
@@ -106,7 +226,7 @@ strong {
 }
 
 a {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 18px;
 	text-align: left;
 	text-decoration: underline;
@@ -149,7 +269,7 @@ a:hover {
 }
 
 .comment {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	text-align: center;
@@ -213,13 +333,57 @@ a:hover {
 	margin: 0;
 }
 
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt40 {
+	margin-top: 40px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
+.mt80 {
+	margin-top: 80px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mb60 {
+	margin-bottom: 60px;
+}
+
+.mb80 {
+	margin-bottom: 80px;
+}
+
+.mlr20 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.mlr40 {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.center {
+	text-align: center !important;
+}
+
 .home-s5-col-height {
 	min-height: 400px;
 }
 
 .home-s5-col-height.left {
-	background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat-x, url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/studentshelpingeachotherhomework.jpg') repeat;
-	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -229,6 +393,7 @@ a:hover {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	background-size: cover;
 }
 
 .home-s5-col-height.left img {
@@ -238,29 +403,22 @@ a:hover {
 
 .home-s5-col-height.left h2 {
 	padding: 0 0 20px 0;
-	color: #ffffff;
+	color: #fff;
 	font-size: 36px;
 	font-weight: 300;
 	line-height: 46px;
 	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
 }
 
 .home-s5-col-height.left p {
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
 }
 
 .home-s5-col-height.left .default-button {
 	margin-top: 20px;
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.home-s5-col-height.left .default-button:hover {
-	color: #007c80;
-	background-color: #ffffff;
 }
 
 .home-s5-col-height.left .ambassador {
@@ -280,9 +438,13 @@ a:hover {
 	        align-items: center;
 	padding-top: 0;
 	background-color: #f6f3f3;
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/confetti.svg');
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.home-s5-col-height.right .jumpstart {
+	max-width: 620px;
+	width: 100%;
 }
 
 .home-s5-col-height.right h2 {
@@ -292,22 +454,17 @@ a:hover {
 	line-height: 46px;
 	text-align: center;
 	color: #5b6770;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
 }
 
 .home-s5-col-height.right p {
 	color: #495966;
 	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
 }
 
 .home-s5-col-height.right .default-button {
 	margin-top: 20px;
-}
-
-.home-s5-col-height.right .default-button:hover {
-	background-color: #4A5965;
-	color: #ffffff;
 }
 
 .apply hr {
@@ -380,21 +537,11 @@ a:hover {
 	margin-top: 60px;
 }
 
-.lending-principles .default-button {
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.lending-principles .default-button:hover {
-	color: #007c80;
-	background-color: #ffffff;
-}
-
 .lending-principles .square {
 	margin: 70px auto 0;
 	width: 148px;
 	padding: 22px;
-	border: 1.7px solid #ffffff;
+	border: 1.7px solid #fff;
 }
 
 .lending-principles .square .line1,
@@ -405,7 +552,7 @@ a:hover {
 	font-weight: 900;
 	text-align: left;
 	line-height: 28px;
-	color: #ffffff;
+	color: #fff;
 }
 
 .lending-principles .square .line2 {
@@ -417,13 +564,13 @@ a:hover {
 }
 
 .lending-principles h3 {
-	color: #ffffff;
+	color: #fff;
 }
 
 .lending-principles .description {
 	padding-top: 10px;
 	padding-bottom: 25px;
-	color: #ffffff;
+	color: #fff;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -454,13 +601,13 @@ a:hover {
 	height: 22px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/chevronsinverted.png');
+	background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/chevronsinverted.png");
 }
 
 .lending-principles ul li p {
 	font-size: 18px;
 	font-style: initial;
-	color: #ffffff;
+	color: #fff;
 }
 
 .lending-principles .list-title {
@@ -500,7 +647,7 @@ a:hover {
 }
 
 .resources .planning-row .list-read-more {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 18px;
 	color: #074679;
 	text-decoration: underline;
@@ -538,7 +685,7 @@ a:hover {
 
 .contact-us .default-button:hover {
 	background-color: #4A5965;
-	color: #ffffff;
+	color: #fff;
 }
 
 .contact-us .contact-us-form {
@@ -701,12 +848,12 @@ a:hover {
 
 .join-community input[type="submit"]:hover {
 	background-color: #4A5965;
-	color: #ffffff !important;
+	color: #fff !important;
 	-webkit-box-shadow: none !important;
 	        box-shadow: none !important;
 }
 
-.join-community label > span:first-of-type {
+.join-community label>span:first-of-type {
 	font-family: 'Heebo', sans-serif !important;
 	font-size: 15px !important;
 	font-weight: 300 !important;
@@ -714,7 +861,7 @@ a:hover {
 }
 
 .join-community .input select {
-	background: #ffffff;
+	background: #fff;
 	height: 42px;
 	width: 100%;
 	border: solid 1px #96d0c8 !important;
@@ -768,7 +915,7 @@ a:hover {
 
 .benefit p {
 	font-size: 19px;
-	padding-left: calc(18%);
+	padding-left: calc(3% + 15px);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -781,15 +928,15 @@ a:hover {
 	max-width: 50px;
 }
 
-.nav > li > a {
+.nav>li>a {
 	color: #128482;
 }
 
-.nav > li > a:hover {
+.nav>li>a:hover {
 	color: #8c1125;
 }
 
-.nav-tabs > li > a {
+.nav-tabs>li>a {
 	margin-right: 2px;
 	line-height: 1.42857143;
 	border: 1px solid transparent;
@@ -797,21 +944,21 @@ a:hover {
 	text-decoration: none;
 }
 
-.nav-tabs > li > a:hover {
+.nav-tabs>li>a:hover {
 	border-color: #eee #eee #ddd;
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.nav-tabs>li.active>a:focus {
 	color: #8c1125;
 	cursor: default;
-	background-color: #ffffff;
+	background-color: #fff;
 	border: 1px solid #ddd;
 	border-bottom-color: transparent;
 }
 
-.tab-content > .active {
+.tab-content>.active {
 	padding: 20px 0 0 0;
 }
 
@@ -833,14 +980,14 @@ a:hover {
 	bottom: 0;
 	left: 0;
 	padding: 18px;
-	background: rgba(255, 0, 0, 0.8); /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(-90deg, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(-90deg, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8)); /* For Opera 11.1 to 12.0 */ /* For Firefox 3.6 to 15 */
-	background: -webkit-gradient(linear, right top, left top, from(rgba(255, 0, 0, 0.8)), to(rgba(0, 128, 128, 0.8)));
-	background: -webkit-linear-gradient(right, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8));
-	background: -o-linear-gradient(right, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8));
-	background: linear-gradient(-90deg, rgba(255, 0, 0, 0.8), rgba(0, 128, 128, 0.8)); /* Standard syntax */
-	color: #ffffff;
+	background: rgba(255,0,0,0.8);
+	background: -webkit-linear-gradient(-90deg, rgba(255,0,0,0.8), rgba(0,128,128,0.8));
+	background: -o-linear-gradient(-90deg, rgba(255,0,0,0.8), rgba(0,128,128,0.8));
+	background: -webkit-gradient(linear, right top, left top, from(rgba(255,0,0,0.8)), to(rgba(0,128,128,0.8)));
+	background: -webkit-linear-gradient(right, rgba(255,0,0,0.8), rgba(0,128,128,0.8));
+	background: -o-linear-gradient(right, rgba(255,0,0,0.8), rgba(0,128,128,0.8));
+	background: linear-gradient(-90deg, rgba(255,0,0,0.8), rgba(0,128,128,0.8));
+	color: #fff;
 }
 
 .resource-overlay h5,
@@ -886,7 +1033,7 @@ a:hover {
 
 .blog-top .jump-to-wrapper .jump-to-button a {
 	margin: 0 15px;
-	background-color: rgba(140, 17, 37, 0.6);
+	background-color: rgba(140,17,37,0.6);
 	color: white;
 }
 
@@ -916,8 +1063,8 @@ a:hover {
 	bottom: 0;
 	left: 0;
 	padding: 18px;
-	background-color: rgba(128, 206, 206, 0.7);
-	color: #ffffff;
+	background-color: rgba(128,206,206,0.7);
+	color: #fff;
 }
 
 .item-overlay h5,
@@ -936,10 +1083,8 @@ a:hover {
 	font-size: 18px;
 }
 
-/* State-of-Student-Debt YOU */
-
 .State-of-Student-Debt {
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+	background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg");
 }
 
 .State-of-Student-Debt .row {
@@ -956,7 +1101,7 @@ a:hover {
 	padding-bottom: 32px;
 	max-width: 440px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 }
 
 .State-of-Student-Debt h2:after {
@@ -966,11 +1111,11 @@ a:hover {
 	left: 40px;
 	right: 40px;
 	height: 2px;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .State-of-Student-Debt p {
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
 }
 
@@ -981,7 +1126,7 @@ a:hover {
 	font-weight: normal;
 	float: left;
 	text-align: left;
-	color: #ffffff;
+	color: #fff;
 }
 
 .State-of-Student-Debt input.hs-input[type=text],
@@ -1011,23 +1156,23 @@ a:hover {
 }
 
 .State-of-Student-Debt .hs-form .hs-field-desc {
-	color: #ffffff;
+	color: #fff;
 	margin: 0;
 	text-align: center;
 	font-size: 11px;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .State-of-Student-Debt .default-button,
 .State-of-Student-Debt .hs-form .hs-button {
 	margin: 20px auto;
-	border-color: #ffffff;
-	color: #ffffff;
+	border-color: #fff;
+	color: #fff;
 }
 
 .State-of-Student-Debt .default-button:hover,
 .State-of-Student-Debt .hs-form .hs-button:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #007c80;
 }
 
@@ -1052,7 +1197,7 @@ a:hover {
 
 .State-of-Student-Debt .hs-form .hs-button:hover {
 	background-color: #4A5965;
-	color: #ffffff !important;
+	color: #fff !important;
 	-webkit-box-shadow: none !important;
 	        box-shadow: none !important;
 }
@@ -1070,7 +1215,7 @@ a:hover {
 
 .portrait {
 	border-radius: 100px;
-	background-color: rgba(91, 103, 112, 0.1);
+	background-color: rgba(91,103,112,0.1);
 	max-width: 200px;
 	max-height: 200px;
 	margin-bottom: 10px;
@@ -1080,6 +1225,146 @@ a:hover {
 
 .story {
 	margin: 20px 0;
+}
+
+.accordion {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 20px 0;
+	font-family: "Heebo",sans-serif;
+	font-size: 26px;
+	line-height: 1.15;
+	color: #323a41;
+	cursor: pointer;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.faq-list .section-title,
+.faq-list .sub-section-title {
+	text-decoration: none;
+}
+
+.chevron {
+	margin-right: 16px;
+	width: 22px;
+	height: 22px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/chevrons.png");
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.accordion.active .chevron {
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+
+.panel {
+	display: none;
+	padding: 0 18px;
+	background-color: white;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.panel p {
+	font-family: "Sanchez",serif;
+	font-size: 17px;
+	font-style: italic;
+	line-height: 1.53;
+	color: #495966;
+}
+
+.thank-you {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.page-not-found-div {
+	padding-top: 40px;
+	padding-bottom: 70px;
+}
+
+.page-not-found-div h3 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.document-holder {
+	display: block;
+	padding-top: 20px;
+	margin-left: 20px;
+	color: #c8102e;
+}
+
+.document-holder>div {
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.document-holder a {
+	font-family: 'Heebo', sans-serif;
+	text-decoration: none;
+}
+
+.tools {
+	background-color: white;
+	padding-top: 50px;
+}
+
+.tools-graph-row {
+	padding-bottom: 30px;
+}
+
+.tools-graph-col {
+	padding-top: 30px;
+}
+
+.bor-rep-liv-giv {
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.banner-helping {
+	margin-top: 68px;
+	padding: 24px 0;
+	text-align: center;
+	text-transform: capitalize;
+	background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg");
+	background-repeat: repeat-x;
+}
+
+.banner-helping h3 {
+	color: #fff;
+}
+
+.bor-rep-liv-giv .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	padding: 35px 0;
+}
+
+.bor-rep-liv-giv img {
+	max-height: 200px;
 }
 
 .header {
@@ -1094,16 +1379,16 @@ a:hover {
 	background-color: #e7e7e7;
 }
 
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-	color: #007c80;
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+	color: #128482;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	color: #007c80;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #128482;
 }
 
 .navbar {
@@ -1111,7 +1396,8 @@ a:hover {
 	border-radius: 0;
 }
 
-.navbar-right {
+.navbar-right,
+.navbar-left {
 	margin-top: 10px;
 }
 
@@ -1126,51 +1412,51 @@ a:hover {
 	transition: all 0.5s ease;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
 	font-style: normal;
-	color: #007c80;
+	color: #128482;
 	text-decoration: none;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-	color: #007c80;
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+	color: #128482;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #007c80;
+	background-color: #128482;
 }
 
 .navbar-default .navbar-text {
-	color: #007c80;
+	color: #128482;
 	font-style: normal;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
 	background: transparent;
 }
 
 .dropdown-menu {
-	color: #007c80;
+	color: #128482;
 }
 
-.dropdown-menu > li > a {
+.dropdown-menu>li>a {
 	color: inherit;
 	font-style: normal;
 	text-decoration: none;
 }
 
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus {
 	color: inherit;
 	background-color: transparent;
 }
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
 	color: inherit;
 	background-color: transparent;
 }
@@ -1200,7 +1486,7 @@ footer .footer-rectangle {
 	background-color: #f6f3f3;
 }
 
-footer .footer-links-container > div {
+footer .footer-links-container>div {
 	margin-top: 5px;
 }
 
@@ -1227,7 +1513,7 @@ footer .footer-links {
 	font-size: 13px;
 	color: #074679;
 	text-decoration: underline;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 }
 
 footer .footer-logo {
@@ -1242,7 +1528,7 @@ footer .footer-address {
 	line-height: 1.42;
 	color: #074679;
 	padding-left: 20px;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 }
 
 footer .logo-col {
@@ -1269,12 +1555,13 @@ footer .logo-col .social-links .linkedin-circled {
 footer .footer-copy p,
 footer .copyright {
 	padding: 0 15px;
-	text-align: left;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 12px;
-	font-style: normal;
 	line-height: 14px;
+	text-align: left;
 	color: #495966;
+	text-align: left;
+	font-style: normal;
 }
 
 .form-wrapper {
@@ -1283,6 +1570,7 @@ footer .copyright {
 
 .form-wrapper h2 {
 	margin-bottom: 23px;
+	font-weight: 300;
 }
 
 .form-wrapper .form-header p {
@@ -1310,7 +1598,7 @@ footer .copyright {
 }
 
 .form-wrapper .input-row .form-label label {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 15px;
 	font-weight: 300;
 	text-align: left;
@@ -1318,30 +1606,32 @@ footer .copyright {
 }
 
 .form-wrapper .input-row input {
+	height: 35px;
 	padding: 4px;
 	border: solid 0.5px #96d0c8;
 	outline: none;
 	font-size: 15px;
+	font-family: "Heebo",sans-serif;
 }
 
 .form-wrapper .toggle-password {
 	position: absolute;
 	left: 270px;
-	top: 26px;
+	top: 35px;
 	cursor: pointer;
 }
 
 .form-wrapper .progress {
-	margin-top: 6px; /* override bootstrap rules */
+	margin-top: 6px;
 	height: 100%;
 	overflow: hidden;
 	background-color: #f6f3f3;
-	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .form-wrapper .forgot-password {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	margin-top: 5px;
 	font-size: 13px;
 }
@@ -1364,32 +1654,22 @@ footer .copyright {
 }
 
 .home-s1-col-height.left {
-	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x, url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
-	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x,url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
+	background-size: cover;
 }
 
 .home-s1-col-height.left img {
 	position: absolute;
 	height: 100%;
-}
-
-.home-s1-col-height.left .default-button {
-	border-color: #ffffff;
-	color: #ffffff;
-}
-
-.home-s1-col-height.left .default-button:hover {
-	color: #007c80;
-	background-color: #ffffff;
 }
 
 .hero-left-content,
@@ -1410,12 +1690,12 @@ footer .copyright {
 .hero-left-title {
 	padding: 0 0 80px 0;
 	max-width: 550px;
-	color: #ffffff;
+	color: #fff;
 	font-size: 40px;
 	font-weight: 300;
 	line-height: 46px;
 	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
 }
 
 .hero-right-title {
@@ -1447,7 +1727,7 @@ footer .copyright {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 19px;
 	font-style: italic;
 	line-height: 1.37;
@@ -1475,12 +1755,12 @@ footer .copyright {
 
 .eligibility-loans .default-button:hover {
 	background-color: #4A5965;
-	color: #ffffff;
+	color: #fff;
 }
 
 .apply-section {
 	padding: 50px 15px 40px 15px;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .apply-section h2 {
@@ -1514,21 +1794,68 @@ footer .copyright {
 	width: 14%;
 }
 
-.home-community {
+.community-section {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #de4365;
-	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/communitybgtess.png);
 	background-repeat: repeat;
 	background-size: 60px 38px;
 }
 
-.home-community .default-button {
+.community-section .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.community-section .col-sm-4,
+.community-section .col-sm-8 {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.community-section .community-title {
+	margin: 35px 0;
+	color: #fff;
+	text-align: center;
+}
+
+.community-section .community-content {
+	color: #fff;
+}
+
+.community-section .community-content.bold {
+	font-weight: 600;
+}
+
+.community-section .default-button {
 	margin: 20px auto 30px;
 }
 
+.community-section p {
+	color: #fff;
+	text-align: center;
+	margin: 12px 0;
+}
+
 .helping-you {
-	background-image: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg');
+	background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/bgpattern.jpg");
 }
 
 .helping-you h2 {
@@ -1537,7 +1864,7 @@ footer .copyright {
 	padding-bottom: 32px;
 	max-width: 440px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 }
 
 .helping-you h2:after {
@@ -1547,17 +1874,21 @@ footer .copyright {
 	left: 40px;
 	right: 40px;
 	height: 2px;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .helping-you p {
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
 }
 
+.helping-you iframe {
+	border: 10px solid #e7e7e7;
+}
+
 .cu-vs-bank {
-	display: none; /* temporary unavailable section */
-	background-color: #ffffff;
+	display: none;
+	background-color: #fff;
 }
 
 .cu-vs-bank.bottom {
@@ -1567,9 +1898,9 @@ footer .copyright {
 .cu-vs-bank-imgs {
 	padding: 24px;
 	text-align: center;
-	background-color: #ffffff;
-	-webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.17);
-	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.17);
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
 }
 
 .cu-vs-bank-imgs .vs {
@@ -1591,7 +1922,7 @@ footer .copyright {
 
 .article-module img {
 	width: 100%;
-	border: 10px solid #f6f3f3;
+	border: 10px solid #f4f4f4;
 }
 
 .authorship {
@@ -1609,21 +1940,24 @@ footer .copyright {
 	height: 120px;
 	border-radius: 50%;
 	border: 3px solid #ECA2B2;
-	background-color: #495966;
+	background-color: #ccc;
+	background-image: url("");
+	background-size: cover;
+	background-position: center;
 }
 
 .authorship-name {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 32px;
 	font-weight: 300;
 	line-height: 1.12;
 	text-align: left;
 	font-style: inherit;
-	color: #323a41;
+	color: #333a40;
 }
 
 .authorship-position {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 18px;
 	text-align: left;
 	font-style: inherit;
@@ -1631,6 +1965,8 @@ footer .copyright {
 }
 
 .banner-module {
+	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png) repeat-x,url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/youngwomanpresentingplanningboard.jpg) repeat;
+	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1640,20 +1976,345 @@ footer .copyright {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	min-height: 400px;
+	min-height: 200px;
 	text-align: center;
 	font-size: 48px;
-	background-color: #5b6770;
+	background-color: #f6f3f3;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.banner-module-home {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	min-height: 490px;
+	font-size: 48px;
+	background-position: center top;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-module-home:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.hero-content {
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.no-gradiant:before {
+	content: '';
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: none;
+	opacity: 0;
+}
+
+.dark-contrast * {
+	color: #ffffff !important;
+	border-color: #ffffff !important;
+}
+
+.light-contrast * {
+	color: #5b6770 !important;
+	border-color: #5b6770 !important;
+}
+
+.banner-module-gradpath {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 490px;
+	background-position: center top;
+	font-size: 48px;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-module-gradpath:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 15px;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.hero-content {
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.hero-content h1 {
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.hero-content h4 {
+	text-align: center;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.no-gradiant:before {
+	content: '';
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: none;
+	opacity: 0;
+}
+
+.dark-contrast * {
+	color: #fff !important;
+	border-color: #fff !important;
+}
+
+.light-contrast * {
+	color: #5b6770 !important;
+	border-color: #5b6770 !important;
+}
+
+.banner-gray {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 40px 20px 80px 20px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	min-height: 200px;
+	text-align: center;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.banner-gray-gradpath h1 {
+	font-size: 50px;
+	font-weight: 500;
+	color: #c8102e !important;
+}
+
+.banner-module-story {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	min-height: 436px;
+	font-size: 48px;
+	background-position: center top;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner-module-story:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: -webkit-gradient(linear, right top, left top, from(#339d9c), to(#de4365));
+	background-image: -webkit-linear-gradient(right, #339d9c, #de4365);
+	background-image: -o-linear-gradient(right, #339d9c, #de4365);
+	background-image: linear-gradient(to left, #339d9c, #de4365);
+	opacity: .75;
+}
+
+.story-content {
+	margin-top: 15%;
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.story-content h2 {
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.story-content h4 {
+	font-size: 22px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.transparency {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0;
+	padding: 0 30px;
+	min-height: 436px;
+	background: #000;
+	background: rgba(0,0,0,0.2);
+}
+
+.banner-module-resources {
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-position: left top;
+	background-color: #ffffff;
+	background-repeat: no-repeat;
+	padding: 40px 30px 40px 60px;
+}
+
+.resources-content {
+	padding-right: 50px;
+	margin-bottom: 40px;
+}
+
+.resources-content h1 {
+	font-weight: 500;
+	text-align: left;
+}
+
+.resources-content p {
+	font-style: italic;
+	font-size: 17px;
+	line-height: 26px;
+	letter-spacing: 1px;
+}
+
+.bordered-white-container {
+	padding: 20px 25px;
+	background-color: rgba(255,255,255,0.9);
+	border: solid 7px #f6f3f3 !important;
+}
+
+.bordered-white-container h3 {
+	font-family: "Heebo",sans-serif;
+	font-weight: 400;
+	font-size: 36px;
+	text-align: left;
+	color: #5b6770;
+}
+
+.bordered-white-container h5 {
+	margin-top: 20px;
+	font-family: "Sanchez",serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+	color: #8c1125 !important;
+}
+
+.bordered-white-container p {
+	color: #495966 !important;
+}
+
+.bordered-white-container img {
+	border: solid 1px #efefef !important;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.list-circles ul {
+	list-style: none;
+	margin: 60px 20px 80px -60px;
+}
+
+.list-circles li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.list-circles li .circle {
+	padding: 15% 5%;
+	width: 105px;
+	min-height: 105px;
+	max-height: 105px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.list-circles li .circle .circle-icon {
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+.list-circles .circle h4 {
+	font-family: 'Sanchez', serif;
+	font-size: 9px;
+	text-align: center;
+	font-style: normal;
+	color: #96d0c8 !important;
+}
+
+.list-circles li .circle p {
+	font-family: 'Heebo', sans-serif;
+	font-size: 6px;
+	font-weight: 300;
+	text-align: center;
+	color: #96d0c8 !important;
+	font-style: normal;
+	margin-top: -5px;
 }
 
 .bulleted-list ul li {
 	position: relative;
 	margin: 20px 0;
 	padding-left: 38px;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 18px;
 	line-height: 1.33;
 	text-align: left;
@@ -1707,7 +2368,7 @@ footer .copyright {
 }
 
 .featured-bio .person-info .person-name {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 32px;
 	font-weight: 300;
 	line-height: 1.12;
@@ -1717,7 +2378,7 @@ footer .copyright {
 }
 
 .featured-bio .person-desc p {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 21px;
 	text-align: left;
 	font-style: italic;
@@ -1730,7 +2391,7 @@ footer .copyright {
 }
 
 .legal-disclaimer {
-	color: #006e74;
+	color: #006E74;
 }
 
 .promo-callout {
@@ -1741,7 +2402,7 @@ footer .copyright {
 	background-color: #006e74;
 }
 
-.promo-callout > div {
+.promo-callout>div {
 	margin: 0 12px;
 }
 
@@ -1760,7 +2421,7 @@ footer .copyright {
 
 .promo-callout h2 {
 	margin-top: 0;
-	color: #ffffff;
+	color: #fff;
 	text-align: left;
 }
 
@@ -1770,7 +2431,7 @@ footer .copyright {
 
 .promo-callout .content p {
 	margin: 0;
-	color: #ffffff;
+	color: #fff;
 	font-style: normal;
 	font-size: 18px;
 }
@@ -1873,7 +2534,7 @@ footer .copyright {
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin: 20px 0;
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 26px;
 	line-height: 1.15;
 	color: #323a41;
@@ -1889,7 +2550,7 @@ footer .copyright {
 	height: 22px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url('/images/chevrons.png');
+	background-image: url("https://dev.thriventstudentloanresources.com/images/chevrons.png");
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -1904,13 +2565,13 @@ footer .copyright {
 .qa-module .panel {
 	display: none;
 	padding: 0 18px;
-	background-color: #ffffff;
+	background-color: #fff;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
 }
 
 .qa-module .panel p {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 17px;
 	font-style: italic;
 	line-height: 1.53;
@@ -1974,12 +2635,12 @@ footer .copyright {
 
 .signup-form input[type="submit"]:hover {
 	background-color: #4A5965;
-	color: #ffffff !important;
+	color: #fff !important;
 	-webkit-box-shadow: none !important;
 	        box-shadow: none !important;
 }
 
-.signup-form label > span:first-of-type {
+.signup-form label>span:first-of-type {
 	font-family: 'Heebo', sans-serif !important;
 	font-size: 15px !important;
 	font-weight: 300 !important;
@@ -1988,7 +2649,7 @@ footer .copyright {
 }
 
 .signup-form .input select {
-	background: #ffffff;
+	background: #fff;
 	height: 42px;
 	width: 100%;
 	max-width: 100%;
@@ -2041,7 +2702,7 @@ footer .copyright {
 }
 
 .sources-citation h3 {
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 26px;
 	line-height: 1.15;
 	text-align: left;
@@ -2050,7 +2711,7 @@ footer .copyright {
 }
 
 .sources-citation hr {
-	border-top: 2px solid rgba(0, 124, 128, 0.26);
+	border-top: 2px solid rgba(0,124,128,0.26);
 }
 
 .sources-citation ol li {
@@ -2067,7 +2728,7 @@ footer .copyright {
 	position: absolute;
 	left: -26px;
 	line-height: 1.8;
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	color: #de4365;
 }
 
@@ -2087,12 +2748,12 @@ footer .copyright {
 
 .static-item-module img {
 	width: 100%;
-	border: 10px solid #f6f3f3;
+	border: 10px solid #F5F1F1;
 }
 
 .static-item-module h3 {
 	margin: 10px 0 30px;
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 22px;
 	line-height: 1.36;
 	text-align: left;
@@ -2100,11 +2761,84 @@ footer .copyright {
 }
 
 .static-item-module p {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: left;
 	color: #006e74;
+}
+
+.static-item-article {
+	padding: 50px 0;
+}
+
+.static-item-article img {
+	width: 100%;
+	border: 10px solid #F5F1F1;
+}
+
+.static-item-article .content-right {
+	padding-top: 30px;
+}
+
+.static-item-article .content-center {
+	padding-top: 15px;
+}
+
+.static-item-article h1 {
+	font-family: "Heebo",sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 40px;
+	color: #5b6770;
+}
+
+.static-item-article h3 {
+	margin: 10px 0 30px;
+	font-family: "Heebo",sans-serif;
+	font-size: 30px;
+	line-height: 1.36;
+	font-weight: 400;
+	text-align: center;
+	color: #323a41;
+}
+
+.static-item-article h4 {
+	margin: 10px 0 20px;
+	font-family: "Heebo",sans-serif;
+	font-size: 22px;
+	line-height: 1.36;
+	font-weight: 400;
+	text-align: center;
+	color: #323a41;
+}
+
+.static-item-article p {
+	font-family: "Sanchez",serif;
+	font-size: 17px;
+	line-height: 1.62;
+	font-weight: 400;
+	text-align: center;
+	color: #495966;
+	margin: 20px;
+}
+
+.static-item-article hr {
+	width: 120px;
+	border: solid 1px #7fcecd;
+}
+
+.static-item-article a {
+	font-style: normal;
+}
+
+.static-item-title h2 {
+	font-family: 'Sanchez', serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+	color: #8c1125 !important;
 }
 
 .tip-module {
@@ -2119,7 +2853,7 @@ footer .copyright {
 	padding: 30px 0 30px 20px;
 	border-top: 1px solid #96d0c8;
 	border-bottom: 1px solid #96d0c8;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 24px;
 	font-style: italic;
 	line-height: 1.08;
@@ -2141,7 +2875,7 @@ footer .copyright {
 	background-color: #de4365;
 	color: #ffffff;
 	border-radius: 50%;
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 30.4px;
 	font-style: italic;
 	text-align: center;
@@ -2153,18 +2887,17 @@ footer .copyright {
 	border-bottom: 2px solid #96d0c8;
 }
 
-.video-module .row > div {
+.video-module .row>div {
 	text-align: center;
 }
 
 .video-module iframe {
-	width: 100%;
-	border: 10px solid #f6f3f3;
+	border: 10px solid #e7e7e7;
 }
 
 .video-module h3 {
 	margin: 10px 0 30px;
-	font-family: 'Heebo', sans-serif;
+	font-family: "Heebo",sans-serif;
 	font-size: 22px;
 	line-height: 1.36;
 	text-align: left;
@@ -2172,7 +2905,7 @@ footer .copyright {
 }
 
 .video-module p {
-	font-family: 'Sanchez', serif;
+	font-family: "Sanchez",serif;
 	font-size: 16px;
 	line-height: 1.62;
 	text-align: left;
@@ -2254,21 +2987,21 @@ footer .copyright {
 	margin: 0 8px;
 	width: 11%;
 	height: 14px;
-	background: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/line.png) repeat-x;
+	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/line.png);
+	background-repeat: repeat-x;
 }
 
 .what-we-do {
 	padding: 50px 15px 40px 15px;
-	background: url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/overlaygradient.png') repeat-x, url('https://dev.thriventstudentloanresources.com/TSLR_Site/img/collegegraduatesceremonyoptimism.jpg') repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 .what-we-do h2,
 .what-we-do p {
-	color: #ffffff;
+	color: #fff;
 	text-align: center;
-	text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.5);
 }
 
 .what-we-do h2 {
@@ -2278,13 +3011,13 @@ footer .copyright {
 .what-we-do .default-button {
 	display: inline-block;
 	margin: 50px auto 40px;
-	border-color: #ffffff;
-	color: #ffffff;
+	border-color: #fff;
+	color: #fff;
 }
 
 .what-we-do .default-button:hover {
-	color: #006e74;
-	background-color: #ffffff;
+	color: #128482;
+	background-color: #fff;
 }
 
 .borrow-more {
@@ -2293,7 +3026,7 @@ footer .copyright {
 
 .borrow-more h2,
 .borrow-more p {
-	color: #006e74;
+	color: #006E74;
 	text-align: center;
 }
 
@@ -2309,7 +3042,7 @@ footer .copyright {
 
 .borrow-more .default-button:hover {
 	background-color: #4A5965;
-	color: #ffffff;
+	color: #fff;
 }
 
 .borrow-more .img-list-container {
@@ -2325,17 +3058,8 @@ footer .copyright {
 	margin: 24px 0;
 }
 
-.borrow-more .img-list-container img:nth-child(1) {
-	width: 26%;
-	margin-right: 4%;
-}
-
-.borrow-more .img-list-container img:nth-child(2) {
-	width: 40%;
-}
-
-.borrow-more .img-list-container img:nth-child(3) {
-	width: 30%;
+.borrow-more .img-list-container img {
+	width: 100%;
 }
 
 .ambassador-callout {
@@ -2352,7 +3076,7 @@ footer .copyright {
 }
 
 .ambassador-callout .default-button:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #4A5965;
 }
 
@@ -2377,7 +3101,7 @@ footer .copyright {
 	transition: all 0.3s ease;
 }
 
-.jump-to-wrapper .jump-to-buttons > span {
+.jump-to-wrapper .jump-to-buttons>span {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2407,8 +3131,8 @@ footer .copyright {
 	line-height: 1.1;
 	border-radius: 50%;
 	background-color: #074679;
-	border: solid 5px #ffffff;
-	color: #ffffff;
+	border: solid 5px #fff;
+	color: #fff;
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
@@ -2418,21 +3142,63 @@ footer .copyright {
 	display: block;
 }
 
-.btn {
-	padding: 9px 5px 7px;
-	color: #074679;
-	border: none;
-	font-size: inherit;
-	line-height: inherit;
-	font-style: inherit;
+.jump-to-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	margin-top: 24px;
 }
 
-.btn:hover {
+.jump-to-container .jump-to-label {
+	margin-right: 12px;
+	font-family: "Sanchez",serif;
+	font-size: 18px;
+	color: #006e74;
+}
+
+.jump-to-container .jump-buttons,
+.jump-to-container .jump-buttons span {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.jump-to-container .jump-buttons a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	margin: 0 8px;
+	height: 100px;
+	background-repeat: no-repeat;
+	font-family: "Heebo",sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: center;
 	color: #074679;
 }
 
-.default-button,
-.hs-form .hs-button {
+.jump-to-container .jump-buttons a:first-of-type {
+	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/icdollar.svg);
+	background-position: 50% 10px;
+	background-size: 80px;
+}
+
+.jump-to-container .jump-buttons a:last-of-type {
+	background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg);
+	background-position: 50% 0px;
+	background-size: 60px;
+}
+
+.default-button {
 	padding: 9px 25px 7px;
 	border: 2px solid #4A5965;
 	background: transparent;
@@ -2449,161 +3215,102 @@ footer .copyright {
 	font-family: 'Heebo', sans-serif;
 	font-size: 16px;
 	display: inline-block;
+	font-weight: 400;
+	font-style: normal;
 }
 
-.default-button:hover,
-.hs-form .hs-button:hover {
+.default-button:hover {
 	background-color: #4A5965;
-	color: #ffffff;
+	color: #fff;
 }
 
-.default-button.inverted,
-.hs-form .hs-button.inverted {
-	border: 2px solid #ffffff;
-	color: #ffffff;
+.default-button.inverted {
+	border: 2px solid #fff;
+	color: #fff;
 }
 
-.default-button.inverted:hover,
-.hs-form .hs-button.inverted:hover {
-	background-color: #ffffff;
-	color: #4A5965;
+.default-button.inverted:hover {
+	background-color: #fff;
+	color: #4A5965 !important;
 }
 
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript */
-
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	background: none;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
+.light-contrast .default-button.inverted {
+	color: #5b6770;
+	border-color: #5b6770;
 }
 
-pre[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-code[class*="language-"] ::-moz-selection {
-	text-shadow: none;
-	background: #b3d4fc;
+.light-contrast .default-button.inverted:hover {
+	background-color: #4A5965;
+	color: #fff !important;
 }
 
-pre[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-code[class*="language-"] ::selection {
-	text-shadow: none;
-	background: #b3d4fc;
+.hexagon {
+	background-image: url("/images/hexagon.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-/* Code blocks */
-
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
+.circle {
+	padding: 15% 5%;
+	width: 90%;
+	min-height: 300px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-khtml-border-radius: 50%;
+	background: #fff;
+	text-align: center;
+	margin: 0 auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
+.circle-1 {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.97)), to(rgba(255,255,255,0.97))),url("/images/one.png");
+	background: -webkit-linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.97)),url("/images/one.png");
+	background: -o-linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.97)),url("/images/one.png");
+	background: linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.97)),url("/images/one.png");
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-/* Inline code */
-
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
+.circle-icon {
+	width: 70px;
+	height: 70px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
+.circle-icon-1 {
+	background-image: url("https://www.thriventstudentloanresources.com/TSLR_Site/img/icfile.svg");
 }
 
-.token.punctuation {
-	color: #999;
+.circle-icon-2 {
+	background-image: url("https://dev.thriventstudentloanresources.com/TSLR_Site/img/iccoin.svg");
 }
 
-.namespace {
-	opacity: .7;
+.circle h4 {
+	font-family: "Sanchez",serif;
+	font-size: 24px;
+	text-align: center;
+	color: #006e74 !important;
 }
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #905;
+.circle p {
+	font-family: "Heebo",sans-serif;
+	font-size: 19px;
+	font-weight: 300;
+	text-align: center;
+	color: #006e74 !important;
+	font-style: normal;
+	margin-top: 10px;
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #a67f59;
-	background: rgba(255, 255, 255, 0.5);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
-}
-
-.token.function {
-	color: #DD4A68;
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #e90;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
+.breadcrumbs span,
+.breadcrumbs a {
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -2691,11 +3398,11 @@ pre[class*="language-"] {
 	height: 95px;
 }
 
-.header > .container {
+.header>.container {
 	width: 100%;
 }
 
-.nav > li > a {
+.nav>li>a {
 	padding: 15px 7px;
 }
 
@@ -2733,9 +3440,31 @@ body form .container {
 
 }
 
+@media (max-width: 1199px) {
+
+.list-circles ul {
+	margin: 30px 20px 30px -60px;
+}
+
+.list-circles li {
+	margin-right: 5px;
+}
+
+.list-circles .circle {
+	min-width: inherit;
+}
+
+.circle {
+	padding: 10% 5%;
+	min-width: 230px;
+	min-height: 240px;
+}
+
+}
+
 @media (max-width: 992px) {
 
-.nav-justified > li > a {
+.nav-justified>li>a {
 	font-size: 16px;
 }
 
@@ -2768,6 +3497,28 @@ body form .container {
 
 }
 
+@media (max-width: 991px) {
+
+.transparency {
+	width: 100%;
+}
+
+.banner-module-resources {
+	padding: 40px 20px 40px 20px;
+}
+
+.resources-content {
+	padding-right: 0px;
+}
+
+.circle {
+	padding: 10% 5%;
+	min-width: 230px;
+	min-height: 240px;
+}
+
+}
+
 @media (max-width: 768px) {
 
 body form .container .row {
@@ -2790,7 +3541,7 @@ h2 {
 h2.inverted {
 	font-weight: 500;
 	line-height: 1.25;
-	color: #ffffff;
+	color: #fff;
 }
 
 h3 {
@@ -2803,7 +3554,7 @@ h4 {
 }
 
 h4.inverted {
-	color: #ffffff;
+	color: #fff;
 }
 
 .do-not-borrow-self {
@@ -2836,8 +3587,14 @@ h4.inverted {
 	margin: 20px auto;
 }
 
-.contact-us .g-recaptcha > div {
+.contact-us .g-recaptcha>div {
 	margin: 0 auto;
+}
+
+.bor-rep-liv-giv .row {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .hero-left-content {
@@ -2867,7 +3624,7 @@ h4.inverted {
 	min-height: inherit;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .lending-principles h3 {
@@ -2982,11 +3739,11 @@ footer .footer-links-container ul li {
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding-top: inherit;
 	min-height: inherit;
-	background-color: #ffffff;
+	background-color: #fff;
 }
 
 .home-s1-col-height.right {
@@ -3048,6 +3805,17 @@ footer .footer-links-container ul li {
 	transition: all 0.3s ease;
 }
 
+.hexagon {
+	background-image: none;
+}
+
+.circle {
+	padding: 15% 5%;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 20px;
+}
+
 }
 
 @media (max-width: 425px) {
@@ -3079,17 +3847,6 @@ footer .linkedin-circled {
 .stepper-btn-container .img3 {
 	width: 50px;
 	height: 50px;
-}
-
-}
-
-@media (max-width: 321px) {
-
-.default-button,
-.hs-form .hs-button {
-	font-size: 12px;
-	padding-left: 15px;
-	padding-right: 15px;
 }
 
 }

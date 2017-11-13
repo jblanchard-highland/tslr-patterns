@@ -1,0 +1,137 @@
+.contact-us {
+
+  h2 {
+    margin-top: 70px;
+  }
+
+  .default-button:hover {
+    background-color: $btn-gray;
+    color: $white;
+  }
+
+  .contact-us-form {
+    margin-top: 40px;
+  }
+
+  .contact-label {
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: $bluegreen-2;
+  }
+
+  .glyphicon {
+    color: $bluegreen-2;
+  }
+
+  .form-group input {
+    margin-top: 5px;
+    height: 42px;
+    border: solid 1px $pale-teal;
+    border-radius: 0;
+  }
+
+  .form-group textarea {
+    margin-top: 5px;
+    border: solid 1px $pale-teal;
+    border-radius: 0;
+    resize: none;
+  }
+
+  .submit-section {
+    padding-left: 120px;
+  }
+
+  .privacy-policy-holder {
+    margin: 110px 0 120px 0;
+  }
+
+  .privacy-policy-holder p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px;
+    line-height: normal;
+    color: $bluegreen-2;
+  }
+
+  .privacy-policy-holder a {
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .privacy-policy {
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px;
+    line-height: normal;
+    color: $bluegreen-2;
+  }
+
+  .privacy-policy a {
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .default-button {
+    display: block;
+    margin-top: 40px;
+    padding: 9px 25px 7px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+  }
+
+  .receive-communications {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .receive-communications input {
+    margin: 0;
+  }
+
+  .receive-communications p {
+    margin: 0 0 0 16px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: $bluegreen-2;
+    font-style: normal;
+  }
+
+  .receive-communications a {
+    color: $bluegreen-2;
+  }
+
+  .receive-communications a:focus {
+    outline: none;
+  }
+
+
+  @media (max-width: 768px) {
+    h2 {
+      margin-top: 55px;
+      margin-bottom: 24px;
+    }
+
+    .submit-section {
+      padding-left: 15px;
+    }
+
+    .privacy-policy-holder {
+      margin: 15px 0;
+    }
+
+    .default-button {
+      margin: 20px auto;
+    }
+
+    .g-recaptcha > div {
+      margin: 0 auto;
+    }
+
+  }
+}
