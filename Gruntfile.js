@@ -46,4 +46,3 @@ module.exports = function (grunt) {
     grunt.registerTask(    'dist', ['default', 'cssmin', 'uglify:main', 'images']);
     grunt.registerTask( 'favicon', ['realFavicon']);
 };
-
