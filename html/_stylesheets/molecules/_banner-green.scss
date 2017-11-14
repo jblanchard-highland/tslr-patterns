@@ -41,5 +41,56 @@
     h5 {
        margin-bottom: 25px;
     }
+    
+    .lines {
+    position: absolute;
+    margin: 55px 0 0 200px;
+    }
   
 }
+
+
+@media (max-width: 1199px) {
+    
+    
+    .banner-green .circle h4 {
+    margin-top: 25px;
+    }
+    
+   .banner-green .lines {
+    position: absolute;   
+    margin: 60px 0 0 60px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    
+    
+    .banner-green .circle h4 {
+    margin-top: 30px;
+    }
+    
+     
+   .banner-green .lines {
+    position: absolute;
+    margin: 55px 0 0 8px;
+    letter-spacing: -1px;   
+    }
+     
+}
+
+
+@media (max-width: 767px) {
+     
+   .banner-green .lines {
+    position: absolute;
+    margin: 55px 0 0 8px;
+    letter-spacing: -1px;   
+    }
+     
+}
+
+
+

@@ -2383,6 +2383,11 @@ footer .copyright {
 	margin-bottom: 25px;
 }
 
+.banner-green .lines {
+	position: absolute;
+	margin: 55px 0 0 200px;
+}
+
 .banner-gray-gradpath h1 {
 	font-size: 50px;
 	font-weight: 500;
@@ -3829,6 +3834,15 @@ body form .container {
 
 @media (max-width: 1199px) {
 
+.banner-green .circle h4 {
+	margin-top: 25px;
+}
+
+.banner-green .lines {
+	position: absolute;
+	margin: 60px 0 0 60px;
+}
+
 .list-circles ul {
 	margin: 30px 20px 30px -60px;
 }
@@ -3885,6 +3899,16 @@ body form .container {
 }
 
 @media (max-width: 991px) {
+
+.banner-green .circle h4 {
+	margin-top: 30px;
+}
+
+.banner-green .lines {
+	position: absolute;
+	margin: 55px 0 0 8px;
+	letter-spacing: -1px;
+}
 
 .transparency {
 	background: none;
@@ -4193,6 +4217,12 @@ footer .footer-links-container ul li {
 .helping-you .video-holder {
 	padding: 0 10px;
 	background: transparent;
+}
+
+.banner-green .lines {
+	position: absolute;
+	margin: 55px 0 0 8px;
+	letter-spacing: -1px;
 }
 
 .banner-module-story {
