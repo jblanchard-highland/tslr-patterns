@@ -24,9 +24,10 @@
 // background image (numbers) for every circle, total must be 7
 
 .circle-1 {
-    background: linear-gradient(rgba(255,255,255,.97), rgba(255,255,255,.97)), url("/images/one.png");
-    background-size:contain;
-    background-repeat: no-repeat;
+  background: url(https://dev.thriventstudentloanresources.com/ResourceLink/264/one.png), linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97));
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 

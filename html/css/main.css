@@ -1737,6 +1737,72 @@ footer .copyright {
 	margin-left: 50px;
 }
 
+.registration-complete {
+	margin-top: 70px;
+}
+
+.registration-complete h2 {
+	margin-bottom: 50px;
+}
+
+.registration-complete h3 {
+	margin-bottom: 30px;
+}
+
+.registration-complete .circle-steps-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin-bottom: 70px;
+}
+
+.registration-complete .circle-steps-wrapper .circle-step {
+	list-style: none;
+}
+
+.registration-complete .circle-steps-wrapper .circle-step a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 20px;
+	padding-top: 40px;
+	width: 232px;
+	height: 232px;
+	border-radius: 50%;
+	background-color: #f6f3f3;
+	text-decoration: none;
+}
+
+.registration-complete .circle-steps-wrapper .circle-step a img {
+	max-width: 50px;
+	margin-bottom: 15px;
+}
+
+.registration-complete .circle-steps-wrapper .circle-step a p {
+	text-align: center;
+	font-size: 24px;
+	color: #006e74;
+}
+
+.registration-complete .circle-steps-wrapper .circle-step a:hover p {
+	text-decoration: underline;
+}
+
 .home-s1-col-height {
 	min-height: 500px;
 }
@@ -2197,16 +2263,6 @@ footer .copyright {
 	left: 0;
 	background-image: none;
 	opacity: 0;
-}
-
-.dark-contrast * {
-	color: #ffffff !important;
-	border-color: #ffffff !important;
-}
-
-.light-contrast * {
-	color: #5b6770 !important;
-	border-color: #5b6770 !important;
 }
 
 .banner-gray {
@@ -3525,12 +3581,13 @@ footer .copyright {
 }
 
 .circle-1 {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.97)), to(rgba(255, 255, 255, 0.97))), url("/images/one.png");
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url("/images/one.png");
-	background: -o-linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url("/images/one.png");
-	background: linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)), url("/images/one.png");
+	background: url(https://dev.thriventstudentloanresources.com/ResourceLink/264/one.png), -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.97)), to(rgba(255, 255, 255, 0.97)));
+	background: url(https://dev.thriventstudentloanresources.com/ResourceLink/264/one.png), -webkit-linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97));
+	background: url(https://dev.thriventstudentloanresources.com/ResourceLink/264/one.png), -o-linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97));
+	background: url(https://dev.thriventstudentloanresources.com/ResourceLink/264/one.png), linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97));
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .circle-icon {

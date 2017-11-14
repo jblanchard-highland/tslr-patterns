@@ -1,0 +1,58 @@
+.registration-complete {
+  margin-top: 70px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  .circle-steps-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 70px;
+
+    .circle-step {
+      list-style: none;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px;
+        padding-top: 40px;
+
+        width: 232px;
+        height: 232px;
+
+        border-radius: 50%;
+
+        background-color: $pale-gray;
+        text-decoration: none;
+
+        img {
+          max-width: 50px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          text-align: center;
+          font-size: 24px;
+          color: $bluegreen-2;
+        }
+
+        &:hover {
+          p {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
