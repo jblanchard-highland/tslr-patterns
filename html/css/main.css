@@ -407,6 +407,14 @@ a:hover {
 	text-align: center !important;
 }
 
+.two-halves > .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
 .home-s5-col-height {
 	min-height: 400px;
 }

@@ -1,3 +1,10 @@
+.two-halves {
+  > .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .home-s5-col-height {
   min-height: 400px;
 
