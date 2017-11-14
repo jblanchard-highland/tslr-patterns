@@ -20,6 +20,10 @@
     justify-content: center;
   }
 
+  .community-icon {
+    max-width: 145px;
+  }
+
   .community {
 
     &-title {
@@ -35,10 +39,6 @@
         font-weight: 600;
       }
     }
-  }
-
-  .default-button {
-    margin: 20px auto 30px;
   }
 
   p {

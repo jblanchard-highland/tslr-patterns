@@ -1989,6 +1989,10 @@ footer .copyright {
 	        justify-content: center;
 }
 
+.community-section .community-icon {
+	max-width: 145px;
+}
+
 .community-section .community-title {
 	margin: 35px 0;
 	color: #ffffff;
@@ -2001,10 +2005,6 @@ footer .copyright {
 
 .community-section .community-content.bold {
 	font-weight: 600;
-}
-
-.community-section .default-button {
-	margin: 20px auto 30px;
 }
 
 .community-section p {
