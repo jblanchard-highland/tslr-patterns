@@ -9,7 +9,7 @@ module.exports = function (grunt) {
 
     // path to tasks and global variables
     var options = {
-        // tasks pasth
+        // tasks path
         config : {
             src: "grunt/*.*"
         },
@@ -36,7 +36,6 @@ module.exports = function (grunt) {
     var configs = require( 'load-grunt-configs' )( grunt, options);
 
     grunt.initConfig( configs );
-    
 
     grunt.registerTask( 'default', ['styles', 'scripts', 'html', 'copy']);
     grunt.registerTask(   'serve', ['browserSync', 'watch']);
@@ -45,5 +44,4 @@ module.exports = function (grunt) {
     grunt.registerTask(    'html', ['clean:pages', 'compile-handlebars:main', 'prettify']);
     grunt.registerTask(  'images', ['imagemin']);
     grunt.registerTask(    'dist', ['default', 'cssmin', 'uglify:main', 'images']);
-    grunt.registerTask( 'favicon', ['realFavicon']);
 };
