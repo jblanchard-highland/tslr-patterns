@@ -3209,6 +3209,42 @@ footer .copyright {
 	margin: 20px;
 }
 
+.find-students {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.find-students h2 {
+	margin-bottom: 34px;
+	text-align: center;
+}
+
+.find-students .find-students-search {
+	text-align: center;
+}
+
+.find-students .find-students-search p {
+	margin: 0;
+	font-family: "Heebo", sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	text-align: left;
+	font-style: normal;
+	color: #006e74;
+}
+
+.find-students .find-students-search input {
+	margin-right: 30px;
+	height: 44px;
+	width: 360px;
+	padding: 8px;
+	font-weight: 400;
+	font-family: "Heebo", sans-serif;
+	font-size: 15px;
+	border: 1px solid #96d0c8;
+	outline: none;
+}
+
 .stepper-btn-container {
 	position: relative;
 	display: -webkit-box;
@@ -3578,6 +3614,10 @@ footer .copyright {
 	background: #fff;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.circle a {
+	text-decoration: none;
 }
 
 .circle-1 {
