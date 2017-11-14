@@ -1803,6 +1803,24 @@ footer .copyright {
 	text-decoration: underline;
 }
 
+.students-gradpath {
+	padding-top: 90px;
+}
+
+.students-gradpath .students-progress {
+	height: 29px;
+	margin: 20px 10px;
+	padding: 0 10px;
+	color: #8c1125;
+	background-color: #f6f3f3;
+}
+
+.students-gradpath .students-progress-value {
+	font-size: 20px;
+	color: #6D89A1;
+	text-align: center;
+}
+
 .home-s1-col-height {
 	min-height: 500px;
 }
@@ -1918,7 +1936,7 @@ footer .copyright {
 }
 
 .apply-section {
-	padding: 50px 15px 40px 15px;
+	padding: 50px 15px 60px 15px;
 	background-color: #ffffff;
 }
 
@@ -1945,6 +1963,10 @@ footer .copyright {
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin: 16px 0 35px;
+}
+
+.apply-section .stepper-btn-container img {
+	width: 100%;
 }
 
 .apply-section .stepper-btn-container .line {

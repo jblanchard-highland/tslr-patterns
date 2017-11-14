@@ -1,6 +1,6 @@
 // TODO: change homepage apply section class to "apply-section"
 .apply-section {
-  padding: 50px 15px 40px 15px;
+  padding: 50px 15px 60px 15px;
   background-color: $white;
 
   h2 {
@@ -23,6 +23,10 @@
     align-items: center;
 
     margin: 16px 0 35px;
+
+    img {
+      width: 100%;
+    }
 
     .line {
       background-image: url(https://dev.thriventstudentloanresources.com/TSLR_Site/img/linered.png);
