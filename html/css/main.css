@@ -300,6 +300,16 @@ a:hover {
 	float: none;
 }
 
+.dark-contrast * {
+	color: #ffffff !important;
+	border-color: #ffffff !important;
+}
+
+.light-contrast * {
+	color: #5b6770 !important;
+	border-color: #5b6770 !important;
+}
+
 .module {
 	margin: 30px 0;
 }
@@ -2223,16 +2233,6 @@ footer .copyright {
 	opacity: 0;
 }
 
-.dark-contrast * {
-	color: #ffffff !important;
-	border-color: #ffffff !important;
-}
-
-.light-contrast * {
-	color: #5b6770 !important;
-	border-color: #5b6770 !important;
-}
-
 .banner-module-gradpath {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -3575,6 +3575,7 @@ footer .copyright {
 	outline: none;
 	background: transparent;
 	cursor: pointer;
+	white-space: normal;
 }
 
 .btn:hover {
@@ -4219,14 +4220,30 @@ footer .footer-links-container ul li {
 	background: transparent;
 }
 
-.banner-green .lines {
-	position: absolute;
-	margin: 55px 0 0 8px;
-	letter-spacing: -1px;
+.banner-green .circle {
+	padding: 35px 5px;
+	width: 140px;
+	height: 140px;
+	margin-top: 60px;
+}
+
+.banner-green .circle {
+	padding: 35px 5px;
+	width: 140px;
+	height: 140px;
+}
+
+.banner-green .circle h4 {
+	margin-top: 5px;
 }
 
 .banner-module-story {
 	background-position: left -350px top 1px;
+}
+
+.find-students .find-students-search input {
+	margin-right: 0px;
+	width: 280px;
 }
 
 .what-we-do {
@@ -4250,6 +4267,10 @@ footer .footer-links-container ul li {
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+}
+
+.btn {
+	margin-top: 20px;
 }
 
 .hexagon {

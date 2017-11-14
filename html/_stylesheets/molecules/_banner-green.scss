@@ -83,11 +83,27 @@
 
 
 @media (max-width: 767px) {
+    
+    
+        .banner-green .circle {
+        padding: 35px 5px;    
+        width: 140px;
+        height: 140px;
+        margin-top: 60px;    
+    }
+    
+    
+    .banner-green .circle {
+        padding: 35px 5px;    
+        width: 140px;
+        height: 140px;
+    }
+    
+
+    
      
-   .banner-green .lines {
-    position: absolute;
-    margin: 55px 0 0 8px;
-    letter-spacing: -1px;   
+    .banner-green .circle h4 {
+        margin-top: 5px;
     }
      
 }
