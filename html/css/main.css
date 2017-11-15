@@ -2301,31 +2301,31 @@ footer .copyright {
 	opacity: .75;
 }
 
-.story-content {
+.banner-module-story .story-content {
 	margin-top: 15%;
 	padding: 30px 40px;
 	text-align: center;
 }
 
-.story-content h2 {
+.banner-module-story .story-content h2 {
 	font-size: 26px;
 	letter-spacing: 1px;
 }
 
-.story-content h4 {
+.banner-module-story .story-content h4 {
 	font-size: 22px;
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: 1px;
 }
 
-.transparency {
+.banner-module-story .transparency {
+	width: 100%;
+	min-height: 436px;
 	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
 	background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
 	background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
 	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
-	width: 100%;
-	min-height: 436px;
 }
 
 .banner-about-gradpath {
@@ -3787,12 +3787,12 @@ body form .container {
 	letter-spacing: -1px;
 }
 
-.transparency {
-	background: none;
-}
-
 .banner-module-story {
 	background-position: left top;
+}
+
+.banner-module-story .transparency {
+	background: none;
 }
 
 .banner-module-resources {
@@ -3928,6 +3928,14 @@ h4.inverted {
 
 .banner-gray-gradpath h1 {
 	font-size: 34px;
+}
+
+.banner-module-story {
+	background-position: left -350px top 1px;
+}
+
+.banner-module-story .story-content {
+	padding: 0;
 }
 
 .static-item-article {
@@ -4130,10 +4138,6 @@ footer .footer-links-container ul li {
 	margin-top: 5px;
 }
 
-.banner-module-story {
-	background-position: left -350px top 1px;
-}
-
 .find-students .find-students-search input {
 	margin-right: 0px;
 	width: 280px;
@@ -4167,7 +4171,6 @@ footer .footer-links-container ul li {
 }
 
 .circle {
-	padding: 9% 5%;
 	width: 200px;
 	height: 200px;
 	margin-bottom: 20px;
