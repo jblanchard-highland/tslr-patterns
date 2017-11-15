@@ -4214,6 +4214,34 @@ footer .linkedin-circled {
 	max-width: 110px;
 }
 
+.header-gradpath .container .nav-gradpath {
+	width: 100%;
+	margin: 5px 0 0 0;
+}
+
+.header-gradpath .container .nav-gradpath li {
+	text-align: left;
+	width: 27%;
+}
+
+.header-gradpath .container .nav-gradpath li:nth-child(2) {
+	text-align: center;
+}
+
+.header-gradpath .container .nav-gradpath li:last-child {
+	margin-right: 0;
+	text-align: right;
+	width: 44%;
+}
+
+.header-gradpath .container .nav-gradpath li a {
+	font-size: 16px;
+}
+
+.header-gradpath .container .signup-gradpath .default-button {
+	padding: 5px 12px 3px;
+}
+
 }
 
 @media (max-width: 400px) {
