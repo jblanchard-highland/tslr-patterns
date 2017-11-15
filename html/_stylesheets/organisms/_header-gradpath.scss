@@ -14,7 +14,8 @@
       padding: 13px;
 
       img {
-        max-width: 213px;
+        max-width: 200px;
+        transition: all 0.5s ease;
       }
     }
 
@@ -44,9 +45,14 @@
     .signup-gradpath {
       order: 3;
       margin-left: 50px;
+
+      .btn {
+        margin-top: 0;
+      }
     }
 
     @media (max-width: 890px) {
+
       .nav-gradpath {
         order: 3;
         margin: 0 10px;
@@ -55,6 +61,28 @@
       .signup-gradpath {
         order: 2;
         margin-left: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-gradpath {
+        margin: 20px 10px;
+
+        li {
+          text-align: center;
+
+          a {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 425px) {
+      .logo-gradpath {
+        img {
+          max-width: 110px;
+        }
       }
     }
   }

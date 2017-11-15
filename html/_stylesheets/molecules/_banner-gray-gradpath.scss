@@ -1,10 +1,15 @@
 .banner-gray-gradpath {
-	
-    h1 {
-	font-size: 50px;
-    font-weight: 500;
-    color: $thrivent-red!important;
-    }
 
+  h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: $thrivent-red !important;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 34px;
+    }
+  }
 }
 

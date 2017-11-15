@@ -1581,7 +1581,10 @@ footer .copyright {
 }
 
 .header-gradpath .container .logo-gradpath img {
-	max-width: 213px;
+	max-width: 200px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .header-gradpath .container .nav-gradpath {
@@ -1616,6 +1619,10 @@ footer .copyright {
 	    -ms-flex-order: 3;
 	        order: 3;
 	margin-left: 50px;
+}
+
+.header-gradpath .container .signup-gradpath .btn {
+	margin-top: 0;
 }
 
 .registration-complete {
@@ -1686,6 +1693,10 @@ footer .copyright {
 
 .students-gradpath {
 	padding-top: 90px;
+}
+
+.students-gradpath h2 {
+	text-align: center;
 }
 
 .students-gradpath .students-progress {
@@ -2130,18 +2141,17 @@ footer .copyright {
 	opacity: .75;
 }
 
-.hero-content {
+.banner-module-gradpath .hero-content {
 	padding: 30px 40px;
 	text-align: center;
 }
 
-.hero-content h1 {
+.banner-module-gradpath .hero-content h1 {
 	font-weight: 400;
-	text-align: center;
 	margin-bottom: 20px;
 }
 
-.hero-content h4 {
+.banner-module-gradpath .hero-content h4 {
 	text-align: center;
 	font-weight: 400;
 	line-height: 30px;
@@ -3116,6 +3126,7 @@ footer .copyright {
 .find-students h2 {
 	margin-bottom: 34px;
 	text-align: center;
+	font-weight: 300;
 }
 
 .find-students .find-students-search {
@@ -3891,12 +3902,36 @@ h4.inverted {
 	        justify-content: center;
 }
 
+.header-gradpath .container .nav-gradpath {
+	margin: 20px 10px;
+}
+
+.header-gradpath .container .nav-gradpath li {
+	text-align: center;
+}
+
+.header-gradpath .container .nav-gradpath li a {
+	font-size: 17px;
+}
+
 .hero-left-content {
 	padding: 100px 0;
 }
 
 .hero-right-content {
 	padding: 24px 0;
+}
+
+.banner-module-gradpath .hero-content {
+	padding: 0;
+}
+
+.banner-gray-gradpath h1 {
+	font-size: 34px;
+}
+
+.static-item-article {
+	padding: 20px 0;
 }
 
 .about-content {
@@ -4132,10 +4167,19 @@ footer .footer-links-container ul li {
 }
 
 .circle {
-	padding: 15% 5%;
-	width: 240px;
-	height: 240px;
+	padding: 9% 5%;
+	width: 200px;
+	height: 200px;
 	margin-bottom: 20px;
+}
+
+.circle-icon {
+	width: 50px;
+	height: 50px;
+}
+
+.circle h4 {
+	font-size: 17px;
 }
 
 }
@@ -4161,6 +4205,10 @@ footer .twitter-circled,
 footer .linkedin-circled {
 	width: 22px;
 	height: 22px;
+}
+
+.header-gradpath .container .logo-gradpath img {
+	max-width: 110px;
 }
 
 }
