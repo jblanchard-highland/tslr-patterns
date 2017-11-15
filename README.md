@@ -1,4 +1,4 @@
-# TSLT Components Guide
+# TSLR Components Guide
 Front-end project to support html elements to be developed in Outsystems
 
 ## Components
