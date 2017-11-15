@@ -1,4 +1,5 @@
 .header-gradpath {
+    
   background-color: $white-smoke;
 
   .container {
@@ -79,11 +80,42 @@
     }
 
     @media (max-width: 425px) {
-      .logo-gradpath {
-        img {
-          max-width: 110px;
+        
+       .logo-gradpath {
+         img {
+           max-width: 110px;
+         }
         }
-      }
+        
+        .nav-gradpath {
+        width: 100%;    
+        margin: 5px 0 0 0;
+        }
+        
+        .nav-gradpath li {   
+            text-align: left;
+            width: 27%;
+        }
+
+        .nav-gradpath li:nth-child(2) {   
+            text-align: center;
+        }
+
+
+        .nav-gradpath li:last-child {
+            margin-right: 0;    
+            text-align: right;
+            width: 44%;
+        }
+
+        .nav-gradpath li a {
+        font-size: 16px;
+        }
+
+        .signup-gradpath .default-button {
+            padding: 5px 12px 3px;
+        } 
+        
     }
   }
 }
