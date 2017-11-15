@@ -1945,6 +1945,7 @@ footer .copyright {
 }
 
 .helping-you iframe {
+	width: 100%;
 	border: 10px solid #e7e7e7;
 }
 
@@ -3496,7 +3497,7 @@ footer .copyright {
 }
 
 .hexagon {
-	background-image: url("/images/hexagon.png");
+	background-image: url("../images/hexagon.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -3622,7 +3623,8 @@ footer .copyright {
 
 .helping-you .description,
 .helping-you .video-holder {
-	padding: 20px 15px 20px 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 .helping-you .vertical-table-row {
@@ -3817,11 +3819,6 @@ body form .container {
 }
 
 @media (max-width: 768px) {
-
-body form .container .row {
-	padding-left: 12px;
-	padding-right: 12px;
-}
 
 h1 {
 	font-size: 36px;
@@ -4067,15 +4064,13 @@ footer .footer-links-container ul li {
 .helping-you .description,
 .helping-you .video-holder {
 	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .helping-you .video-holder {
 	padding: 0;
 	background-color: #f6f3f3;
-}
-
-.helping-you .description {
-	padding: 10px 10px 30px 10px;
 }
 
 .helping-you .video-holder {
@@ -4138,8 +4133,8 @@ footer .footer-links-container ul li {
 
 .circle {
 	padding: 15% 5%;
-	width: 300px;
-	height: 300px;
+	width: 240px;
+	height: 240px;
 	margin-bottom: 20px;
 }
 
