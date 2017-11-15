@@ -2371,6 +2371,10 @@ footer .copyright {
 	color: #ffffff;
 }
 
+.banner-simple-gradpath {
+	min-height: 200px;
+}
+
 .banner-module-resources {
 	background-size: cover;
 	display: -webkit-box;
