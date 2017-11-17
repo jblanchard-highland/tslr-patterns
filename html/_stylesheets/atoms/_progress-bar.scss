@@ -1,0 +1,33 @@
+.custom-progress {   
+
+    .progress {
+    height: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: $pale-gray;    
+    border-radius: 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;   
+    }
+    
+    .progress-bar {
+    float: left;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1px; 
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+    }
+    
+    .progress-bar-success {
+    background-image: url(../images/bar.png);
+    background-size: contain;    
+    background-repeat:repeat-x;
+    padding:5px 5px;
+    background-origin: content-box;    
+    background-color: transparent;
+    transform: skewX(-18deg);
+    }
+    
+} 

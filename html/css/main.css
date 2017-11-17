@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500|Sanchez:300,400,400i");body {
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500|Sanchez:400,400i");body {
 	font-family: "Sanchez", serif;
 	font-size: 19px;
 	text-align: left;
@@ -1524,6 +1524,16 @@ footer .copyright {
 	font-family: "Heebo", sans-serif;
 }
 
+.form-wrapper .input-row textarea {
+	height: 350px;
+	padding: 15px;
+	border: solid 0.5px #96d0c8;
+	outline: none;
+	font-size: 15px;
+	font-family: "Heebo", sans-serif;
+	color: #006e74 !important;
+}
+
 .form-wrapper .toggle-password {
 	position: absolute;
 	left: 270px;
@@ -2919,20 +2929,27 @@ footer .copyright {
 	min-height: 436px;
 	font-size: 48px;
 	background-position: center top;
-	background-color: #f6f3f3;
+	background-color: #e7e7e7;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.campaign-story .form-wrapper {
+	margin: 40px 40px 20px 20px;
+}
+
+.campaign-story .form-wrapper h2 {
+	font-weight: 400;
+}
+
 .campaign-story .story-content {
-	margin-top: 15%;
-	padding: 30px 40px;
-	text-align: center;
+	padding: 30px 20px 30px 40px;
 }
 
 .campaign-story .story-content h2 {
 	font-size: 26px;
 	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
 
 .campaign-story .story-content h4 {
@@ -2942,13 +2959,24 @@ footer .copyright {
 	letter-spacing: 1px;
 }
 
+.campaign-story .story-content ol {
+	margin: 20px 0 20px -20px;
+}
+
+.campaign-story .story-content li p {
+	margin: 15px 0 15px 0px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #006e74;
+}
+
 .campaign-story .transparency {
 	width: 100%;
 	min-height: 436px;
-	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
-	background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
-	background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
-	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
+	background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);
+	background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);
+	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);
 }
 
 .sources-citation h3 {
@@ -3666,6 +3694,38 @@ a.circle-link:hover {
 	font-weight: 300;
 }
 
+.custom-progress .progress {
+	height: 30px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #f6f3f3;
+	border-radius: 1px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.custom-progress .progress-bar {
+	float: left;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.custom-progress .progress-bar-success {
+	background-image: url(../images/bar.png);
+	background-size: contain;
+	background-repeat: repeat-x;
+	padding: 5px 5px;
+	background-origin: content-box;
+	background-color: transparent;
+	-webkit-transform: skewX(-18deg);
+	    -ms-transform: skewX(-18deg);
+	        transform: skewX(-18deg);
+}
+
 @media (min-width: 768px) {
 
 .pull-right-sm {
@@ -4032,7 +4092,7 @@ h4.inverted {
 }
 
 .banner-module-story .story-content {
-	padding: 0;
+	padding: 25px;
 }
 
 .campaign-story {

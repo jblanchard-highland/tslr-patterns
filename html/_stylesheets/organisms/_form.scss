@@ -44,6 +44,16 @@
         font-size: 15px;
         font-family: $heading-font;
   }
+    
+  .input-row textarea {
+        height: 350px;
+        padding: 15px;
+        border: solid 0.5px $pale-teal;
+        outline: none;
+        font-size: 15px;
+        font-family: $heading-font;
+        color: $bluegreen-2!important;
+  }    
 
   .toggle-password {
         position: absolute;
