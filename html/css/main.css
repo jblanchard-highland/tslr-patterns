@@ -1554,6 +1554,13 @@ footer .copyright {
 	margin-top: 30px;
 }
 
+.form-wrapper .checkbox label,
+.form-wrapper .radio label {
+	font-size: 18px;
+	font-style: italic;
+	color: #006e74;
+}
+
 .header-gradpath {
 	background-color: #F7F5F5;
 }
@@ -2874,6 +2881,76 @@ footer .copyright {
 	margin-top: 20px;
 }
 
+.create-campaign {
+	margin: 40px 20px;
+}
+
+.create-campaign h1 {
+	text-align: center !important;
+}
+
+.create-campaign h2 {
+	font-size: 50px;
+	margin-bottom: 40px;
+	color: #006e74;
+}
+
+.create-campaign h2 span {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+.create-campaign hr {
+	width: 100% !important;
+	margin: 20px 0;
+}
+
+.campaign-story {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	position: relative;
+	min-height: 436px;
+	font-size: 48px;
+	background-position: center top;
+	background-color: #f6f3f3;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.campaign-story .story-content {
+	margin-top: 15%;
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.campaign-story .story-content h2 {
+	font-size: 26px;
+	letter-spacing: 1px;
+}
+
+.campaign-story .story-content h4 {
+	font-size: 22px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.campaign-story .transparency {
+	width: 100%;
+	min-height: 436px;
+	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4)));
+	background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+	background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 100%);
+}
+
 .sources-citation h3 {
 	font-family: "Heebo", sans-serif;
 	font-size: 26px;
@@ -3518,6 +3595,14 @@ footer .copyright {
 	background-position: center;
 }
 
+a.circle-link {
+	text-decoration: none;
+}
+
+a.circle-link:hover {
+	text-decoration: underline;
+}
+
 .circle {
 	padding: 15% 5%;
 	width: 300px;
@@ -3529,10 +3614,6 @@ footer .copyright {
 	background: #fff;
 	text-align: center;
 	margin: 0 auto;
-}
-
-.circle a {
-	text-decoration: none;
 }
 
 .circle-1 {
@@ -3807,10 +3888,18 @@ body form .container {
 	padding-right: 0px;
 }
 
+.campaign-story {
+	background-position: left top;
+}
+
+.campaign-story .transparency {
+	background: none;
+}
+
 .circle {
-	padding: 10% 5%;
-	width: 230px;
-	height: 230px;
+	padding: 5% 5%;
+	width: 240px;
+	height: 240px;
 }
 
 }
@@ -3943,6 +4032,14 @@ h4.inverted {
 }
 
 .banner-module-story .story-content {
+	padding: 0;
+}
+
+.campaign-story {
+	background-position: left -350px top 1px;
+}
+
+.campaign-story .story-content {
 	padding: 0;
 }
 
@@ -4178,6 +4275,17 @@ footer .footer-links-container ul li {
 	background-image: none;
 }
 
+.hexagon .circle {
+	width: 230px;
+	height: 230px;
+	margin-bottom: 20px;
+}
+
+.hexagon .circle-icon {
+	width: 30px;
+	height: 30px;
+}
+
 .circle {
 	width: 200px;
 	height: 200px;
@@ -4190,7 +4298,7 @@ footer .footer-links-container ul li {
 }
 
 .circle h4 {
-	font-size: 17px;
+	font-size: 20px;
 }
 
 }
