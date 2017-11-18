@@ -3721,9 +3721,14 @@ a.circle-link:hover {
 	padding: 5px 5px;
 	background-origin: content-box;
 	background-color: transparent;
-	-webkit-transform: skewX(-18deg);
-	    -ms-transform: skewX(-18deg);
-	        transform: skewX(-18deg);
+	-webkit-animation: 5s ease-out 0s 1 slideInFromLeft;
+	        animation: 5s ease-out 0s 1 slideInFromLeft;
+	-ms-transform: skewX(-20deg);
+	    transform: skewX(-20deg);
+	-webkit-transform: skewX(-20deg);
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
 }
 
 @media (min-width: 768px) {
@@ -4432,6 +4437,38 @@ footer .linkedin-circled {
 .stepper-btn-container .img3 {
 	width: 50px;
 	height: 50px;
+}
+
+}
+
+@-webkit-keyframes slideInFromLeft {
+
+0% {
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+}
+
+100% {
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+	transform: skewX(25deg);
+	-webkit-transform: skewX(25deg);
+}
+
+}
+
+@keyframes slideInFromLeft {
+
+0% {
+	-webkit-transform: translateX(-100%);
+	        transform: translateX(-100%);
+}
+
+100% {
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+	transform: skewX(25deg);
+	-webkit-transform: skewX(25deg);
 }
 
 }
