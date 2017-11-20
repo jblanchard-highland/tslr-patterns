@@ -1,43 +1,47 @@
 .featured-bio {
-	display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-	.person-info {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+  .person-info {
+    text-align: center;
 
-		margin-right: 48px;
+    img {
+      margin-bottom: 12px;
+      width: 100%;
+      border-radius: 50%;
+    }
 
-		img {
-			margin-bottom: 12px;
-			width: 210px;
-			border-radius: 50%;
-		}
+    .person-name {
+      font-family: $heading-font;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 1.12;
+      font-style: inherit;
+      color: rgb(51, 58, 64);
+    }
+  }
 
-		.person-name {
-			font-family: $heading-font;
-		    font-size: 32px;
-		    font-weight: 300;
-		    line-height: 1.12;
-		    text-align: left;
-		    font-style: inherit;
-		    color: rgb(51, 58, 64);
-		}
-	}
+  .person-desc {
+    p {
+      font-family: $content-font;
+      font-size: 21px;
+      text-align: left;
+      font-style: italic;
+      color: rgb(0, 110, 116);
 
-	.person-desc {
-		p {
-			font-family: $content-font;
-		    font-size: 21px;
-		    text-align: left;
-		    font-style: italic;
-		    color: rgb(0, 110, 116);
+      a {
+        font-size: inherit;
+        text-align: inherit;
+      }
+    }
+  }
 
-		    a {
-		    	font-size: inherit;
-		    	text-align: inherit;
-		    }
-	    }
-	}	
+  @media (max-width: 768px) {
+    .person-info {
+      img {
+        width: 50%;
+      }
+    }
+  }
+
 }

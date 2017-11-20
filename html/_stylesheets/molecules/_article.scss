@@ -1,6 +1,16 @@
 .article-module {
+
   img {
     width: 100%;
     border: 10px solid #f4f4f4;
+  }
+
+  @media (max-width: 768px) {
+    > .row {
+      > div {
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+    }
   }
 }

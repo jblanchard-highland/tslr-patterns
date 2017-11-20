@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500|Sanchez:400,400i");body {
+@import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500|Sanchez:300,400,400i");body {
 	font-family: "Sanchez", serif;
 	font-size: 19px;
 	text-align: left;
@@ -1524,16 +1524,6 @@ footer .copyright {
 	font-family: "Heebo", sans-serif;
 }
 
-.form-wrapper .input-row textarea {
-	height: 350px;
-	padding: 15px;
-	border: solid 0.5px #96d0c8;
-	outline: none;
-	font-size: 15px;
-	font-family: "Heebo", sans-serif;
-	color: #006e74 !important;
-}
-
 .form-wrapper .toggle-password {
 	position: absolute;
 	left: 270px;
@@ -1562,13 +1552,6 @@ footer .copyright {
 
 .form-wrapper .form-footer .default-button {
 	margin-top: 30px;
-}
-
-.form-wrapper .checkbox label,
-.form-wrapper .radio label {
-	font-size: 18px;
-	font-style: italic;
-	color: #006e74;
 }
 
 .header-gradpath {
@@ -2017,6 +2000,11 @@ footer .copyright {
 }
 
 .authorship {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.authorship .col {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -2500,6 +2488,15 @@ footer .copyright {
 	margin-top: -5px;
 }
 
+.bulleted-list {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.bulleted-list ul {
+	padding: 0;
+}
+
 .bulleted-list ul li {
 	position: relative;
 	margin: 20px 0;
@@ -2529,31 +2526,17 @@ footer .copyright {
 }
 
 .featured-bio {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .featured-bio .person-info {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	margin-right: 48px;
+	text-align: center;
 }
 
 .featured-bio .person-info img {
 	margin-bottom: 12px;
-	width: 210px;
+	width: 100%;
 	border-radius: 50%;
 }
 
@@ -2562,7 +2545,6 @@ footer .copyright {
 	font-size: 32px;
 	font-weight: 300;
 	line-height: 1.12;
-	text-align: left;
 	font-style: inherit;
 	color: #333a40;
 }
@@ -2581,7 +2563,17 @@ footer .copyright {
 }
 
 .legal-disclaimer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.legal-disclaimer p {
+	margin-bottom: 10px;
 	color: #006E74;
+}
+
+.legal-disclaimer p:last-of-type {
+	margin-bottom: 0;
 }
 
 .promo-callout {
@@ -2740,7 +2732,7 @@ footer .copyright {
 	height: 22px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url("https://dev.thriventstudentloanresources.com/images/chevrons.png");
+	background-image: url("https://dev.thriventstudentloanresources.com../images/chevrons.png");
 	-webkit-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -2889,94 +2881,6 @@ footer .copyright {
 
 .signup-form .actions {
 	margin-top: 20px;
-}
-
-.create-campaign {
-	margin: 40px 20px;
-}
-
-.create-campaign h1 {
-	text-align: center !important;
-}
-
-.create-campaign h2 {
-	font-size: 50px;
-	margin-bottom: 40px;
-	color: #006e74;
-}
-
-.create-campaign h2 span {
-	font-size: 20px;
-	letter-spacing: 1px;
-}
-
-.create-campaign hr {
-	width: 100% !important;
-	margin: 20px 0;
-}
-
-.campaign-story {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	position: relative;
-	min-height: 436px;
-	font-size: 48px;
-	background-position: center top;
-	background-color: #e7e7e7;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.campaign-story .form-wrapper {
-	margin: 40px 40px 20px 20px;
-}
-
-.campaign-story .form-wrapper h2 {
-	font-weight: 400;
-}
-
-.campaign-story .story-content {
-	padding: 30px 20px 30px 40px;
-}
-
-.campaign-story .story-content h2 {
-	font-size: 26px;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-}
-
-.campaign-story .story-content h4 {
-	font-size: 22px;
-	font-weight: 400;
-	text-align: center;
-	letter-spacing: 1px;
-}
-
-.campaign-story .story-content ol {
-	margin: 20px 0 20px -20px;
-}
-
-.campaign-story .story-content li p {
-	margin: 15px 0 15px 0px;
-	font-size: 16px;
-	line-height: 18px;
-	color: #006e74;
-}
-
-.campaign-story .transparency {
-	width: 100%;
-	min-height: 436px;
-	background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
-	background: -webkit-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);
-	background: -o-linear-gradient(left, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);
-	background: linear-gradient(to right, transparent 0%, transparent 50%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.6) 100%);
 }
 
 .sources-citation h3 {
@@ -3623,14 +3527,6 @@ footer .copyright {
 	background-position: center;
 }
 
-a.circle-link {
-	text-decoration: none;
-}
-
-a.circle-link:hover {
-	text-decoration: underline;
-}
-
 .circle {
 	padding: 15% 5%;
 	width: 300px;
@@ -3642,6 +3538,10 @@ a.circle-link:hover {
 	background: #fff;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.circle a {
+	text-decoration: none;
 }
 
 .circle-1 {
@@ -3692,43 +3592,6 @@ a.circle-link:hover {
 	font-size: 18px;
 	letter-spacing: 1px;
 	font-weight: 300;
-}
-
-.custom-progress .progress {
-	height: 30px;
-	margin-bottom: 20px;
-	overflow: hidden;
-	background-color: #f6f3f3;
-	border-radius: 1px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.custom-progress .progress-bar {
-	float: left;
-	height: 30px;
-	font-size: 14px;
-	line-height: 30px;
-	letter-spacing: 1px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.custom-progress .progress-bar-success {
-	background-image: url(../images/bar.png);
-	background-size: contain;
-	background-repeat: repeat-x;
-	padding: 5px 5px;
-	background-origin: content-box;
-	background-color: transparent;
-	-webkit-animation: 5s ease-out 0s 1 slideInFromLeft;
-	        animation: 5s ease-out 0s 1 slideInFromLeft;
-	-ms-transform: skewX(-20deg);
-	    transform: skewX(-20deg);
-	-webkit-transform: skewX(-20deg);
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
 }
 
 @media (min-width: 768px) {
@@ -3953,18 +3816,10 @@ body form .container {
 	padding-right: 0px;
 }
 
-.campaign-story {
-	background-position: left top;
-}
-
-.campaign-story .transparency {
-	background: none;
-}
-
 .circle {
-	padding: 5% 5%;
-	width: 240px;
-	height: 240px;
+	padding: 10% 5%;
+	width: 230px;
+	height: 230px;
 }
 
 }
@@ -4084,6 +3939,11 @@ h4.inverted {
 	padding: 24px 0;
 }
 
+.article-module > .row > div {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
 .banner-module-gradpath .hero-content {
 	padding: 0;
 }
@@ -4097,15 +3957,11 @@ h4.inverted {
 }
 
 .banner-module-story .story-content {
-	padding: 25px;
-}
-
-.campaign-story {
-	background-position: left -350px top 1px;
-}
-
-.campaign-story .story-content {
 	padding: 0;
+}
+
+.featured-bio .person-info img {
+	width: 50%;
 }
 
 .static-item-article {
@@ -4340,17 +4196,6 @@ footer .footer-links-container ul li {
 	background-image: none;
 }
 
-.hexagon .circle {
-	width: 230px;
-	height: 230px;
-	margin-bottom: 20px;
-}
-
-.hexagon .circle-icon {
-	width: 30px;
-	height: 30px;
-}
-
 .circle {
 	width: 200px;
 	height: 200px;
@@ -4363,7 +4208,7 @@ footer .footer-links-container ul li {
 }
 
 .circle h4 {
-	font-size: 20px;
+	font-size: 17px;
 }
 
 }
@@ -4437,38 +4282,6 @@ footer .linkedin-circled {
 .stepper-btn-container .img3 {
 	width: 50px;
 	height: 50px;
-}
-
-}
-
-@-webkit-keyframes slideInFromLeft {
-
-0% {
-	-webkit-transform: translateX(-100%);
-	        transform: translateX(-100%);
-}
-
-100% {
-	-webkit-transform: translateX(0);
-	        transform: translateX(0);
-	transform: skewX(25deg);
-	-webkit-transform: skewX(25deg);
-}
-
-}
-
-@keyframes slideInFromLeft {
-
-0% {
-	-webkit-transform: translateX(-100%);
-	        transform: translateX(-100%);
-}
-
-100% {
-	-webkit-transform: translateX(0);
-	        transform: translateX(0);
-	transform: skewX(25deg);
-	-webkit-transform: skewX(25deg);
 }
 
 }
